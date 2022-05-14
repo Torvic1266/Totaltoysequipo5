@@ -12,4 +12,4 @@ Harold ,
 Victor Hugo Giraldo Gallego ,
 
 ## Referencias
-[https://products.hasbro.com/es-lam](navigation.brand.restName%3Anerf))
+[https://products.hasbro.com/es-lam](navigation.brand.restName%3Anerf)
