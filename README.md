@@ -12,7 +12,8 @@ Harold ,
 Victor Hugo Giraldo Gallego ,
 
 ## Referencias
-** hasbros**
+**** hasbros****
 **Toys tory **
 ** Lego **
 **Disney ** 
+**fisher price**
