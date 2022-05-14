@@ -6,6 +6,13 @@ Total toys es un sitio web creado para la compra y venta de juguetes para todas 
 nuestro equipo Total toys equiopo # 5, esta conformado por:
 Juan Esteban Hernandez Benitez
 Erica Polo
-Claudia Cano
+Claudia Patricia Cano Muñoz
 Harold 
 Victor Hugo Giraldo Gallego
+
+Referencias
++Hasbro
+*Mattel
++Toys tory
++Lego
++ Disney
