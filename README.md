@@ -13,7 +13,7 @@ Victor Hugo Giraldo Gallego ,
 
 ## Referencias
 **hasbro**
-****Toys tory ****
-**** Lego ****
-****Disney ** **
-****fisher price****
+**Toys tory**
+**Lego**
+**Disney**
+**fisher price**
