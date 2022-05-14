@@ -12,8 +12,7 @@ Harold ,
 Victor Hugo Giraldo Gallego ,
 
 ## Referencias
-****Hasbro
-****Mattel
-****Toys tory
-****Lego
-**** Disney 
+** hasbros**
+**Toys tory **
+** Lego **
+**Disney ** 
