@@ -12,12 +12,4 @@ Harold ,
 Victor Hugo Giraldo Gallego ,
 
 ## Referencias
-**hasbro**
-
-**Toys tory**
-
-**Lego**
-
-**Disney**
-
-**fisher price**
+[](https://products.hasbro.com/es-lamurl)
