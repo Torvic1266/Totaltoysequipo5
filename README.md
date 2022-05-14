@@ -12,4 +12,4 @@ Harold ,
 Victor Hugo Giraldo Gallego ,
 
 ## Referencias
-[GitHub Pages](https://products.hasbro.com/es-lamurl)
+[https://products.hasbro.com/es-lam](https://products.hasbro.com/es-lamurl)
