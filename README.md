@@ -13,3 +13,7 @@ Victor Hugo Giraldo Gallego ,
 
 ## Referencias
 [https://products.hasbro.com/es-lam]
+[https://shopping.mattel.com/es-es]
+[https://www.lego.com/en-us]
+[https://www.woodenheart.ie/]
+[https://yiminshum.com/marcas-juguetes-toys-2020/]
