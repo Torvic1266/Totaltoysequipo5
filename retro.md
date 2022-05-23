@@ -9,5 +9,5 @@ Una de nuestras virtudes durante el proyecto y durante todo este tiempo es que n
 Empezar a hacer - Start Doing 
 Deberíamos empezar a conocer más páginas de desarrollo para tener varias alternativas a la hora de trabajar, y no conformarnos solo con lo que sabemos utilizar, tenemos que buscar alternativas por nosotros mismos
 
-enlace de tablero digital 
+## Enlace de tablero digital 
 https://trello.com/b/1t37s6RD/proyecto-integrador
