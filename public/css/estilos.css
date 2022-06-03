@@ -1,87 +1,77 @@
-@import url('https://fonts.googleapis.com/css2?family=Tiro+Devanagari+Sanskrit&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Tiro+Devanagari+Sanskrit&display=swap");
 
-*{
-    margin: 0%;
-    padding: 0%;
-    font-family: 'Tiro Devanagari Sanskrit', serif;
+* {
+  margin: 0%;
+  padding: 0%;
+  font-family: "Tiro Devanagari Sanskrit", serif;
 }
-header{
-    display: flex;
-    align-items:center;
-    justify-content: space-around;
-    padding-top: 3%;
-    padding-bottom:3%;
-    box-shadow: 0px 0px 15px #a49a9a;
-
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding-top: 3%;
+  padding-bottom: 3%;
+  box-shadow: 0px 0px 15px #a49a9a;
 }
-header img{
-    width: 55%;
+header img {
+  width: 55%;
 }
 
- .menu {
-     display:none;
- }
+.menu {
+  display: none;
+}
 
- .fas-bars{
-     font-size:30px;
-     color: black;
- } 
+.fas-bars {
+  font-size: 30px;
+  color: black;
+}
 
- 
+@media (min-width: 700px) {
+  header img {
+    width: 20%;
+  }
+  .menu {
+    display: none;
+  }
 
- @media (min-width:700px) {
+  .menu a {
+    text-decoration: none;
+    color: #0c0c0d;
+    margin-left: 25px;
+    margin-right: 25px;
+    font-size: 20px;
+  }
+  .fas-bars {
+    display: none;
+  }
 
-    header img {
-        width: 20%;
-    }
-     .menu{
-         display: none;
-     }
+  /*-------seccion de los porductos -----*/
+  .seccionDeLosProductos div {
+    width: 23.5%;
+    height: auto;
+    margin: 15px;
+    box-shadow: 0px 0px 6px #a49a9a;
+  }
+}
 
-     .menu a {
-         text-decoration:none;
-         color:#0c0c0d;
-         margin-left: 25px;
-         margin-right:25px;
-         font-size: 20px;
-     }
-     .fas-bars{
-         display:none;
-     }
-     
+/*-------seccion de los porductos -----*/
 
-     /*-------seccion de los porductos -----*/
-     .seccionDeLosProductos div {
-        width: 23.5%;
-        height:auto;
-        margin: 15px;
-        box-shadow: 0px 0px 6px #a49a9a ;
-    }
+.seccionDeLosProductos {
+  width: 98%;
+  display: flex;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin: 0 auto;
+  flex-wrap:wrap;
+}
 
- }
+.seccionDeLosProductos div {
+  width: 100%;
+  height: auto;
+  margin: 15px;
+  box-shadow: 0px 0px 6px #a49a9a;
+}
 
- /*-------seccion de los porductos -----*/
-
-
- .seccionDeLosProductos{
-    width: 98%; 
-    display: flex; 
-    padding-top: 20px;
-    padding-bottom : 20px;  
-    margin:0 auto;
-   /* ----flex-wrap:wrap;----*/
-
- }
-
- .seccionDeLosProductos div {
-     width: 100%;
-     height:auto;
-     margin: 15px;
-     box-shadow: 0px 0px 6px #a49a9a ;
- }
-
-
- .productos img {
-     width: 100%;
-
- }
+.productos img {
+  width: 100%;
+}
