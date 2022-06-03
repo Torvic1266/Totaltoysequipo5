@@ -19,17 +19,35 @@ header img {
 }
 
 #menu a {
-    text-decoration: none;
-    color: #0c0c0d;
-    margin-left: 25px;
-    margin-right: 25px;
-    font-size: 20px;
+  text-decoration: none;
+  color: #0c0c0d;
+  margin-left: 25px;
+  margin-right: 25px;
+  font-size: 20px;
+  border-radius: 5px;
+  padding: 4px;
+  background: mediumpurple;
+  display: inline-block;
+  line-height: 1.2em;
 }
 
 #menu-icon {
   display: none;
   font-size: 16px;
   color: black;
+}
+
+#baner {
+  position: relative;
+}
+
+#baner p {
+  position: absolute;
+  top: 66px;
+  left: 40px;
+  font-size: 40px;
+  color: white;
+  font-family: 'Gill Sans', sans-serif;
 }
 
 /*-------seccion de los porductos -----*/
@@ -40,37 +58,38 @@ header img {
   padding-top: 20px;
   padding-bottom: 20px;
   margin: 0 auto;
+  flex-wrap: wrap;
 }
 
 .producto {
-  width: 100%;
-  height: auto;
+  width: 20%;
   margin: 15px;
   box-shadow: 0px 0px 6px #a49a9a;
 }
+.producto .producto-image {
+  width: 100%;
+  height: 150px;
+}
 
 .producto img {
-  width: 100%;
+  display: flex;
+  margin: auto;
+  max-width: 100%;
+  max-height: 100%;
 }
 
 @media (max-width: 700px) {
-    #menu {
-      display: none;
-    }
-
-    #menu-icon {
-        display: block;
-      }
-  
-    /*-------seccion de los porductos -----*/
-    .seccionDeLosProductos {
-        flex-wrap: wrap;
-    }
-
-    .producto {
-      width: 23.5%;
-      height: auto;
-      margin: 15px;
-      box-shadow: 0px 0px 6px #a49a9a;
-    }
+  #menu {
+    display: none;
   }
+
+  #menu-icon {
+    display: block;
+  }
+
+  /*-------seccion de los porductos -----*/
+
+  .producto {
+    width: 100%;
+  }
+}
