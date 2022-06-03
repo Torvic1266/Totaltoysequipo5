@@ -8,18 +8,26 @@ app.listen(3600,()=> {
     console.log("servidor corriendo en el puerto 3600");
 });
 app.get("/",(req, res)=>{
-    res.sendFile(path.resolve(__dirname,"./views/index.html"))
+    res.sendFile(path.resolve(__dirname,"./views/index.html"));
       
 });
 
 
 app.get("/loguin",(req, res)=>{
-    res.sendFile(path.resolve(__dirname,"./views/loguin.html"))
+    res.sendFile(path.resolve(__dirname,"./views/login.html"))
       
 });
 
 
 app.get("/productDetail",(req, res)=>{
     res.sendFile(path.resolve(__dirname,"./views/productDetail.html"))
+
       
 });
+  
+app.get("/productcart",(req, res)=>{
+    res.sendFile(path.resolve(__dirname,"./views/productcart.html"))
+      
+});
+
+
