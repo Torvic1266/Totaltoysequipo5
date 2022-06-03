@@ -8,6 +8,3 @@ Más de - More Of
 Una de nuestras virtudes durante el proyecto y durante todo este tiempo es que nos ayudamos entre todos y fuimos muy eficaces al momento de dar ideas para nuestro proyecto, pero esto lo debemos de mejorar un poco más ya que a veces nos quedamos mucho tiempo dando ideas y no hacemos la ejercitación , si mejoramos este aspecto solo un poco seremos mejores para realizar cualquier actividad ya sea individualmente o grupal.
 Empezar a hacer - Start Doing 
 Deberíamos empezar a conocer más páginas de desarrollo para tener varias alternativas a la hora de trabajar, y no conformarnos solo con lo que sabemos utilizar, tenemos que buscar alternativas por nosotros mismos
-
-## Enlace de tablero digital 
-https://trello.com/b/1t37s6RD/proyecto-integrador
