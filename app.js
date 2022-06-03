@@ -13,20 +13,24 @@ app.get("/",(req, res)=>{
 });
 
 
-app.get("/loguin",(req, res)=>{
+app.get("/login",(req, res)=>{
     res.sendFile(path.resolve(__dirname,"./views/login.html"))
       
 });
 
 
-app.get("/productDetail",(req, res)=>{
-    res.sendFile(path.resolve(__dirname,"./views/productDetail.html"))
+app.get("/productdetail",(req, res)=>{
+    res.sendFile(path.resolve(__dirname,"./views/productdetail.html"))
 
       
 });
   
-app.get("/productcart",(req, res)=>{
-    res.sendFile(path.resolve(__dirname,"./views/productcart.html"))
+app.get("/productCart",(req, res)=>{
+    res.sendFile(path.resolve(__dirname,"./views/productCart.html"))
+      
+});
+app.get("/register",(req, res)=>{
+    res.sendFile(path.resolve(__dirname,"./views/register.html"))
       
 });
 
