@@ -8,12 +8,22 @@ body {
     height:  100vh;
     }
     
+    .logo{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .logo img{
+       width: 25%; 
+      
+    }
     .login-box {
     width: 360px;
     height: 450px;
     background: #49bec7;
     color: #fff;
-    top: 50%;
+    top: 65%;
     left: 50%;
     position: absolute;
     transform: translate(-50%, -50%);
