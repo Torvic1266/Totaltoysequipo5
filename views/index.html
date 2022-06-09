@@ -5,79 +5,118 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"/>
-    <link rel="stylesheet" href="/css/estilos.css" />
+    <link rel="stylesheet" href="/css/estilos.css"/>
+  
     <title>Total Toys</title>
   </head>
   <body>
     <header>
       <img src="/img/logo Total Toys.jpg" alt="se crea logo" />
-      <nav id="menu">
-        <a href="#">Inicio</a>
-        <a href="productDetail.html">Detalle Del Producto</a>
-        <a href="productcart.html">Detalle Del Carrito</a>
-        <a href="login.html">Login</a>
+      <nav class="menu">
+        <li><a href="/"><i class="fa-solid fa-shop"></i></a></li>
+        <li><a href="/Productdetail">Detalle del producto<i class=""></i></a></li>
+        <li><a href="/productcart">Mi Carrito<i class="fa-solid fa-cart-plus"></i></a></li>
+        <li><a href="/login">loguin <i class="fa-solid fa-right-to-bracket"></i></a></li>
+        <li><a href="/register">Registrarse<i class=""></i></a></li>
       </nav>
       <div id="menu-icon">
         <i class="fas fa-bars"></i>
       </div>
     </header>
-
-    <div id="baner">
-      <img
-        src="/img/banerg.bmp"
-        alt="banner inicial del portatil"
-        width="100%"
-      />
-      <p>Bienvenidos</p>
+<!-----seccion del baneer -->
+    <div class="baner">
+      <div class = "capa"></div>
+      <div class="info">
+      <h1>Bienvenidos a Total Toys </h1> 
+      <p>un lugar para soñar y encontrar tus juguetes preferidos</p>
+      <a href="#">Acerca de nosotros</a></div>
     </div>
 
-    <!-----seccion de los productos-->
-    <div class="seccionDeLosProductos">
-      <div class="producto">
-        <div class="producto-image">
-          <img src="/img/barbe.jpg" alt="producto de la barbie" />
-        </div>
-        <p>
-          Muñeca Barbie fashionista, para niños de 3 años en adelante. La muñeca
-          Barbie cuerpo original y lleva una falda 3/4. una blusa corta a juego,
-          tenis estilo pantufla .
-        </p>
-      </div>
 
-      <div class="producto">
-        <div class="producto-image">
-          <img src="/img/dinosaurio.jpg" alt="producto dinosaurio" />
-        </div>
-        <p>
-          Dinosaurio Rex Tyrannosaurus Jurassic World Super Colossal Prepárate
-          para una emocionante acción y aventura con Jurassic World! Watch out!,
-          este Super Colosal Tyrannosaurus Rex está basado en el icónico
-          Tyrannosaurus Rex de Jurassic World. características realistas detalle
-          y la decoración.
-        </p>
+<!--------- secion productos -->
+<section>
+  <div class="seccionDeLosProductos">
+    <div class="producto">
+      <div class="producto-image">
+        <img src="/img/barbe.jpg" alt="producto de la barbie" />
       </div>
+      <p>
+        Muñeca Barbie fashionista .
+      </p>
+      <strong>$60.000</strong>
 
-      <div class="producto">
-        <div class="producto-image">
-          <img src="/img/boss light.jpg" alt="Producto boss light. " />
-        </div>
-        <p>
-          Buzz Lightyear es un fabuloso guardián espacial que vuela con mucho
-          estilo, es el mejor amigo de Woody y uno de los juguetes más
-          calculador y racional.
-        </p>
+    <div class="contenedor-botones"> 
+      <button class="boton-comprar"><span>Agregar Al Carrito</span></button>
+    </div>
+    </div>
+
+    <div class="producto">
+      <div class="producto-image">
+        <img src="/img/dinosaurio.jpg" alt="producto dinosaurio"/>
       </div>
-
-      <div class="producto">
-        <div class="producto-image">
-          <img src="/img/yoda.jpeg" alt="porducto Yoda " />
-        </div>
-        <p>
-          Para los pequeños fans de la fantástica película Star Wars, llega este
-          tierno y divertido Peluche de uno de los personajes más
-          representativos. 
-        </p>
+      <p>
+        Dinosaurio Rex Tyrannosaurus n.
+      </p>
+      <strong>$80.000</strong>
+      <div class="contenedor-botones"> 
+        <button class="boton-comprar"><span>Agregar Al Carrito</span></button>
       </div>
     </div>
+
+    <div class="producto">
+      <div class="producto-image">
+        <img src="/img/boss light.jpg" alt="Producto boss light. " />
+      </div>
+      <p>
+        Boss Lightyear
+      </p>
+
+      <strong>$120.000</strong>
+      <div class="contenedor-botones"> 
+        <button class="boton-comprar"><span>Agregar Al Carrito</span></button>
+      </div>
+    </div>
+
+    <div class="producto">
+      <div class="producto-image">
+        <img src="/img/yoda.jpeg" alt="porducto Yoda " />
+      </div>
+      <p>Yoda </p>
+
+      <strong>$80.000</strong>
+      <div class="contenedor-botones"> 
+        <button class="boton-comprar"><span>Agregar Al Carrito</span></button>
+      </div>
+
+    </div>
+
+    <div class="producto">
+      <div class="producto-image">
+        <img src="/img/el-sr-cara-de-papa-cambiara-su-identidad-de-genero.jpg" alt="porducto Señores cara de papa " />
+      </div>
+      <p>Señores Cara de Papa</p>
+      <strong>$120.000</strong>
+
+      <div class="contenedor-botones"> 
+        <button class="boton-comprar"><span>Agregar Al Carrito</span></button>
+      </div>
+    
+    </div>
+
+    <div class="producto">
+      <div class="producto-image">
+        <img src="/img/Carro Lambom..jpg" alt="carro lambotgini " />
+      </div>
+      <p>Carro lambotgini</p>
+      <strong>$100.000</strong>
+      <div class="contenedor-botones"> 
+        <button class="boton-comprar"><span>Agregar Al Carrito</span></button>
+      </div>
+    </div>
+    
+  </div>
+  
+</section>
+
   </body>
 </html>

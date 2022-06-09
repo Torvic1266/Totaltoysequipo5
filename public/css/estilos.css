@@ -1,6 +1,7 @@
-@import url("https://fonts.googleapis.com/css2?family=Tiro+Devanagari+Sanskrit&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed&family=Tiro+Devanagari+Sanskrit&display=swap");
 
 * {
+  list-style:none;
   margin: 0;
   padding: 0;
   font-family: "Tiro Devanagari Sanskrit", serif;
@@ -10,15 +11,35 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  padding: 3% 0;
-  box-shadow: 0px 0px 15px #a49a9a;
+  padding: 1% 0;
+ 
 }
 
 header img {
-  width: 15%;
+  width: 10%;
+}
+.menu{
+    display: flex;
 }
 
-#menu a {
+.menu li a {
+    text-decoration: none;
+    color: #0c0c0d;
+    margin-left: 25px;
+    margin-right: 25px;
+    font-size: 20px;
+    border-radius: 5px;
+    padding: 4px;
+    display: inline-block;
+    line-height: 1.2em;
+    transition:1s;
+}
+
+.menu :hover{
+  color:#099fea
+}
+
+.menu li a  {
   text-decoration: none;
   color: #0c0c0d;
   margin-left: 25px;
@@ -26,7 +47,7 @@ header img {
   font-size: 20px;
   border-radius: 5px;
   padding: 4px;
-  background: rgb(238, 241, 58);
+  background: #fffcfc;
   display: inline-block;
   line-height: 1.2em;
 }
@@ -37,38 +58,95 @@ header img {
   color: black;
 }
 
-#baner {
+.baner{
+  width:100%;
+  height: 600px;
+  animation:baner 10s infinite linear  alternate;
+  background-size:100% 100%;
   position: relative;
+  display:flex;
+  justify-content: center;
+  align-items:center;
 }
 
-#baner p {
+@keyframes baner{
+  0%, 20%{
+    background-image: url(../img/baner1.jpeg);
+  }
+  25%, 45%{
+    background-image: url(../img/baneer2.jpeg);
+  }
+  50%, 70%{
+    background-image: url(../img/baner3.jpeg);
+  }
+  75%, 100%{
+    background-image: url(../img/baner4.jpeg);
+  }
+
+} 
+
+.capa{
+  width: 100%;
+  height:100%;
   position: absolute;
-  top: 66px;
-  left: 40px;
-  font-size: 40px;
-  color: white;
-  font-family: 'Gill Sans', sans-serif;
+  top:0;
+  left: 0;
+  background:rgba(0,0,0,0);
+}
+.info{
+  z-index:1;
+  width:100%;
+  max-width: 550px;
+  text-align: center;
+}
+.info h1{
+  color: hwb(0 97% 1%);
+  font: size 300px;
+  margin-bottom :20px;
+  letter-spacing:3px;
+
+
+}
+
+.info p{
+  color: #f2d1d1;
+  line-height:2.0;
+  margin-bottom :30px;
+
+}
+
+.info a{
+  color: hsl(240, 10%, 94%);
+  text-decoration:none;
+  background:#715efd;
+  padding: 18px 37px ;
+  display :inline-block;
+  border-radius:60px; 
 }
 
 /*-------seccion de los porductos -----*/
-
 .seccionDeLosProductos {
   width: 98%;
   display: flex;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top:10px;
+  padding-bottom:10px;
   margin: 0 auto;
   flex-wrap: wrap;
+  font-family:Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  text-align: center;
+
+  
 }
 
 .producto {
-  width: 20%;
-  margin: 15px;
-  box-shadow: 0px 0px 6px #a49a9a;
+  width: 23%;
+  margin: 50px;
+  box-shadow: 0px 0px 6px hwb(0 68% 30%);
 }
 .producto .producto-image {
   width: 100%;
-  height: 150px;
+  height: 280px;
 }
 
 .producto img {
@@ -77,6 +155,33 @@ header img {
   max-width: 100%;
   max-height: 100%;
 }
+
+.boton-comprar{
+  display: inline-flex;
+  align-items:center;
+  justify-content: center;
+  width: 100%;
+  height: 40px;
+  background:hwb(240 98% 1%);
+  border: none ;
+  color: black;
+  font-family:Arial, Helvetica, sans-serif;
+  font-size: 20 px;
+  font-weight: 500;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition:.3s ease all ;
+  border-radius: 5px;
+
+
+}
+ 
+.boton-comprar:hover{
+  background-color: hsl(200, 82%, 89%);
+}
+
+
+
 
 @media (max-width: 700px) {
   #menu {
@@ -93,3 +198,6 @@ header img {
     width: 100%;
   }
 }
+
+
+

@@ -1,6 +1,39 @@
-*{ 
-    background-color:rgb(236, 229, 229)
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed&family=Tiro+Devanagari+Sanskrit&display=swap");
+
+* {
+  list-style:none;
+  margin: 0;
+  padding: 0;
+  font-family: "Tiro Devanagari Sanskrit", serif;
 }
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 1% 0;
+ 
+}
+
+header img {
+  width:10%;
+}
+.menu{
+    display: flex;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: #0c0c0d;
+    margin-left: 25px;
+    margin-right: 25px;
+    font-size: 20px;
+    border-radius: 5px;
+    padding: 4px;
+    display: inline-block;
+    line-height: 1.2em;
+}
+
 
 
 
@@ -20,21 +53,42 @@
     flex-direction:column;
     justify-content: center;
     align-items: center;
-    gap: 50px;
+    gap: 30px;
 }
 
 .producto {
-    width: 20%;
+    width: 80%;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
-    border: 2px solid rgb(232, 190, 54);
-    border-radius: 10px;
+    border: 4px solid rgb(9, 9, 9);
+    border-radius: 30px;
+    
+}
+
+.producto img{
+    
+
+    align-items: center;
+    height: 200px;
+
+
 }
 
 .interaccion {
     display: flex;
-    width: 50px;
+    width: 90px;
     justify-content: space-between;
 }
+.interaccion button {
+     padding: 10px ;
+     background-color: blue;
+     color: aliceblue;
+     border: none;
+     border-radius:15px ;
+}
+
+
+
+
