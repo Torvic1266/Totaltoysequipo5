@@ -17,3 +17,9 @@ Victor Hugo Giraldo Gallego ,
 [https://www.lego.com/en-us]
 [https://www.woodenheart.ie/]
 [https://yiminshum.com/marcas-juguetes-toys-2020/]
+
+
+
+##Tablero De actividades
+
+[https://trello.com/b/1t37s6RD/proyecto-integrador]
