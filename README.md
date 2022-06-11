@@ -20,6 +20,6 @@ Victor Hugo Giraldo Gallego ,
 
 
 
-##Tablero De actividades
+## Tablero De actividades
 
 [https://trello.com/b/1t37s6RD/proyecto-integrador]
