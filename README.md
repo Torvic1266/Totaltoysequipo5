@@ -18,6 +18,15 @@ Victor Hugo Giraldo Gallego ,
 [https://www.woodenheart.ie/]
 [https://yiminshum.com/marcas-juguetes-toys-2020/]
 
+## Conclusiones Sprint 2
+
+En el Sprint 2 tuvimos varias dificultades tales como:
+1. errores en los codigos
+2. falta de tiempo
+3. la Ejecucion del servidor
+todas estas dificulates (lo malo), la pudimos superar gracias a la profundizacion que le dimos a los temas para corregir los codigos, llegando a un compromiso con el equipo de trabajo para sacar el Sprint 2 adelante, teniendo un buen resultado, tanto en el servidor como en el proyecto final.
+
+
 
 
 ## Tablero De actividades
