@@ -1,35 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="/css/productCart.css">
-    <title>Mis Productos</title>
-</head>
+    <head> 
+        <%- include('./partials/head'); %>
+      <title>producto</title>
+      <link rel="stylesheet" href="/css/productCart.css">
+      </head>
 <body>
  
-    <header>
-        <!--LOGOTIPO-->
-        <img src="/img/logo Total Toys.jpg" alt="">
-        <!--MENU DE NAVEGACION-->
-        
-        <nav class="menu">
-            <li><a href="/"><i class="fa-solid fa-shop"></i></a></li>
-            <li><a href="/Productdetail">Detalle del producto<i class=""></i></a></li>
-            <li><a href="/productcart">Mi Carrito<i class="fa-solid fa-cart-plus"></i></a></li>
-            <li><a href="/login">loguin <i class="fa-solid fa-right-to-bracket"></i></a></li>
-            <li><a href="/register">Registrarse<i class=""></i></a></li>
-        </nav>
-
-
-        <!--ICONO MENU HAMBURGUESA-->
-        <div>
-            <i class="fas fa-bars"></i>
-        </div>
-    
-    </header>
+    <%- include('./partials/header'); %>
     <div class="container-productos">
         <div class="producto">
             <img src="/img/Carro Lambom..jpg" alt="">
