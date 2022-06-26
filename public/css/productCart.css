@@ -90,5 +90,19 @@ header img {
 }
 
 
+footer {  
+    background-color: rgb(188, 208, 226);
+    height: 100px;
+    padding: 5px;
+    
+    color: black;
+    display:flex;
+    text-align:center;
+    font-size: large;
+    justify-content: center;
+  
+  
+    
+  }
 
 

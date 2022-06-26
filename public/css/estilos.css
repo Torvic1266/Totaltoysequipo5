@@ -12,6 +12,7 @@ header {
   align-items: center;
   justify-content: space-around;
   padding: 1% 0;
+  background-color: rgb(188, 208, 226);
  
 }
 
@@ -198,6 +199,20 @@ header img {
     width: 100%;
   }
 }
+footer {  
+  background-color: rgb(188, 208, 226);
+  height: 100px;
+  padding: 5px;
+  
+  color: black;
+  display:flex;
+  text-align:center;
+  font-size: large;
+  justify-content: center;
 
 
+  
+}
+
+    
 

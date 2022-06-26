@@ -120,7 +120,7 @@ main div {
 
 footer{
     display: flex;
-    background: red;
+    background: rgb(192, 189, 189);
 	color: rgb(15, 12, 12);
     height: 100px;
   
