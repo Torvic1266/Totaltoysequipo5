@@ -118,18 +118,7 @@ main div {
 }
 
 
-footer{
-    display: flex;
-    background: rgb(192, 189, 189);
-	color: rgb(15, 12, 12);
-    height: 100px;
-  
-    
-}
 
-footer img {
-    margin: 12px;
-}
 
 .boton-comprar{
     display: inline-flex;
