@@ -21,7 +21,7 @@ height:  100vh;
 .login-box {
 width: 350px;
 height: 500px;
-background: hsl(180, 71%, 99%);
+background: hsl(0, 0%, 100%);
 color: #0a0909;
 top: 50%;
 left: 50%;
@@ -30,7 +30,7 @@ transform: translate(-50%, -50%);
 box-sizing: border-box;
 padding: 70px 30px;
 border-radius: 5px;
-border:solid;
+border:solid ;
 }
 
 .login-box .avatar {
@@ -46,6 +46,8 @@ margin: 0;
 padding: 0 0 20px;
 text-align: center;
 font-size: 22px;
+
+
 }
 
 .login-box label{
@@ -58,6 +60,7 @@ display: block;
 .login-box input {
 width: 100%;
 margin-bottom: 20px;
+
 }
 
 .login-box input[type="text"],
@@ -67,7 +70,7 @@ border-bottom: 1px solid #fcfafa;
 background: transparent;
 outline: none;
 height: 40px;
-color: #fff8f8;
+color: black;
 font-size: 16px;
 }
 
