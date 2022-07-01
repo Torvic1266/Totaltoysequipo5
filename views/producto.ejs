@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es" dir="itr">
+  <head>
+    <%- include('./partials/head'); %>
+    <title>registro</title>
+    <link rel="stylesheet" href="/css/producto.css" />
+  </head>
+  <body>
+    <div class="fondo">
+      <div class="login-box">
+        <h1>creacion de producto</h1>
+        <form>
+          <label for="NombreDelProducto">Nombre del Producto</label>
+          <input type="text" placeholder="Nombre del producto" />
+
+          <label for="Descripcion">Descripcion</label>
+          <input type="text" placeholder="Descripcion" />
+
+          
+
+          <label for="Categoria">Categoria</label>
+         
+          <select name="Categorias">
+            <option value="Bebes">Bebes</option>
+            <option value="Niños" selected>Niños</option>
+            <option value="Adolescentes">Adolescentes</option>
+          </select>
+          
+          <label for="Color">Color</label>
+          <input type="password" placeholder="Ingrese su Password" />
+          <label for="Precio">precio</label>
+          <input type="number" placeholder="Ingrese su Password" />
+          <input type="submit" value="Registrar" />
+          <input type="checkbox" id="subscribeNews" name="subscribe" value="newsletter">
+    <label for="subscribeNews">Acepto terminos y condiciones</label>
+        </form>
+      </div>
+    </div>
+    <%- include('./partials/footer'); %>
+  </body>
+</html>

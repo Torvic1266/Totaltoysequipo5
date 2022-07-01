@@ -1,34 +1,30 @@
 <!DOCTYPE html>
 <html lang="es" dir="itr">
-    <head> 
-        <%- include('./partials/head'); %>
-        <title>registro</title>
-        <link rel="stylesheet" href="/css/register.css">
-      </head>
-<body>
-<div class="fondo">
-<div class="login-box">
+  <head>
+    <%- include('./partials/head'); %>
+    <title>registro</title>
+    <link rel="stylesheet" href="/css/register.css" />
+  </head>
+  <body>
+    <div class="fondo">
+      <div class="login-box">
+        <h1>Formulario de Registro</h1>
+        <form>
+          <label for="Nombre">Nombre</label>
+          <input type="text" placeholder="Nombre" />
 
-<h1>Formulario de Registro</h1>
-<form>
+          <label for="Apellido">Apellido</label>
+          <input type="text" placeholder="Ingresa su Apellido" />
 
-<label for="Nombre">Nombre</label>
-<input type="text" placeholder="Nombre">
-
-<label for="Apellido">Apellido</label>
-<input type="text" placeholder="Ingresa su Apellido">
-
-<label for="Email">Email</label>
-<input  type="text" placeholder="Ingrese su Email">
-<label for="Password">Password</label>
-<input  type="password" placeholder="Ingrese su Password">
-<input type="submit"  value="Registrar">
-<P> Estoy de acuerdo con los terminos y condiciones</P>
-
-
-</form>
-</div>
-</div>
-<%- include('./partials/footer'); %>
-</body>
+          <label for="Email">Email</label>
+          <input type="text" placeholder="Ingrese su Email" />
+          <label for="Password">Password</label>
+          <input type="password" placeholder="Ingrese su Password" />
+          <input type="submit" value="Registrar" />
+          <P> Estoy de acuerdo con los terminos y condiciones</P>
+        </form>
+      </div>
+    </div>
+    <%- include('./partials/footer'); %>
+  </body>
 </html>

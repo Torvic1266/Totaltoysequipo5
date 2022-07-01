@@ -34,5 +34,7 @@ app.get("/register",(req, res)=>{
     res.render("register.ejs")
       
 });
-
+app.get("/producto",(req,res)=>{
+    res.render("producto.ejs")
+});
 
