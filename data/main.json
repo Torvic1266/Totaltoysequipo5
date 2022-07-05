@@ -1,0 +1,235 @@
+[
+    {
+        "id": 1,
+        "nombre": "Muñeco Batman",
+        "descripcion": "Batman.webp",
+        "precio": 85.000,
+        "imagen": "Batman.webp"
+    },
+    {
+        "id": 2,
+        "nombre": "Batman",
+        "descripcion": "Batman-Batimovil.webp",
+        "precio":120.000,
+        "imagen": "Batman-Batimovil.webp"
+    },
+    
+       { "id": 3,
+        "nombre": "Dragon",
+        "descripcion": "Dragon.webp",
+        "precio": 125.000,
+        "imagen": "Dragon.webp"
+       },
+    
+    {
+        "id": 4,
+        "nombre": "Muñeco Fornite",
+        "descripcion": "Fornite.webp",
+        "precio":100.000,
+        "imagen": "Fornite.webp"
+    },
+
+    {
+        "id": 5,
+        "nombre": "Muñeco Funko",
+        "descripcion": "Funko-Harry-potter.webp",
+        "precio": 130.000,
+        "imagen": "Funko-Harry-potter.webp"
+    },
+    {
+        "id": 6,
+        "nombre": "",
+        "descripcion": "",
+        "precio": ,
+        "imagen": ""
+    },
+    
+       { "id": 7,
+        "nombre": "",
+        "descripcion": "",
+        "precio": ,
+        "imagen": ""
+       },
+    
+    {
+        "id": 8,
+        "nombre": "",
+        "descripcion": "",
+        "precio": ,
+        "imagen": ""
+    },
+    {
+        "id": 9,
+        "nombre": "",
+        "descripcion": "",
+        "precio": ,
+        "imagen": ""
+    },
+    {
+        "id": 10,
+        "nombre": "",
+        "descripcion": "",
+        "precio": ,
+        "imagen": ""
+    },
+    
+       { "id": 11,
+        "nombre": "",
+        "descripcion": "",
+        "precio": ,
+        "imagen": ""
+       },
+    {
+        "id": 12,
+        "nombre": "",
+        "descripcion": "",
+        "precio": ,
+        "imagen": ""
+    },
+
+    {
+        "id": 13,
+        "nombre": "",
+        "descripcion": "",
+        "precio": ,
+        "imagen": ""
+    },
+    {
+        "id": 14,
+        "nombre": "",
+        "descripcion": "",
+        "precio": ,
+        "imagen": ""
+    },
+    
+        {
+        "id": 15,
+        "nombre": "",
+        "descripcion": "Caja-De-Secretos-Mariposas-2.wepd",
+        "precio": 40.000,
+        "imagen": "Caja-De-Secretos-Mariposas-2.wepd"
+        },
+    {
+        "id": 16,
+        "nombre": "",
+        "descripcion": "Caja-De-Secretos-Mariposas-3.wepd",
+        "precio":45.000,
+        "imagen": "Caja-De-Secretos-Mariposas-3.wepd"
+    },
+
+    {
+        "id": 17,
+        "nombre": "Diario mariposa",
+        "descripcion": "Caja-De-Secretos-Mariposas.wepd",
+        "precio": 35.000,
+        "imagen": "Caja-De-Secretos-Mariposas.wepd"
+    },
+    {
+        "id": 18,
+        "nombre": "Sonajero para bebes",
+        "descripcion": "Movil-Interativo-Leon.webp",
+        "precio": 65.000,
+        "imagen": "Movil-Interativo-Leon.webp"
+    },
+    
+      {
+         "id": 19,
+        "nombre": "juguete didactico caldero",
+        "descripcion": "My-Magic-Mixies-Caldero.webp",
+        "precio":229.000 ,
+        "imagen": "My-Magic-Mixies-Caldero.webp"
+      },
+    {
+        "id": 20,
+        "nombre": "muñeco panda",
+        "descripcion": "Peek-A-Roo-Panda-y-Bebe-Sorpresa.webp",
+        "precio":115.000 ,
+        "imagen": "Peek-A-Roo-Panda-y-Bebe-Sorpresa.webp"
+    },
+
+    {
+        "id":21,
+        "nombre": "Tapete didactico",
+        "descripcion": "Tapete-De Estimulacion-Sunny.webp",
+        "precio": 120.000,
+        "imagen": "Tapete-De Estimulacion-Sunny.webp"
+    },
+    {
+        "id": 22,
+        "nombre": "muñeco de pinguino",
+        "descripcion": "Ty-Beanie-Boos-Gale-Pinguino.webp",
+        "precio": 160.000,
+        "imagen": "Ty-Beanie-Boos-Gale-Pinguino.webp"
+    },
+    
+      { "id": 23,
+        "nombre": "Juego de mesa ajedrez",
+        "descripcion": "Ajedrez.webp",
+        "precio":150.000 ,
+        "imagen": "Ajedrez.webp"
+      },
+    {
+        "id": 24,
+        "nombre": "Juego de mesa bingo",
+        "descripcion": "Bingo.webp",
+        "precio": 75.000,
+        "imagen": "Bingo.webp"
+    }
+
+    {
+        "id": 25,
+        "nombre": "Juego de mesa damas",
+        "descripcion": "Damas.webp",
+        "precio":105.000 ,
+        "imagen": "Damas.webp"
+    },
+    {
+        "id": 26,
+        "nombre": "Juego de mesa domino",
+        "descripcion": "Domino.webp",
+        "precio":96.000 ,
+        "imagen": "Domino.webp"
+    },
+    
+       { "id": 27,
+        "nombre": "Juego de mesa monopoly",
+        "descripcion": "Monopoly.jpg",
+        "precio":110.000 ,
+        "imagen": "Monopoly.jpg"
+       },
+    {
+        "id": 28,
+        "nombre": "Juego de mesa parques",
+        "descripcion": " Parques",
+        "precio": 85.000,
+        "imagen": "Parques.webp"
+    },
+    {
+        "id": 29,
+        "nombre": "Juego de mesa pimple peter",
+        "descripcion": "Pimple-Peter.webp",
+        "precio":90.000 ,
+        "imagen": "Pimple-Peter.webp"
+    },
+    {
+        "id": 30,
+        "nombre": "Juego de mesa Poker",
+        "descripcion": "Poker",
+        "precio":30.000 ,
+        "imagen": "Poker"
+    },
+    
+       { "id": 31,
+        "nombre": "Juego de mesa Torre De Equilibrio",
+        "descripcion": "Torre-De-Equilibrio.webp",
+        "precio":45.000 ,
+        "imagen": "Torre-De-Equilibrio.webp"
+       },
+    {
+        "id": 32,
+        "nombre": "Juego de mesa Uno",
+        "descripcion": "Uno.webp",
+        "precio":50.000 ,
+        "imagen": "Uno.webp"
+    },
+]
