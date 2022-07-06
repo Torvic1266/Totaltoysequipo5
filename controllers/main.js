@@ -9,7 +9,7 @@ const main = {
         res.render("index",{menu});      
     }, 
     detalle:(req,res)=>{
-        let producto = menu.find(producto => producto.id === + req.params.id);
+        let producto = menu.find(producto => producto.id ===  req.params.id);
         return res.render("detalleMenu",{producto});
     }
 };

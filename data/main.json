@@ -6,6 +6,7 @@
         "precio": 85.000,
         "imagen": "Batman.webp"
     },
+
     {
         "id": 2,
         "nombre": "Batman",
@@ -36,82 +37,88 @@
         "precio": 130.000,
         "imagen": "Funko-Harry-potter.webp"
     },
+
     {
         "id": 6,
-        "nombre": "",
-        "descripcion": "",
-        "precio": ,
-        "imagen": ""
+        "nombre": "Muñecos de heroes y villanos",
+        "descripcion": "Heroes y villanos.webp",
+        "precio": 100.000,
+        "imagen": "Heroes y villanos.webp"
     },
     
        { "id": 7,
-        "nombre": "",
-        "descripcion": "",
-        "precio": ,
-        "imagen": ""
+        "nombre": "Lego avion",
+        "descripcion": "Lego-Avion-Jet-Supersonico.webp",
+        "precio":220.000 ,
+        "imagen": "Lego-Avion-Jet-Supersonico.webp"
        },
     
     {
         "id": 8,
-        "nombre": "",
-        "descripcion": "",
-        "precio": ,
-        "imagen": ""
+        "nombre": "Carro monster",
+        "descripcion": "Monster.webp",
+        "precio":150.000 ,
+        "imagen": "Monster.webp"
     },
+
     {
         "id": 9,
-        "nombre": "",
-        "descripcion": "",
-        "precio": ,
-        "imagen": ""
+        "nombre": "Motocicleta electrica",
+        "descripcion": "Motocicleta-De-Carreras.webp",
+        "precio":540.000 ,
+        "imagen": "Motocicleta-De-Carreras.webp"
     },
+
     {
         "id": 10,
-        "nombre": "",
-        "descripcion": "",
-        "precio": ,
-        "imagen": ""
+        "nombre": "Pokebola",
+        "descripcion": "Pokemon-Pokebola.webp",
+        "precio":90.000 ,
+        "imagen": "Pokemon-Pokebola.webp"
     },
     
        { "id": 11,
-        "nombre": "",
-        "descripcion": "",
-        "precio": ,
-        "imagen": ""
+        "nombre": "carritos de carreras",
+        "descripcion": "Set-10-carros.webp",
+        "precio": 55.000,
+        "imagen": "Set-10-carros.webp"
        },
+
     {
         "id": 12,
-        "nombre": "",
-        "descripcion": "",
-        "precio": ,
-        "imagen": ""
+        "nombre": "muñeco aquariana",
+        "descripcion": "Aquamerito-Aquariana-Rosa.webp",
+        "precio": 180.000,
+        "imagen": "Aquamerito-Aquariana-Rosa-1.webp"
     },
 
     {
         "id": 13,
-        "nombre": "",
-        "descripcion": "",
-        "precio": ,
-        "imagen": ""
+        "nombre": "muñeco aquariana",
+        "descripcion": "Aquamerito-Aquariana-Rosa.webp",
+        "precio":165.000 ,
+        "imagen": "Aquamerito-Aquariana-Rosa-2.webp"
     },
+
     {
         "id": 14,
-        "nombre": "",
-        "descripcion": "",
-        "precio": ,
-        "imagen": ""
+        "nombre": "muñeco aquariana",
+        "descripcion": "Aquamerito-Aquariana-Rosa-3.webp",
+        "precio": 160.000,
+        "imagen": "Aquamerito-Aquariana-Rosa.webp"
     },
     
         {
         "id": 15,
-        "nombre": "",
+        "nombre": "sticker mariposa",
         "descripcion": "Caja-De-Secretos-Mariposas-2.wepd",
         "precio": 40.000,
         "imagen": "Caja-De-Secretos-Mariposas-2.wepd"
         },
+
     {
         "id": 16,
-        "nombre": "",
+        "nombre": "Libreta",
         "descripcion": "Caja-De-Secretos-Mariposas-3.wepd",
         "precio":45.000,
         "imagen": "Caja-De-Secretos-Mariposas-3.wepd"
@@ -124,6 +131,7 @@
         "precio": 35.000,
         "imagen": "Caja-De-Secretos-Mariposas.wepd"
     },
+
     {
         "id": 18,
         "nombre": "Sonajero para bebes",
@@ -139,6 +147,7 @@
         "precio":229.000 ,
         "imagen": "My-Magic-Mixies-Caldero.webp"
       },
+
     {
         "id": 20,
         "nombre": "muñeco panda",
@@ -154,6 +163,7 @@
         "precio": 120.000,
         "imagen": "Tapete-De Estimulacion-Sunny.webp"
     },
+
     {
         "id": 22,
         "nombre": "muñeco de pinguino",
@@ -168,13 +178,14 @@
         "precio":150.000 ,
         "imagen": "Ajedrez.webp"
       },
+
     {
         "id": 24,
         "nombre": "Juego de mesa bingo",
         "descripcion": "Bingo.webp",
         "precio": 75.000,
         "imagen": "Bingo.webp"
-    }
+    },
 
     {
         "id": 25,
@@ -197,6 +208,7 @@
         "precio":110.000 ,
         "imagen": "Monopoly.jpg"
        },
+
     {
         "id": 28,
         "nombre": "Juego de mesa parques",
@@ -204,6 +216,7 @@
         "precio": 85.000,
         "imagen": "Parques.webp"
     },
+
     {
         "id": 29,
         "nombre": "Juego de mesa pimple peter",
@@ -211,6 +224,7 @@
         "precio":90.000 ,
         "imagen": "Pimple-Peter.webp"
     },
+
     {
         "id": 30,
         "nombre": "Juego de mesa Poker",
@@ -225,11 +239,20 @@
         "precio":45.000 ,
         "imagen": "Torre-De-Equilibrio.webp"
        },
+       
     {
         "id": 32,
         "nombre": "Juego de mesa Uno",
         "descripcion": "Uno.webp",
         "precio":50.000 ,
         "imagen": "Uno.webp"
-    },
+     },
+
+     { "id": 33,
+        "nombre": "Muñeco de superman",
+        "descripcion": "Superman.webp",
+        "precio": 55.000,
+        "imagen": "Superman.webp"
+       },
+
 ]
