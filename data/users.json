@@ -1,0 +1,54 @@
+[
+    {
+        "id": 1,
+        "firstName": "Harold",
+        "lastName": "Botero",
+        "email": "boteroharold63@gmail.com",
+        "password": "harold123",
+        "category": "Administrador",
+        "image": ""
+
+
+    },
+    {
+        "id": 2,
+        "firstName": "Esteban",
+        "lastName": "Hernandez",
+        "email": "",
+        "password": "",
+        "category":"Administrador",
+        "image":""
+
+    },
+    {
+        "id": 3, 
+        "firstName": "Claudia",
+        "lastName": "Cano",
+        "email":"claudiacanom@hotmail.com",
+        "password":"086613",
+        "category":"Administrador",
+        "image":""
+
+    },
+    {
+        "id": 4,
+        "firstName": "Victor",
+        "lastName": "Giraldo",
+        "email":"",
+        "password":"",
+        "category":"Administrador",
+        "image":""
+
+    },
+    {
+        "id": 5,
+        "firstName":"Erika",
+        "lastName":"Polo",
+        "email":"ericapolo10@hotmail.com",
+        "password":"",
+        "category":"Administrador",
+        "image":""
+
+    }
+
+]
