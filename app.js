@@ -38,3 +38,4 @@ app.get("/producto",(req,res)=>{
     res.render("producto.ejs")
 });
 
+ 
