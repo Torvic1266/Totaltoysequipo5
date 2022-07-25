@@ -20,82 +20,30 @@
 <!--------- secion productos -->
 <section>
   <div class="seccionDeLosProductos">
+    
+    <% for (let i = 0; i < products.length; i++) { %>
+
     <div class="producto">
+      <a href="/productDetail/<%=products[i].id%>"></a>
+      <a href="/productDetail/<%=products[i].id%>"></a>
       <div class="producto-image">
-        <img src="/img/barbe.jpg" alt="producto de la barbie" />
+      <img src="/img/JUGUETES/Niños/<%=products[i].imagen%>" alt="producto de la barbie" />
       </div>
       <p>
-        Muñeca Barbie fashionista .
+      <%=products[i].nombre%>
       </p>
-      <strong>$60.000</strong>
+      <strong>
+      <%=products[i].precio%>
+      </strong>
+      
 
     <div class="contenedor-botones"> 
       <button class="boton-comprar"><span>Agregar Al Carrito</span></button>
     </div>
     </div>
-
-    <div class="producto">
-      <div class="producto-image">
-        <img src="/img/dinosaurio.jpg" alt="producto dinosaurio"/>
-      </div>
-      <p>
-        Dinosaurio Rex Tyrannosaurus n.
-      </p>
-      <strong>$80.000</strong>
-      <div class="contenedor-botones"> 
-        <button class="boton-comprar"><span>Agregar Al Carrito</span></button>
-      </div>
-    </div>
-
-    <div class="producto">
-      <div class="producto-image">
-        <img src="/img/boss light.jpg" alt="Producto boss light. " />
-      </div>
-      <p>
-        Boss Lightyear
-      </p>
-
-      <strong>$120.000</strong>
-      <div class="contenedor-botones"> 
-        <button class="boton-comprar"><span>Agregar Al Carrito</span></button>
-      </div>
-    </div>
-
-    <div class="producto">
-      <div class="producto-image">
-        <img src="/img/yoda.jpeg" alt="porducto Yoda " />
-      </div>
-      <p>Yoda </p>
-
-      <strong>$80.000</strong>
-      <div class="contenedor-botones"> 
-        <button class="boton-comprar"><span>Agregar Al Carrito</span></button>
-      </div>
-
-    </div>
-
-    <div class="producto">
-      <div class="producto-image">
-        <img src="/img/el-sr-cara-de-papa-cambiara-su-identidad-de-genero.jpg" alt="porducto Señores cara de papa " />
-      </div>
-      <p>Señores Cara de Papa</p>
-      <strong>$120.000</strong>
-
-      <div class="contenedor-botones"> 
-        <button class="boton-comprar"><span>Agregar Al Carrito</span></button>
-      </div>
     
+    <% } %>
     </div>
-
-    <div class="producto">
-      <div class="producto-image">
-        <img src="/img/Carro Lambom..jpg" alt="carro lambotgini " />
-      </div>
-      <p>Carro lambotgini</p>
-      <strong>$100.000</strong>
-      <div class="contenedor-botones"> 
-        <button class="boton-comprar"><span>Agregar Al Carrito</span></button>
-      </div>
     </div>
     
   </div>

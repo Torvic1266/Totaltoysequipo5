@@ -11,10 +11,6 @@ app.listen(3001,()=> {
     console.log("servidor corriendo en el puerto 3001");
 });
 
-
-
-
-
   
 app.get("/productcart",(req, res)=>{
     res.render("productcart.ejs")

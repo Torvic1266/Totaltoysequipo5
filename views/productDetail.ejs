@@ -9,19 +9,19 @@
     <%- include('./partials/header'); %>
 
     <main>
-      <img class="juguete" src="/img/Carro Lambom..jpg" />
+      
+      
+      <img class="juguete" src="/img/JUGUETES/Niños/<%=product.imagen%>" />
 
       <div class="article">
-        <h4>Carro Lamborghini</h4>
+
+        <h4><%=product.nombre%></h4>
 
         <div class="precio">
-          <h4>$100.000</h4>
+          <h4><%=product.precio%></h4>
         </div>
-
-        <h4>descripcion</h4>
         <p>
-          Lamborghini - Vehículo de juguete de aleación para automóvil fundido a
-          presión con luces y sonido
+          <%=product.descripcion%>
         </p>
 
         <div class="seccion">
@@ -35,6 +35,7 @@
           </div>
         </div>
       </div>
+     
     </main>
 
     <%- include('./partials/footer'); %>

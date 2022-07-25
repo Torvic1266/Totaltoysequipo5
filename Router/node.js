@@ -5,5 +5,5 @@ const menuController = require("../controllers/main");
 
 router.get("/", menuController.index);
 router.get("/detalle/:id", menuController.detalle);
-router.get("/productDetail", menuController.productDetail);
+router.get("/productDetail/:id", menuController.productDetail);
 module.exports = router;
