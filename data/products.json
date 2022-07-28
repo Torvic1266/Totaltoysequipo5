@@ -12,7 +12,7 @@
 		"nombre": "Batman",
 		"descripcion": "Batman-Batimovil.webp",
 		"precio": 120.0,
-		"imagen": "Batman-Batimovil.webp",
+		"imagen": "Batman Batimovil.webp",
 		"category": "Niños"
 	},
 	{
@@ -36,7 +36,7 @@
 		"nombre": "Muñeco Funko",
 		"descripcion": "Funko-Harry-potter.webp",
 		"precio": 130.0,
-		"imagen": "Funko-Harry-potter.webp",
+		"imagen": "Funko Harry potter.webp",
 		"category": "Niños"
 	},
 	{
@@ -50,9 +50,9 @@
 	{
 		"id": 7,
 		"nombre": "Lego avion",
-		"descripcion": "Lego-Avion-Jet-Supersonico.webp",
+		"descripcion": "lego Avion.webp",
 		"precio": 220.0,
-		"imagen": "Lego-Avion-Jet-Supersonico.webp",
+		"imagen": "lego Avion .webp",
 		"category": "Niños"
 	},
 	{
@@ -68,63 +68,63 @@
 		"nombre": "Motocicleta electrica",
 		"descripcion": "Motocicleta-De-Carreras.webp",
 		"precio": 540.0,
-		"imagen": "Motocicleta-De-Carreras.webp",
+		"imagen": "Motocicleta De Carreras.webp",
 		"category": "Niños"
 	},
 	{
 		"id": 10,
 		"nombre": "Pokebola",
-		"descripcion": "Pokemon-Pokebola.webp",
+		"descripcion": "pokebola.webp",
 		"precio": 90.0,
-		"imagen": "Pokemon-Pokebola.webp",
+		"imagen": "pokebola.webp",
 		"category": "Niños"
 	},
 	{
 		"id": 11,
-		"nombre": "carritos de carreras",
-		"descripcion": "Set-10-carros.webp",
+		"nombre": " Carritos por 10 ",
+		"descripcion": "Caritos 10 .png",
 		"precio": 55.0,
-		"imagen": "Set-10-carros.webp",
+		"imagen": "Caritos 10 .png",
 		"category": "Niños"
 	},
 	{
 		"id": 12,
-		"nombre": "muñeco aquariana",
-		"descripcion": "Aquamerito-Aquariana-Rosa.webp",
+		"nombre": "muñeco aquariana Rosa ",
+		"descripcion": "Aquamerito Rosa.webp",
 		"precio": 180.0,
-		"imagen": "Aquamerito-Aquariana-Rosa-1.webp",
+		"imagen": "Aquamerito  Rosa.webp",
 		"category": "Niñas"
 	},
 	{
 		"id": 13,
 		"nombre": "muñeco aquariana",
-		"descripcion": "Aquamerito-Aquariana-Rosa.webp",
+		"descripcion": "Aquamerito-Aquariana Rosa-2.webp",
 		"precio": 165.0,
-		"imagen": "Aquamerito-Aquariana-Rosa-2.webp",
+		"imagen": "Aquamerito Aquariana Rosa -2.webp",
 		"category": "Niñas"
 	},
 	{
 		"id": 14,
 		"nombre": "muñeco aquariana",
-		"descripcion": "Aquamerito-Aquariana-Rosa-3.webp",
+		"descripcion": "Aquamerito Aquariana Rosa-3.webp",
 		"precio": 160.0,
-		"imagen": "Aquamerito-Aquariana-Rosa.webp",
+		"imagen": "Aquamerito Aquariana Rosa -3.webp",
 		"category": "Niñas"
 	},
 	{
 		"id": 15,
 		"nombre": "sticker mariposa",
-		"descripcion": "Caja-De-Secretos-Mariposas-2.wepd",
+		"descripcion": "Caja de Secretos Mariposas-2.wepd",
 		"precio": 40.0,
-		"imagen": "Caja-De-Secretos-Mariposas-2.wepd",
+		"imagen": "Caja de Secretos Mariposas-2.webp",
 		"category": "Niñas"
 	},
 	{
 		"id": 16,
-		"nombre": "Libreta",
-		"descripcion": "Caja-De-Secretos-Mariposas-3.wepd",
+		"nombre": "Libreta Mariposa",
+		"descripcion": "libreta.wepd",
 		"precio": 45.0,
-		"imagen": "Caja-De-Secretos-Mariposas-3.wepd",
+		"imagen": "libreta.webp",
 		"category": "Niñas"
 	},
 	{
@@ -132,7 +132,7 @@
 		"nombre": "Diario mariposa",
 		"descripcion": "Caja-De-Secretos-Mariposas.wepd",
 		"precio": 35.0,
-		"imagen": "Caja-De-Secretos-Mariposas.wepd",
+		"imagen": "Caja de Secretos Mariposas.webp",
 		"category": "Niñas"
 	},
 	{
@@ -140,39 +140,39 @@
 		"nombre": "Sonajero para bebes",
 		"descripcion": "Movil-Interativo-Leon.webp",
 		"precio": 65.0,
-		"imagen": "Movil-Interativo-Leon.webp",
+		"imagen": "Movil Interativo Leon.webp",
 		"category": "Niñas"
 	},
 	{
 		"id": 19,
 		"nombre": "juguete didactico caldero",
-		"descripcion": "My-Magic-Mixies-Caldero.webp",
+		"descripcion": "Caldero.webp",
 		"precio": 229.0,
-		"imagen": "My-Magic-Mixies-Caldero.webp",
+		"imagen": "Caldero.webp",
 		"category": "Niñas"
 	},
 	{
 		"id": 20,
 		"nombre": "muñeco panda",
-		"descripcion": "Peek-A-Roo-Panda-y-Bebe-Sorpresa.webp",
+		"descripcion": "panda.webp",
 		"precio": 115.0,
-		"imagen": "Peek-A-Roo-Panda-y-Bebe-Sorpresa.webp",
+		"imagen": "panda.webp",
 		"category": "Niñas"
 	},
 	{
 		"id": 21,
 		"nombre": "Tapete didactico",
-		"descripcion": "Tapete-De Estimulacion-Sunny.webp",
+		"descripcion": "Tapete.webp",
 		"precio": 120.0,
-		"imagen": "Tapete-De Estimulacion-Sunny.webp",
+		"imagen": "Tapete De Estimulacion Sunny.webp",
 		"category": "Niñas"
 	},
 	{
 		"id": 22,
 		"nombre": "muñeco de pinguino",
-		"descripcion": "Ty-Beanie-Boos-Gale-Pinguino.webp",
+		"descripcion": "pinguino .webp",
 		"precio": 160.0,
-		"imagen": "Ty-Beanie-Boos-Gale-Pinguino.webp",
+		"imagen": "pinguino.webp",
 		"category": "Niñas"
 	},
 	{
@@ -226,9 +226,9 @@
 	{
 		"id": 29,
 		"nombre": "Juego de mesa pimple peter",
-		"descripcion": "Pimple-Peter.webp",
+		"descripcion": "Pimpler Peter.webp",
 		"precio": 90.0,
-		"imagen": "Pimple-Peter.webp",
+		"imagen": "Pimpler Peter.webp",
 		"category": "Jovenes, Adultos"
 	},
 	{
@@ -236,7 +236,7 @@
 		"nombre": "Juego de mesa Poker",
 		"descripcion": "Poker",
 		"precio": 30.0,
-		"imagen": "Poker",
+		"imagen": "Poker.webp",
 		"category": "Jovenes, Adultos"
 	},
 	{
@@ -244,7 +244,7 @@
 		"nombre": "Juego de mesa Torre De Equilibrio",
 		"descripcion": "Torre-De-Equilibrio.webp",
 		"precio": 45.0,
-		"imagen": "Torre-De-Equilibrio.webp",
+		"imagen": "Torre De Equilidrio.webp",
 		"category": "Jovenes, Adultos"
 	},
 	{
