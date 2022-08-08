@@ -6,10 +6,9 @@ const routerUsuario = require("./Router/usuario");
 const routerProductos = require("./Router/node");
 
 const publicPath =path.resolve(__dirname,"./public");
-app.use(express.static(publicPath));
-app.listen(3001,()=> {
-    console.log("servidor corriendo en el puerto 3001");
-});
+
+app.use(express.urlencoded({extended:false}));
+app.use(express.json());
 
   
 app.get("/productcart",(req, res)=>{
@@ -26,4 +25,9 @@ app.get("/producto",(req,res)=>{
 app.use("/usuario", routerUsuario);
 app.use("/", routerProductos);
 
- 
+
+
+app.use(express.static(publicPath));
+app.listen(3001,()=> {
+    console.log("servidor corriendo en el puerto 3001");
+});
