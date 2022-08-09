@@ -4,6 +4,8 @@ const app = express();
 app.set("view engine","ejs");
 const routerUsuario = require("./Router/usuario");
 const routerProductos = require("./Router/node");
+app.use(express.urlencoded({extended: false}));
+
 
 const publicPath =path.resolve(__dirname,"./public");
 app.use(express.static(publicPath));
@@ -18,11 +20,6 @@ app.get("/productcart",(req, res)=>{
 });
 
       
-app.get("/producto",(req,res)=>{
-    res.render("producto.ejs")
-});
-
-
 app.use("/usuario", routerUsuario);
 app.use("/", routerProductos);
 

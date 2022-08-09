@@ -1,266 +1,266 @@
 [
-	{
-		"id": 1,
-		"nombre": "Muñeco Batman",
-		"descripcion": "Batman.webp",
-		"precio": 85.0,
-		"imagen": "Batman.webp",
-		"category": "Niños"
-	},
-	{
-		"id": 2,
-		"nombre": "Batman",
-		"descripcion": "Batman-Batimovil.webp",
-		"precio": 120.0,
-		"imagen": "Batman Batimovil.webp",
-		"category": "Niños"
-	},
-	{
-		"id": 3,
-		"nombre": "Dragon",
-		"descripcion": "Dragon.webp",
-		"precio": 125.0,
-		"imagen": "Dragon.webp",
-		"category": "Niños"
-	},
-	{
-		"id": 4,
-		"nombre": "Muñeco Fornite",
-		"descripcion": "Fornite.webp",
-		"precio": 100.0,
-		"imagen": "Fornite.webp",
-		"category": "Niños"
-	},
-	{
-		"id": 5,
-		"nombre": "Muñeco Funko",
-		"descripcion": "Funko-Harry-potter.webp",
-		"precio": 130.0,
-		"imagen": "Funko Harry potter.webp",
-		"category": "Niños"
-	},
-	{
-		"id": 6,
-		"nombre": "Muñecos de heroes y villanos",
-		"descripcion": "Heroes y villanos.webp",
-		"precio": 100.0,
-		"imagen": "Heroes y villanos.webp",
-		"category": "Niños"
-	},
-	{
-		"id": 7,
-		"nombre": "Lego avion",
-		"descripcion": "lego Avion.webp",
-		"precio": 220.0,
-		"imagen": "lego Avion .webp",
-		"category": "Niños"
-	},
-	{
-		"id": 8,
-		"nombre": "Carro monster",
-		"descripcion": "Monster.webp",
-		"precio": 150.0,
-		"imagen": "Monster.webp",
-		"category": "Niños"
-	},
-	{
-		"id": 9,
-		"nombre": "Motocicleta electrica",
-		"descripcion": "Motocicleta-De-Carreras.webp",
-		"precio": 540.0,
-		"imagen": "Motocicleta De Carreras.webp",
-		"category": "Niños"
-	},
-	{
-		"id": 10,
-		"nombre": "Pokebola",
-		"descripcion": "pokebola.webp",
-		"precio": 90.0,
-		"imagen": "pokebola.webp",
-		"category": "Niños"
-	},
-	{
-		"id": 11,
-		"nombre": " Carritos por 10 ",
-		"descripcion": "Caritos 10 .png",
-		"precio": 55.0,
-		"imagen": "Caritos 10 .png",
-		"category": "Niños"
-	},
-	{
-		"id": 12,
-		"nombre": "muñeco aquariana Rosa ",
-		"descripcion": "Aquamerito Rosa.webp",
-		"precio": 180.0,
-		"imagen": "Aquamerito  Rosa.webp",
-		"category": "Niñas"
-	},
-	{
-		"id": 13,
-		"nombre": "muñeco aquariana",
-		"descripcion": "Aquamerito-Aquariana Rosa-2.webp",
-		"precio": 165.0,
-		"imagen": "Aquamerito Aquariana Rosa -2.webp",
-		"category": "Niñas"
-	},
-	{
-		"id": 14,
-		"nombre": "muñeco aquariana",
-		"descripcion": "Aquamerito Aquariana Rosa-3.webp",
-		"precio": 160.0,
-		"imagen": "Aquamerito Aquariana Rosa -3.webp",
-		"category": "Niñas"
-	},
-	{
-		"id": 15,
-		"nombre": "sticker mariposa",
-		"descripcion": "Caja de Secretos Mariposas-2.wepd",
-		"precio": 40.0,
-		"imagen": "Caja de Secretos Mariposas-2.webp",
-		"category": "Niñas"
-	},
-	{
-		"id": 16,
-		"nombre": "Libreta Mariposa",
-		"descripcion": "libreta.wepd",
-		"precio": 45.0,
-		"imagen": "libreta.webp",
-		"category": "Niñas"
-	},
-	{
-		"id": 17,
-		"nombre": "Diario mariposa",
-		"descripcion": "Caja-De-Secretos-Mariposas.wepd",
-		"precio": 35.0,
-		"imagen": "Caja de Secretos Mariposas.webp",
-		"category": "Niñas"
-	},
-	{
-		"id": 18,
-		"nombre": "Sonajero para bebes",
-		"descripcion": "Movil-Interativo-Leon.webp",
-		"precio": 65.0,
-		"imagen": "Movil Interativo Leon.webp",
-		"category": "Niñas"
-	},
-	{
-		"id": 19,
-		"nombre": "juguete didactico caldero",
-		"descripcion": "Caldero.webp",
-		"precio": 229.0,
-		"imagen": "Caldero.webp",
-		"category": "Niñas"
-	},
-	{
-		"id": 20,
-		"nombre": "muñeco panda",
-		"descripcion": "panda.webp",
-		"precio": 115.0,
-		"imagen": "panda.webp",
-		"category": "Niñas"
-	},
-	{
-		"id": 21,
-		"nombre": "Tapete didactico",
-		"descripcion": "Tapete.webp",
-		"precio": 120.0,
-		"imagen": "Tapete De Estimulacion Sunny.webp",
-		"category": "Niñas"
-	},
-	{
-		"id": 22,
-		"nombre": "muñeco de pinguino",
-		"descripcion": "pinguino .webp",
-		"precio": 160.0,
-		"imagen": "pinguino.webp",
-		"category": "Niñas"
-	},
-	{
-		"id": 23,
-		"nombre": "Juego de mesa ajedrez",
-		"descripcion": "Ajedrez.webp",
-		"precio": 150.0,
-		"imagen": "Ajedrez.webp",
-		"category": "Jovenes, Adultos"
-	},
-	{
-		"id": 24,
-		"nombre": "Juego de mesa bingo",
-		"descripcion": "Bingo.webp",
-		"precio": 75.0,
-		"imagen": "Bingo.webp",
-		"category": "Jovenes, Adultos"
-	},
-	{
-		"id": 25,
-		"nombre": "Juego de mesa damas",
-		"descripcion": "Damas.webp",
-		"precio": 105.0,
-		"imagen": "Damas.webp",
-		"category": "Jovenes, Adultos"
-	},
-	{
-		"id": 26,
-		"nombre": "Juego de mesa domino",
-		"descripcion": "Domino.webp",
-		"precio": 96.0,
-		"imagen": "Domino.webp",
-		"category": "Jovenes, Adultos"
-	},
-	{
-		"id": 27,
-		"nombre": "Juego de mesa monopoly",
-		"descripcion": "Monopoly.jpg",
-		"precio": 110.0,
-		"imagen": "Monopoly.jpg",
-		"category": "Jovenes, Adultos"
-	},
-	{
-		"id": 28,
-		"nombre": "Juego de mesa parques",
-		"descripcion": " Parques",
-		"precio": 85.0,
-		"imagen": "Parques.webp",
-		"category": "Jovenes, Adultos"
-	},
-	{
-		"id": 29,
-		"nombre": "Juego de mesa pimple peter",
-		"descripcion": "Pimpler Peter.webp",
-		"precio": 90.0,
-		"imagen": "Pimpler Peter.webp",
-		"category": "Jovenes, Adultos"
-	},
-	{
-		"id": 30,
-		"nombre": "Juego de mesa Poker",
-		"descripcion": "Poker",
-		"precio": 30.0,
-		"imagen": "Poker.webp",
-		"category": "Jovenes, Adultos"
-	},
-	{
-		"id": 31,
-		"nombre": "Juego de mesa Torre De Equilibrio",
-		"descripcion": "Torre-De-Equilibrio.webp",
-		"precio": 45.0,
-		"imagen": "Torre De Equilidrio.webp",
-		"category": "Jovenes, Adultos"
-	},
-	{
-		"id": 32,
-		"nombre": "Juego de mesa Uno",
-		"descripcion": "Uno.webp",
-		"precio": 50.0,
-		"imagen": "Uno.webp",
-		"category": "Jovenes, Adultos"
-	},
-	{
-		"id": 33,
-		"nombre": "Muñeco de superman",
-		"descripcion": "Superman.webp",
-		"precio": 55.0,
-		"imagen": "Superman.webp",
-		"category": "Niños"
-	}
+ {
+  "id": 1,
+  "nombre": "Muñeco Batman",
+  "descripcion": "Batman.webp",
+  "precio": 85,
+  "imagen": "Batman.webp",
+  "category": "Niños"
+ },
+ {
+  "id": 2,
+  "nombre": "Batman",
+  "descripcion": "Batman-Batimovil.webp",
+  "precio": 120,
+  "imagen": "Batman Batimovil.webp",
+  "category": "Niños"
+ },
+ {
+  "id": 3,
+  "nombre": "Dragon",
+  "descripcion": "Dragon.webp",
+  "precio": 125,
+  "imagen": "Dragon.webp",
+  "category": "Niños"
+ },
+ {
+  "id": 4,
+  "nombre": "Muñeco Fornite",
+  "descripcion": "Fornite.webp",
+  "precio": 100,
+  "imagen": "Fornite.webp",
+  "category": "Niños"
+ },
+ {
+  "id": 5,
+  "nombre": "Muñeco Funko",
+  "descripcion": "Funko-Harry-potter.webp",
+  "precio": 130,
+  "imagen": "Funko Harry potter.webp",
+  "category": "Niños"
+ },
+ {
+  "id": 6,
+  "nombre": "Muñecos de heroes y villanos",
+  "descripcion": "Heroes y villanos.webp",
+  "precio": 100,
+  "imagen": "Heroes y villanos.webp",
+  "category": "Niños"
+ },
+ {
+  "id": 7,
+  "nombre": "Lego avion",
+  "descripcion": "lego Avion.webp",
+  "precio": 220,
+  "imagen": "lego Avion .webp",
+  "category": "Niños"
+ },
+ {
+  "id": 8,
+  "nombre": "Carro monster",
+  "descripcion": "Monster.webp",
+  "precio": 150,
+  "imagen": "Monster.webp",
+  "category": "Niños"
+ },
+ {
+  "id": 9,
+  "nombre": "Motocicleta electrica",
+  "descripcion": "Motocicleta-De-Carreras.webp",
+  "precio": 540,
+  "imagen": "Motocicleta De Carreras.webp",
+  "category": "Niños"
+ },
+ {
+  "id": 10,
+  "nombre": "Pokebola",
+  "descripcion": "pokebola.webp",
+  "precio": 90,
+  "imagen": "pokebola.webp",
+  "category": "Niños"
+ },
+ {
+  "id": 11,
+  "nombre": " Carritos por 10 ",
+  "descripcion": "Caritos 10 .png",
+  "precio": 55,
+  "imagen": "Caritos 10 .png",
+  "category": "Niños"
+ },
+ {
+  "id": 12,
+  "nombre": "muñeco aquariana Rosa ",
+  "descripcion": "Aquamerito Rosa.webp",
+  "precio": 180,
+  "imagen": "Aquamerito  Rosa.webp",
+  "category": "Niñas"
+ },
+ {
+  "id": 13,
+  "nombre": "muñeco aquariana",
+  "descripcion": "Aquamerito-Aquariana Rosa-2.webp",
+  "precio": 165,
+  "imagen": "Aquamerito Aquariana Rosa -2.webp",
+  "category": "Niñas"
+ },
+ {
+  "id": 14,
+  "nombre": "muñeco aquariana",
+  "descripcion": "Aquamerito Aquariana Rosa-3.webp",
+  "precio": 160,
+  "imagen": "Aquamerito Aquariana Rosa -3.webp",
+  "category": "Niñas"
+ },
+ {
+  "id": 15,
+  "nombre": "sticker mariposa",
+  "descripcion": "Caja de Secretos Mariposas-2.wepd",
+  "precio": 40,
+  "imagen": "Caja de Secretos Mariposas-2.webp",
+  "category": "Niñas"
+ },
+ {
+  "id": 16,
+  "nombre": "Libreta Mariposa",
+  "descripcion": "libreta.wepd",
+  "precio": 45,
+  "imagen": "libreta.webp",
+  "category": "Niñas"
+ },
+ {
+  "id": 17,
+  "nombre": "Diario mariposa",
+  "descripcion": "Caja-De-Secretos-Mariposas.wepd",
+  "precio": 35,
+  "imagen": "Caja de Secretos Mariposas.webp",
+  "category": "Niñas"
+ },
+ {
+  "id": 18,
+  "nombre": "Sonajero para bebes",
+  "descripcion": "Movil-Interativo-Leon.webp",
+  "precio": 65,
+  "imagen": "Movil Interativo Leon.webp",
+  "category": "Niñas"
+ },
+ {
+  "id": 19,
+  "nombre": "juguete didactico caldero",
+  "descripcion": "Caldero.webp",
+  "precio": 229,
+  "imagen": "Caldero.webp",
+  "category": "Niñas"
+ },
+ {
+  "id": 20,
+  "nombre": "muñeco panda",
+  "descripcion": "panda.webp",
+  "precio": 115,
+  "imagen": "panda.webp",
+  "category": "Niñas"
+ },
+ {
+  "id": 21,
+  "nombre": "Tapete didactico",
+  "descripcion": "Tapete.webp",
+  "precio": 120,
+  "imagen": "Tapete De Estimulacion Sunny.webp",
+  "category": "Niñas"
+ },
+ {
+  "id": 22,
+  "nombre": "muñeco de pinguino",
+  "descripcion": "pinguino .webp",
+  "precio": 160,
+  "imagen": "pinguino.webp",
+  "category": "Niñas"
+ },
+ {
+  "id": 23,
+  "nombre": "Juego de mesa ajedrez",
+  "descripcion": "Ajedrez.webp",
+  "precio": 150,
+  "imagen": "Ajedrez.webp",
+  "category": "Jovenes, Adultos"
+ },
+ {
+  "id": 24,
+  "nombre": "Juego de mesa bingo",
+  "descripcion": "Bingo.webp",
+  "precio": 75,
+  "imagen": "Bingo.webp",
+  "category": "Jovenes, Adultos"
+ },
+ {
+  "id": 25,
+  "nombre": "Juego de mesa damas",
+  "descripcion": "Damas.webp",
+  "precio": 105,
+  "imagen": "Damas.webp",
+  "category": "Jovenes, Adultos"
+ },
+ {
+  "id": 26,
+  "nombre": "Juego de mesa domino",
+  "descripcion": "Domino.webp",
+  "precio": 96,
+  "imagen": "Domino.webp",
+  "category": "Jovenes, Adultos"
+ },
+ {
+  "id": 27,
+  "nombre": "Juego de mesa monopoly",
+  "descripcion": "Monopoly.jpg",
+  "precio": 110,
+  "imagen": "Monopoly.jpg",
+  "category": "Jovenes, Adultos"
+ },
+ {
+  "id": 28,
+  "nombre": "Juego de mesa parques",
+  "descripcion": " Parques",
+  "precio": 85,
+  "imagen": "Parques.webp",
+  "category": "Jovenes, Adultos"
+ },
+ {
+  "id": 29,
+  "nombre": "Juego de mesa pimple peter",
+  "descripcion": "Pimpler Peter.webp",
+  "precio": 90,
+  "imagen": "Pimpler Peter.webp",
+  "category": "Jovenes, Adultos"
+ },
+ {
+  "id": 30,
+  "nombre": "Juego de mesa Poker",
+  "descripcion": "Poker",
+  "precio": 30,
+  "imagen": "Poker.webp",
+  "category": "Jovenes, Adultos"
+ },
+ {
+  "id": 31,
+  "nombre": "Juego de mesa Torre De Equilibrio",
+  "descripcion": "Torre-De-Equilibrio.webp",
+  "precio": 45,
+  "imagen": "Torre De Equilidrio.webp",
+  "category": "Jovenes, Adultos"
+ },
+ {
+  "id": 32,
+  "nombre": "Juego de mesa Uno",
+  "descripcion": "Uno.webp",
+  "precio": 50,
+  "imagen": "Uno.webp",
+  "category": "Jovenes, Adultos"
+ },
+ {
+  "id": 33,
+  "nombre": "Muñeco de superman",
+  "descripcion": "Superman.webp",
+  "precio": 55,
+  "imagen": "Superman.webp",
+  "category": "Niños"
+ }
 ]
