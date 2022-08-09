@@ -9,17 +9,17 @@
     <div class="fondo">
       <div class="login-box">
         <h1>Formulario de Registro</h1>
-        <form>
+        <form method="POST" action="/usuario/registro">
           <label for="Nombre">Nombre</label>
-          <input type="text" placeholder="Nombre" />
+          <input name="nombre" type="text" placeholder="Nombre" required />
 
           <label for="Apellido">Apellido</label>
-          <input type="text" placeholder="Ingresa su Apellido" />
+          <input name="Apellido" type="text" placeholder="Ingresa su Apellido" required />
 
           <label for="Email">Email</label>
-          <input type="text" placeholder="Ingrese su Email" />
+          <input type="text" placeholder="Ingrese su Email" required />
           <label for="Password">Password</label>
-          <input type="password" placeholder="Ingrese su Password" />
+          <input type="password" placeholder="Ingrese su Password" required/>
           <input type="submit" value="Registrar" />
           <P> Estoy de acuerdo con los terminos y condiciones</P>
         </form>
