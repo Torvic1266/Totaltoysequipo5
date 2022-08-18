@@ -262,5 +262,11 @@
   "precio": 55,
   "imagen": "Superman.webp",
   "category": "Niños"
+ },
+ {
+  "nombre": "ATENCION AL CLIENTE",
+  "descripcion": "",
+  "imagen": "WhatsApp Image 2022-08-10 at 6.17.12 AM.jpeg",
+  "precio": "233000"
  }
 ]
