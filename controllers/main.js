@@ -22,12 +22,12 @@ const main = {
            
     },
 
-    create:(req ,res) =>{
+    /* create:(req ,res) =>{
         res.render("ForCreacion") ;
 
-    },
+    }, */
 
-    guardar: (req, res) => {
+    /* guardar: (req, res) => {
 let rutaProducts = path.join(__dirname, '../data/products.json');
         let productoGuardado = {
             
@@ -47,7 +47,7 @@ let rutaProducts = path.join(__dirname, '../data/products.json');
         productosJSON = JSON.stringify(productos, null, ' ');
         fs.writeFileSync(rutaProducts, productosJSON);
         res.redirect('/');
-    },
+    }, */
    
     
 }

@@ -1,4 +1,6 @@
 const express = require("express");
+const path = require('path');
+const methodOverride = require('method-override')
 const session = require("express-session"); 
 const cookies = require('cookie-parser');
 
@@ -20,7 +22,7 @@ app.use(userLoggedMiddleware);
 
 app.set("view engine","ejs");
 
-const routerProductos = require("./Router/node");
+const routerProductos = require("./Router/productRouter");
 const userRouter = require('./Router/userRouter');
 
 app.use(express.urlencoded({extended: false}));

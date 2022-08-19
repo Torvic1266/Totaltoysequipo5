@@ -15,10 +15,10 @@ const productoController = {
     guardar: (req,res) => {
         let rutaProducts = path.join(__dirname,"../data/products.json");
 
-        let productoguardado ={
+        let productoguardado = {
             nombre: req.body.nombre,
             precio: req.body.precio,
-            imagen: req.body.imagen,
+            imagen: req.file.imagen,
             descripcion: req.body.descripcion,
             category: req.body.category
         };
@@ -32,9 +32,9 @@ const productoController = {
             productos = JSON.parse(archivoproducto);
         }
         productos.push(productoguardado);
-        productosJSON = JSON.stringify(productos,null, '');
+        productosJSON = JSON.stringify(productos, null, '');
         fs.writeFileSync(rutaProducts,productosJSON);
-        res,redirect('/productos/lista');
+        res.redirect('/productos/lista');
     },
     list: (req,res) => {
         res.render('litadoProductos',{
@@ -42,8 +42,8 @@ const productoController = {
         });
     },
     singleDetail: (req,res) => { 
-    let productoEncontrado = productos.find(products => products.id === req.params.id);
-    res.render("detail",{"productos": productoEncontrado})
+        let productoEncontrado = productos.find(products => products.id === req.params.id);
+        res.render("detail",{"productos": productoEncontrado})
      },
      editarFormulario: (req,res) => {
         let productoEncontrado = productos.find(products => products.id === req.params.id);
