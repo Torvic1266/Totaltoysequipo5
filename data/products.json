@@ -264,39 +264,17 @@
   "category": "Niños"
  },
  {
-  "nombre": "ATENCION AL CLIENTE",
-  "descripcion": "",
-  "imagen": "WhatsApp Image 2022-08-10 at 6.17.12 AM.jpeg",
-  "precio": "233000"
- },
- {
-  "nombre": "carro",
-  "descripcion": "carrito",
+  "nombre": "Buchi",
+  "precio": "50",
   "imagen": "buchipecoso.jpg",
-  "precio": "7000"
+  "descripcion": "hola",
+  "categoria": "Niños"
  },
  {
-  "nombre": "carrito",
-  "descripcion": "carritico",
-  "imagen": "buchipecoso.jpg",
-  "precio": "7000"
- },
- {
-  "nombre": "muñeco",
-  "descripcion": "muñequito",
-  "imagen": "buchipecoso.jpg",
-  "precio": "8000"
- },
- {
-  "nombre": "peluche",
-  "descripcion": "peluchin",
-  "imagen": "buchipecoso.jpg",
-  "precio": "1000"
- },
- {
-  "nombre": "carro",
-  "descripcion": "carritos",
+  "nombre": "Buti",
+  "precio": "60",
   "imagen": "Buteo swainsoni.jpg",
-  "precio": "7000"
+  "descripcion": "holi",
+  "categoria": "Niños"
  }
 ]

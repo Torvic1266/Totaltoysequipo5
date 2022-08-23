@@ -21,14 +21,14 @@ const upload = multer({storage});
 
 router.get("/productDetail", productController.detail);
 router.get("/carritoDeCompras",productController.carritoCompras);
-router.get("/ForCreacion", productController.create);
+router.get("/createProduct", productController.create);
 router.get("/editarProduct/:id", productController.editarFormulario);
 router.get("lista",productController.list);
 router.get("/detail/:id", productController.singleDetail);
 
 //Enrutamiento por post
 
-router.post("/ForCreacion", upload.single('imagen'), productController.guardar);
+router.post("/createProduct", upload.single('imagen'), productController.guardar);
 
 //Enrutamiento por put
 
@@ -36,6 +36,6 @@ router.put("/editarProduct/:id", upload.single('imagen'), productController.edit
 
 //Enrutamiento por delete
 
-router.delete("/editarProduct/:id", productController.delete);
+router.delete("/editarProduct/:id", productController.destroy);
 
 module.exports = router;

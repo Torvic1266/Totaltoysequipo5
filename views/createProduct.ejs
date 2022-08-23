@@ -9,7 +9,7 @@
     <div class="fondo">
       <div class="login-box">
         <h1>creacion de producto</h1>
-        <form action="/ForCreacion" method="post">
+        <form action="/products/createProduct" method="post" enctype="multipart/form-data">
          
           <label for="NombreDelProducto">Nombre del Producto</label>
           <input type="text"name="nombre" placeholder="Nombre del producto" />
@@ -21,14 +21,14 @@
 
           <label for="Categoria">Categoria</label>
          
-          <select name="Categorias">
+          <select name="categoria">
             <option value="Bebes">Bebes</option>
             <option value="Niños" selected>Niños</option>
             <option value="Adolescentes">Adolescentes</option>
           </select>
           
-          <label for="Imagen">Imagen</label>
-          <input type="file" name="imagen" placeholder="Imagen" />
+          <label for="imagen">Imagen</label>
+          <input type="file" name="imagen" placeholder="imagen" />
           <label for="Precio">Precio</label>
           <input type="money" name="precio"inputmode="numeric" pattern="\d*" />
           <input type="submit" value="Registrar" />

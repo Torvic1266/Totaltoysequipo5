@@ -1,7 +1,10 @@
-const  render  = require("ejs")
-const  productDetail  = require("./main")
+const path = require('path');
+const fs = require('fs');
+const { join } = require('path');
+/* const render  = require("ejs")
+const productDetail  = require("./main") */
 
-const productoController = {
+const productController = {
 
     detail: function (req, res){
         res.render ('productDetail')
@@ -10,19 +13,20 @@ const productoController = {
         res.render('productcart')
     },
     create: (req,res) => {
-        res.render('createProducts')
+        res.render('createProduct')
     },
     guardar: (req,res) => {
         let rutaProducts = path.join(__dirname,"../data/products.json");
 
-        let productoguardado = {
+        let productoGuardado = {
             nombre: req.body.nombre,
             precio: req.body.precio,
-            imagen: req.file.imagen,
+            imagen: req.file.originalname,
             descripcion: req.body.descripcion,
-            category: req.body.category
+            categoria: req.body.categoria
         };
-        let archivoproducto = fs.readFileSync(rutaProducts,{
+
+        let archivoproducto = fs.readFileSync(rutaProducts, {
             encoding:"utf-8"
         });
         let productos;
@@ -31,13 +35,13 @@ const productoController = {
         } else {
             productos = JSON.parse(archivoproducto);
         }
-        productos.push(productoguardado);
-        productosJSON = JSON.stringify(productos, null, '');
+        productos.push(productoGuardado);
+        productosJSON = JSON.stringify(productos, null, ' ');
         fs.writeFileSync(rutaProducts,productosJSON);
-        res.redirect('/productos/lista');
+        res.redirect('/');
     },
     list: (req,res) => {
-        res.render('litadoProductos',{
+        res.render('listado',{
             "productos":productos
         });
     },
@@ -60,10 +64,10 @@ const productoController = {
         }
         res.render('listadoProductos' , {"productos": productos })
      },
+     destroy: (req, res) => {
+        res.send("Estoy borrando un producto");
+     }
      
      }
 
      module.exports = productController;
-
- 
-

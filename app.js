@@ -1,14 +1,15 @@
 const express = require("express");
+const app = express();
 const path = require('path');
 const methodOverride = require('method-override')
 const session = require("express-session"); 
 const cookies = require('cookie-parser');
 
-const app = express();
+const routerMain = require("./Router/node.js");
+const routerProductos = require("./Router/productRouter");
+const userRouter = require('./Router/userRouter');
+
 const  userLoggedMiddleware = require('./middlewares/userLoggedMiddleware');
-
-
-const path = require("path");
 
 app.use(session({
     secret:"shhh, it's a secret",
@@ -17,13 +18,11 @@ app.use(session({
 }));
 
 app.use(cookies());
-
+app.use(methodOverride ("_method"));
 app.use(userLoggedMiddleware);
 
 app.set("view engine","ejs");
-
-const routerProductos = require("./Router/productRouter");
-const userRouter = require('./Router/userRouter');
+app.set("views", "./views");
 
 app.use(express.urlencoded({extended: false}));
 app.use(express.json());
@@ -31,19 +30,14 @@ app.use(express.static("./public"));
 
 const publicPath =path.resolve(__dirname,"./public");
 
-
-  
 app.get("/productcart",(req, res)=>{
     res.render("productcart.ejs")
       
 });
 
-
-//app.use("/usuario", routerUsuario);
-app.use("/", routerProductos);
+app.use("/", routerMain);
+app.use("/products", routerProductos);
 app.use("/user", userRouter);
-
-
 
 app.use(express.static(publicPath));
 app.listen(3001,()=> {
