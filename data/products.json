@@ -276,5 +276,19 @@
   "imagen": "Buteo swainsoni.jpg",
   "descripcion": "holi",
   "categoria": "Niños"
+ },
+ {
+  "nombre": "wdew",
+  "precio": "120000",
+  "imagen": "img-cafetera-moulinex.jpg",
+  "descripcion": "gre",
+  "categoria": "Niños"
+ },
+ {
+  "nombre": "wdew",
+  "precio": "129999",
+  "imagen": "img-macbook-pro-2019.jpg",
+  "descripcion": "gre",
+  "categoria": "Niños"
  }
 ]
