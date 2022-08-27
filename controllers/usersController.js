@@ -47,8 +47,7 @@ const Controller = {
         return res.redirect('/user/login');
     },
     login: (req, res) => {
-        
-       return res.render("userLoginForm");
+       return res.render("login");
     },
     
     loginProcess: (req, res) => {

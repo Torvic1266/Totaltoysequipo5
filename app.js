@@ -32,12 +32,11 @@ const publicPath =path.resolve(__dirname,"./public");
 
 app.get("/productcart",(req, res)=>{
     res.render("productcart.ejs")
-      
 });
 
 app.use("/", routerMain);
 app.use("/products", routerProductos);
-app.use("/user", userRouter);
+app.use("/usuario", userRouter);
 
 app.use(express.static(publicPath));
 app.listen(3001,()=> {

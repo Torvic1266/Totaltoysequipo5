@@ -13,10 +13,11 @@
         <form>
           <label for="usuario">Usuario</label>
           <input type="text" name="" value="" placeholder="usuario" required />
-        <% if (locals.errors && errors.email){ %>
-        <div class="text-danger">
-          <% = erros.email.msg %>
-        </div>}
+          <% if (locals.errors && errors.email){ %>
+          <div class="text-danger">
+            <%= errors.email.msg %>
+          </div>
+          <% } %>
           <label for="contraseña">Contraseña</label>
           <input type="password" name="" value="" placeholder="Contraseña" required/>
 
