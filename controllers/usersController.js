@@ -9,7 +9,7 @@ const User = require('../models/User');
 
 const Controller = {
     register: (req, res) => {
-        res.render("userRegisterForm");
+        res.render("register");
         
     },
     processRegister: (req, res) => {
