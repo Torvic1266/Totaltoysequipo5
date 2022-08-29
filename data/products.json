@@ -290,5 +290,12 @@
   "imagen": "img-macbook-pro-2019.jpg",
   "descripcion": "gre",
   "categoria": "Niños"
+ },
+ {
+  "nombre": "wdew",
+  "precio": "120000",
+  "imagen": "img-samsung-galaxy-s10.jpg",
+  "descripcion": "gre",
+  "categoria": "Niños"
  }
 ]

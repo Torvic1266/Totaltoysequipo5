@@ -16,7 +16,7 @@ const Controller = {
         const resultValidation = validationResult(req);
 
         if (resultValidation.errors.length > 0) {
-            return res.render('userRegisterform', {
+            return res.render('login', {
                 errors: resultValidation.mapped(),
                 oldData: req.body
             });
@@ -24,7 +24,7 @@ const Controller = {
         let userInDB = user.findByField('email', req.body.email);
 
         if (userInDB) {
-            return res.render('userRegisterform', {
+            return res.render('user.json', {
                 errors: {
                     email: {
                         msg: 'este email ya esta registrado'
@@ -47,7 +47,7 @@ const Controller = {
         return res.redirect('/user/login');
     },
     login: (req, res) => {
-       return res.render("login");
+       return res.render("index");
     },
     
     loginProcess: (req, res) => {
@@ -63,7 +63,7 @@ const Controller = {
         res.cookie('userEmail', req.body.email,{ maxAge: (1000 * 60) * 2 });
        return res.redirect('/user/profile');  
        }
-       return res.render('userLoginForm',{
+       return res.render('login',{
         errors:{
             email:{
                 msg:'las credenciales son invalidas'
@@ -71,7 +71,7 @@ const Controller = {
         }
        });
        }
-       return res.render('userLoginForm',{
+       return res.render('login',{
         errors:{
             email:{
                 msg:'no se encuentra este email en nuestra base de datos'

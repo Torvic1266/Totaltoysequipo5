@@ -28,14 +28,14 @@ router.get("/detail/:id", productController.singleDetail);
 
 //Enrutamiento por post
 
-router.post("/createProduct", upload.single('imagen'), productController.guardar);
+router.post("/createProduct/:id/eliminar", upload.single('imagen'), productController.guardar);
 
 //Enrutamiento por put
 
-router.put("/editarProduct/:id", upload.single('imagen'), productController.editar);
+router.put("/productDetail/:id", upload.single('imagen'), productController.editar);
 
 //Enrutamiento por delete
 
-router.delete("/editarProduct/:id", productController.destroy);
+router.delete("/productDetail/:id", productController.destroy);
 
 module.exports = router;
