@@ -10,16 +10,16 @@
       <div class="login-box">
         <h1>Login</h1>
 
-        <form>
+        <form method="POST" action="/usuario/login">
           <label for="usuario">Usuario</label>
-          <input type="text" name="" value="" placeholder="usuario" required />
+          <input type="text" name="email" value="" placeholder="usuario" required />
           <% if (locals.errors && errors.email){ %>
           <div class="text-danger">
             <%= errors.email.msg %>
           </div>
           <% } %>
           <label for="contraseña">Contraseña</label>
-          <input type="password" name="" value="" placeholder="Contraseña" required/>
+          <input type="password" name="password" value="" placeholder="Contraseña" required/>
 
           <input type="submit" value="Iniciar Sesión" />
 

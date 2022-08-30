@@ -21,7 +21,7 @@ const Controller = {
                 oldData: req.body
             });
         }
-        let userInDB = user.findByField('email', req.body.email);
+        let userInDB = User.findByField('email', req.body.email);
 
         if (userInDB) {
             return res.render('user.json', {
@@ -38,23 +38,24 @@ const Controller = {
 
         let userToCreate = {
             ...req.body,
-            password: bcryptjs.hashSync(req.body.password, 10),
+            password: bcrypt.hashSync(req.body.password, 10),
             avatar: req.file.filename
         }
 
-        let UserCreated =  user.Create (UserToCreate);
+        let UserCreated =  User.create(userToCreate);
 
         return res.redirect('/user/login');
     },
     login: (req, res) => {
-       return res.render("index");
+       return res.render("login");
     },
     
     loginProcess: (req, res) => {
-       let userToLogin = user.findByField('email', req.body.email);
+       let userToLogin = User.findByField('email', req.body.email);
        
        if(userToLogin) {
-       let isOkThePassword = bcryptjs.compareSync(req.body.password,userToLogin.password);
+        console.log(req.body.password, userToLogin);
+       let isOkThePassword = bcrypt.compareSync(String(req.body.password), bcrypt.hashSync(userToLogin.password, 10));
        if (isOkThePassword ){
         delete userToLogin.password;
         req.session.userLogged = userToLogin;
