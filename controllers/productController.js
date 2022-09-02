@@ -35,6 +35,8 @@ const productController = {
         } else {
             productos = JSON.parse(archivoproducto);
         }
+        let newId = maxid + 1;
+        productoGuardado.id = newId;
         productos.push(productoGuardado);
         productosJSON = JSON.stringify(productos, null, ' ');
         fs.writeFileSync(rutaProducts,productosJSON);
