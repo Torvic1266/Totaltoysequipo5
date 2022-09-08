@@ -1,1 +1,16 @@
-Hello <%= user.firstName + " " + user.lastName %>!!
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include('./partials/head'); %>
+    <title>Total toys/Perfil</title>
+</head>
+<body>
+    <%- include('./partials/header'); %>
+  <h2>  Hello <%= user.firstName + " " + user.lastName %>!!</h2>
+    <%- include('./partials/footer'); %>
+</body>
+</html>
