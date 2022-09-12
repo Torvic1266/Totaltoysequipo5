@@ -32,3 +32,21 @@ todas estas dificulates (lo malo), la pudimos superar gracias a la profundizacio
 ## Tablero De actividades
 
 [https://trello.com/b/1t37s6RD/proyecto-integrador]
+
+
+
+## Conclusiones Sprint 3
+
+En el Sprint 3 nos fue mucho mejor que en los demas sprints aunque tuvimos varios fallos:
+1. errores al codear
+2. falta de comunicacion
+de estos errores pudimos aprender mucho y empezamos a manejar todos estos temas con mayor facilidad
+
+
+## sprint 4
+
+en este sprint nos dio mucha dificultad ya que los temas eran un poco avanzados para nostros y la disponibilidad del grupo era muy poca, pero con el tiempo nos fuimos a complando a estas dificultades
+
+## sprint numero 6
+
+en este sprint aprovechamos de manera efectiva y eficaz el tiempo ya que entre todos pudimos sacar este sprint con mayor facilidad
