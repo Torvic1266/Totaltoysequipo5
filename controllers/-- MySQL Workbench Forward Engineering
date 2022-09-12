@@ -5,19 +5,19 @@ SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0;
 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION';
 
 -- -----------------------------------------------------
--- Schema mydb
+-- Schema totaltoysDB
 -- -----------------------------------------------------
 
 -- -----------------------------------------------------
--- Schema mydb
+-- Schema totaltoysDB
 -- -----------------------------------------------------
-CREATE SCHEMA IF NOT EXISTS `mydb` DEFAULT CHARACTER SET utf8 ;
-USE `mydb` ;
+CREATE SCHEMA IF NOT EXISTS `totaltoysDB` DEFAULT CHARACTER SET utf8 ;
+USE `totaltoysDB` ;
 
 -- -----------------------------------------------------
--- Table `mydb`.`producto`
+-- Table `totaltoysDB`.`producto`
 -- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS `mydb`.`producto` (
+CREATE TABLE IF NOT EXISTS `totaltoysDB`.`producto` (
   `id` INT NOT NULL AUTO_INCREMENT,
   `nombre` VARCHAR(45) NOT NULL,
   `descripcion` VARCHAR(45) NOT NULL,
@@ -29,9 +29,9 @@ ENGINE = InnoDB;
 
 
 -- -----------------------------------------------------
--- Table `mydb`.`categorias`
+-- Table `totaltoysDB`.`categorias`
 -- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS `mydb`.`categorias` (
+CREATE TABLE IF NOT EXISTS `totaltoysDB`.`categorias` (
   `id_categoria` INT NOT NULL,
   `niños` VARCHAR(45) NOT NULL,
   `niñas` VARCHAR(45) NOT NULL,
@@ -39,7 +39,7 @@ CREATE TABLE IF NOT EXISTS `mydb`.`categorias` (
   PRIMARY KEY (`id_categoria`),
   CONSTRAINT `id_categoria`
     FOREIGN KEY (`id_categoria`)
-    REFERENCES `mydb`.`producto` (`id`)
+    REFERENCES `totaltoysDB`.`producto` (`id`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
 ENGINE = InnoDB;
