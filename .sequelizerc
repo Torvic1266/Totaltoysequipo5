@@ -1,0 +1,9 @@
+
+const path = requiere ("path")
+
+module.esports = {
+    config: path.resolveIncluderesolve('./database/config', 'config.js'),
+    'models-path': path.resolve ('./database/models'),
+    'seeders-path':path.resolve('./database/seeders'),
+    'migrations-path': path.resolve('./database/migrations'),
+}
