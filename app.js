@@ -35,7 +35,7 @@ app.get("/productcart",(req, res)=>{
 });
 
 app.use("/", routerMain);
-app.use("/products", routerProductos);
+app.use("/productos", routerProductos);
 app.use("/usuario", userRouter);
 
 app.use(express.static(publicPath));

@@ -23,7 +23,7 @@ router.get("/productDetail", productController.detail);
 router.get("/carritoDeCompras",productController.carritoCompras);
 router.get("/createProduct", productController.create);
 router.get("/editarProduct/:id", productController.editarFormulario);
-router.get("/lista",productController.list);
+router.get("/listar",productController.list);
 router.get("/detail/:id", productController.singleDetail);
 
 //Enrutamiento por post

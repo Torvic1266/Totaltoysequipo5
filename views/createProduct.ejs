@@ -11,27 +11,37 @@
         <h1>creacion de producto</h1>
         <form action="/products/createProduct" method="post" enctype="multipart/form-data">
          
-          <label for="NombreDelProducto">Nombre del Producto</label>
-          <input type="text"name="nombre" placeholder="Nombre del producto" />
+          
+          <div style="margin-bottom:18px;">
 
+            <label for="NombreDelProducto">Nombre del Producto</label>
+          <input type="text"name="nombre" placeholder="Nombre del producto" />
+        </div>
+        <div style="margin-bottom:24px;">
           <label for="Descripcion">Descripcion</label>
           <input type="text" name ="descripcion" placeholder="Descripcion" />
-
+        </div>
+        <div style="margin-bottom:24px;">
+          <label for="Precio">Precio</label>
+            <input type="text" name="precio" pattern="\d*" placeholder="Ingrese el precio"/>
+          </div>
           
-
+        <div style="margin-bottom:24px;">
           <label for="Categoria">Categoria</label>
-         
-          <select name="categoria">
+           <select name="categoria">
+            <option value=""disabled selected> categoria</option>
             <option value="Bebes">Bebes</option>
             <option value="Niños" selected>Niños</option>
             <option value="Adolescentes">Adolescentes</option>
+           
           </select>
-          
+        </div>
+        <div style="margin-bottom:24px;">
           <label for="imagen">Imagen</label>
           <input type="file" name="imagen" placeholder="imagen" />
-          <label for="Precio">Precio</label>
-          <input type="money" name="precio"inputmode="numeric" pattern="\d*" />
-          <input type="submit" value="Agregar" />
+        </div>
+        
+          <button> type="submit" value="Agregar" style="cursor:pointer" /> </button>
           
           
     

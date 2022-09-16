@@ -5,16 +5,23 @@ const { join } = require('path');
 const productDetail  = require("./main") */
 
 const productController = {
+    // ruta de productos para el listado de productos punto 1 sprin 4 entregable 
+    list: (req,res) => {
+        res.render('listado',{ products });
+    },
+// punto 2 la ruta del formulario de creacion de productos entregable
+    create: (req,res) => {
+        res.render('createProduct')
+    },
+
 
     detail: function (req, res){
         res.render ('productDetail')
     },
     carritoCompras: (req,res) => {
         res.render('productcart')
-    },
-    create: (req,res) => {
-        res.render('createProduct')
-    },
+    },  
+    
     guardar: (req,res) => {
         let rutaProducts = path.join(__dirname,"../data/products.json");
 
@@ -42,11 +49,7 @@ const productController = {
         fs.writeFileSync(rutaProducts,productosJSON);
         res.redirect('/');
     },
-    list: (req,res) => {
-        res.render('listado',{
-            "productos":productos
-        });
-    },
+
     singleDetail: (req,res) => { 
         let productoEncontrado = productos.find(products => products.id === req.params.id);
         res.render("detail",{"productos": productoEncontrado})

@@ -270,33 +270,5 @@
   "imagen": "buchipecoso.jpg",
   "descripcion": "hola",
   "categoria": "Niños"
- },
- {
-  "nombre": "Buti",
-  "precio": "60",
-  "imagen": "Buteo swainsoni.jpg",
-  "descripcion": "holi",
-  "categoria": "Niños"
- },
- {
-  "nombre": "wdew",
-  "precio": "120000",
-  "imagen": "img-cafetera-moulinex.jpg",
-  "descripcion": "gre",
-  "categoria": "Niños"
- },
- {
-  "nombre": "wdew",
-  "precio": "129999",
-  "imagen": "img-macbook-pro-2019.jpg",
-  "descripcion": "gre",
-  "categoria": "Niños"
- },
- {
-  "nombre": "wdew",
-  "precio": "120000",
-  "imagen": "img-samsung-galaxy-s10.jpg",
-  "descripcion": "gre",
-  "categoria": "Niños"
  }
 ]
