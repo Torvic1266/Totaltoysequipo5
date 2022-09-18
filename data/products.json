@@ -93,7 +93,7 @@
   "descripcion": "Aquamerito Rosa.webp",
   "precio": 180,
   "imagen": "Aquamerito  Rosa.webp",
-  "category": "Niñas"
+  "category": "Bebes"
  },
  {
   "id": 13,
@@ -101,7 +101,7 @@
   "descripcion": "Aquamerito-Aquariana Rosa-2.webp",
   "precio": 165,
   "imagen": "Aquamerito Aquariana Rosa -2.webp",
-  "category": "Niñas"
+  "category": "Bebes"
  },
  {
   "id": 14,
@@ -109,7 +109,7 @@
   "descripcion": "Aquamerito Aquariana Rosa-3.webp",
   "precio": 160,
   "imagen": "Aquamerito Aquariana Rosa -3.webp",
-  "category": "Niñas"
+  "category": "Bebes"
  },
  {
   "id": 15,
@@ -117,7 +117,7 @@
   "descripcion": "Caja de Secretos Mariposas-2.wepd",
   "precio": 40,
   "imagen": "Caja de Secretos Mariposas-2.webp",
-  "category": "Niñas"
+  "category": "Bebes"
  },
  {
   "id": 16,
@@ -125,7 +125,7 @@
   "descripcion": "libreta.wepd",
   "precio": 45,
   "imagen": "libreta.webp",
-  "category": "Niñas"
+  "category": "Bebes"
  },
  {
   "id": 17,
@@ -133,7 +133,7 @@
   "descripcion": "Caja-De-Secretos-Mariposas.wepd",
   "precio": 35,
   "imagen": "Caja de Secretos Mariposas.webp",
-  "category": "Niñas"
+  "category": "Bebes"
  },
  {
   "id": 18,
@@ -141,7 +141,7 @@
   "descripcion": "Movil-Interativo-Leon.webp",
   "precio": 65,
   "imagen": "Movil Interativo Leon.webp",
-  "category": "Niñas"
+  "category": "Bebes"
  },
  {
   "id": 19,
@@ -149,7 +149,7 @@
   "descripcion": "Caldero.webp",
   "precio": 229,
   "imagen": "Caldero.webp",
-  "category": "Niñas"
+  "category": "Bebes"
  },
  {
   "id": 20,
@@ -157,7 +157,7 @@
   "descripcion": "panda.webp",
   "precio": 115,
   "imagen": "panda.webp",
-  "category": "Niñas"
+  "category": "Bebes"
  },
  {
   "id": 21,
@@ -165,7 +165,7 @@
   "descripcion": "Tapete.webp",
   "precio": 120,
   "imagen": "Tapete De Estimulacion Sunny.webp",
-  "category": "Niñas"
+  "category": "Bebes"
  },
  {
   "id": 22,
@@ -173,7 +173,7 @@
   "descripcion": "pinguino .webp",
   "precio": 160,
   "imagen": "pinguino.webp",
-  "category": "Niñas"
+  "category": "Bebes"
  },
  {
   "id": 23,
@@ -181,7 +181,7 @@
   "descripcion": "Ajedrez.webp",
   "precio": 150,
   "imagen": "Ajedrez.webp",
-  "category": "Jovenes, Adultos"
+  "category": "Adolescentes"
  },
  {
   "id": 24,
@@ -189,7 +189,7 @@
   "descripcion": "Bingo.webp",
   "precio": 75,
   "imagen": "Bingo.webp",
-  "category": "Jovenes, Adultos"
+  "category": "Adolescentes"
  },
  {
   "id": 25,
@@ -197,7 +197,7 @@
   "descripcion": "Damas.webp",
   "precio": 105,
   "imagen": "Damas.webp",
-  "category": "Jovenes, Adultos"
+  "category": "Adolescentes"
  },
  {
   "id": 26,
@@ -253,7 +253,7 @@
   "descripcion": "Uno.webp",
   "precio": 50,
   "imagen": "Uno.webp",
-  "category": "Jovenes, Adultos"
+  "category": "Adolescentes"
  },
  {
   "id": 33,
@@ -262,13 +262,6 @@
   "precio": 55,
   "imagen": "Superman.webp",
   "category": "Niños"
- },
- {
-  "id": 34,
-  "nombre": "Buchi",
-  "precio": "50",
-  "imagen": "buchipecoso.jpg",
-  "descripcion": "hola",
-  "categoria": "Niños"
  }
+ 
 ]

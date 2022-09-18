@@ -86,7 +86,7 @@ main{
 main div {
     padding:5px;
     text-align: center;
-    margin: 10px ; 
+    margin:auto ; 
     border-color:black;
     
 
@@ -128,6 +128,16 @@ main div {
   .boton-comprar:hover{
     background-color: hsl(200, 82%, 89%);
   }
+  
+  .detalles {
+    width: 100%;
+ max-width: 1800px;
+ margin: auto;
+ display:flex;
+ grid-template-columns: repeat(3, 1fr);
+ 
+
+}
   
 
 

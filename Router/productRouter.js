@@ -20,11 +20,23 @@ const upload = multer({storage});
 //Enrutamiento por get
 
 router.get("/productDetail", productController.detail);
+
+router.get("/detalle-producto/:id", productController.productDetail);
+
+
+// punto 5 formulario de edicion de productos
+router.get("/editar-product/:id", productController.editarFormulario);
+
 router.get("/carritoDeCompras",productController.carritoCompras);
+
 router.get("/createProduct", productController.create);
-router.get("/editarProduct/:id", productController.editarFormulario);
+
+
+
 router.get("/listar",productController.list);
+
 router.get("/detail/:id", productController.singleDetail);
+
 
 //Enrutamiento por post
 

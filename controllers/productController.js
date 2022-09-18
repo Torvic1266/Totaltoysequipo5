@@ -15,6 +15,31 @@ const productController = {
     create: (req,res) => {
         res.render('createProduct')
     },
+// punto 3 creacion de productos 
+    singleDetail: (req,res) => { 
+        let productoEncontrado = products.find(product => product.id === req.params.id);
+        res.render("detail",{"productos": productoEncontrado})
+     },
+     // punto 5 editar producto
+     editarFormulario: (req,res) => {
+
+        let productoEncontrado = products.find(products => products.id ===parseInt (req.params.id));
+        if (productoEncontrado){   
+        res.render("createProduct",{"producto": productoEncontrado });
+     }
+     else{
+        res.render("error");
+     }
+    },
+
+
+productDetail: (req,res)=>{
+
+        let id = req.params.id
+        let product = products.find(products => products.id == id)
+        res.render("productDetail" ,{product:product})
+           
+    },    
 
 
     detail: function (req, res){
@@ -52,14 +77,8 @@ const productController = {
         res.redirect('/');
     },
 
-    singleDetail: (req,res) => { 
-        let productoEncontrado = productos.find(products => products.id === req.params.id);
-        res.render("detail",{"productos": productoEncontrado})
-     },
-     editarFormulario: (req,res) => {
-        let productoEncontrado = productos.find(products => products.id === req.params.id);
-        res.render("editarProduct",{"productos": productoEncontrado });
-     },
+    
+     
      editar: (req,res) => {
         let idProduct = req.params.id
         let products = productos;
