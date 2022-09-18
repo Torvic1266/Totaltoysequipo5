@@ -1,47 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
 
-  <head>
-    <%- include('./partials/head'); %>
-    <title>total toys</title>
-</head>
+    <head> 
+        <%- include('./partials/head'); %>
+      <title>Total Toys</title>
+      </head>
+    
 
   <body>
-    <%- include('./partials/header'); %>
+    <%- include('./partials/header') %>
 
 
     <!--------seccion productos-->
       <section>
-        <div class="seccionDelosProductos">
+        
+            <div class="seccionDelosProductos">
 
-         <% products.forEach(singleProduct => { %>
+                   <% products.forEach(singleProduct => { %>
            
                 
-      <div class="producto">
-    <a href="/productDetail/<%=singleProduct.id%>">
-    <div class="producto-image">
-    <img src="/img/ninos/<%=singleProduct.imagen%>" />
-    </div>
-    <p>
-        <%=singleProduct.nombre%>
-    </p>
-    </a>
-    <p>
-    <strong>
+                       <div class="producto" >
+                         <a href="/productDetail/<%=singleProduct.id%>">
+                             <div class="producto-image">
+                                 <img src="/img/ninos/<%=singleProduct.imagen%>" />
+                                         </div>
+                                              <p>
+
+                                                 <%=singleProduct.nombre%>
+
+                                                       </p>
+                                                             </a>
+
+                                                                 <p>
+
+       <strong>
        $ <%=singleProduct.precio%>
-    </strong>
-    </p>
+       </strong>
+     </p>
+
 
     <div class="contenedor-botones">
         <button class="boton-comprar"><span>Agregar al carrito</span></button>
-    </div>
-</div>
+        </div>
+ </div>
 
 <% }) %>
 
-</div>
 
-</section>
+
+
+ </div>
+
+ </section>
 
 
 <%- include('./partials/footer'); %>

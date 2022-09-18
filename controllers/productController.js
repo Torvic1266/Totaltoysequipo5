@@ -1,6 +1,8 @@
 const path = require('path');
 const fs = require('fs');
 const { join } = require('path');
+const productsFilePath = path.join(__dirname, '../data/products.json');
+const products = JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'));
 /* const render  = require("ejs")
 const productDetail  = require("./main") */
 
