@@ -29,7 +29,7 @@ router.get("/editar-product/:id", productController.editarFormulario);
 
 router.get("/carritoDeCompras",productController.carritoCompras);
 
-router.get("/createProduct", productController.create);
+router.get("/crear-producto", productController.create);
 
 
 
@@ -38,13 +38,13 @@ router.get("/listar",productController.list);
 router.get("/detail/:id", productController.singleDetail);
 
 
-//Enrutamiento por post
+//Enrutamiento por post metodo de creacion de productos punto 4
 
-router.post("/createProduct/:id/eliminar", upload.single('imagen'), productController.guardar);
+router.post("/crear-producto", upload.single('imagen'), productController.guardar);
 
 //Enrutamiento por put
 
-router.put("/productDetail/:id", upload.single('imagen'), productController.editar);
+router.put("/editar-producto/:id", upload.single('imagen'), productController.editar);
 
 //Enrutamiento por delete
 

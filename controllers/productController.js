@@ -50,7 +50,7 @@ productDetail: (req,res)=>{
     },  
     
     guardar: (req,res) => {
-        let rutaProducts = path.join(__dirname,"../data/products.json");
+        //let rutaProducts = path.join(__dirname,"../data/products.json");
 
         let productoGuardado = {
             nombre: req.body.nombre,
@@ -60,36 +60,48 @@ productDetail: (req,res)=>{
             categoria: req.body.categoria
         };
 
-        let archivoproducto = fs.readFileSync(rutaProducts, {
+        //let archivoproducto = fs.readFileSync(rutaProducts, {
             encoding:"utf-8"
-        });
+        //});
         let productos;
-        if (archivoproducto == ''){
+        if (products == ''){
             productos = [];
         } else {
-            productos = JSON.parse(archivoproducto);
+            productos = [...products];
         }
-        let newId = maxid + 1;
+        let newId = productos.length + 1;
         productoGuardado.id = newId;
         productos.push(productoGuardado);
-        productosJSON = JSON.stringify(productos, null, ' ');
-        fs.writeFileSync(rutaProducts,productosJSON);
-        res.redirect('/');
+        const productosJSON = JSON.stringify(productos, null, '\t');
+        fs.writeFileSync(productsFilePath,productosJSON);
+        //setTimeout(function(){    
+        res.redirect('/productos/detalle-producto/'+newId);
+        //}, 3000);
     },
 
     
      
      editar: (req,res) => {
         let idProduct = req.params.id
-        let products = productos;
-        let productToEdit = products.findIndex(product => product.id === idProduct);
-        if (req.method ==='PUT') {
-        const data = req.body;
-        products[productToEdit] = {...products[productToEdit], ...data}
-        fs.writeFileSync(productsFilepath, JSON.stringify(products, null, ' '));
-        }
-        res.render('listadoProductos' , {"productos": productos })
-     },
+        let productToEdit = products.findIndex(product => product.id === parseInt(idProduct));
+        if(productToEdit){
+            const data = req.body;
+            products[productToEdit] = {...products[productToEdit], ...data}
+            fs.writeFileSync(productsFilePath, JSON.stringify(products, null, '\t'));
+            
+            res.redirect('/productos/detalle-producto/'+ idProduct);
+         
+          }else{
+            res.render("error");
+          }
+
+        },
+
+
+
+
+       
+        
      destroy: (req, res) => {
         res.send("Estoy borrando un producto");
      }
