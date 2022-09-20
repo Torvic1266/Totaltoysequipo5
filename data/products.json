@@ -114,10 +114,11 @@
 	{
 		"id": 15,
 		"nombre": "sticker mariposa",
-		"descripcion": "Caja de Secretos Mariposas-2.wepd",
-		"precio": 40,
+		"descripcion": "Caja de Secretos Mariposas",
+		"precio": "40",
 		"imagen": "Caja de Secretos Mariposas-2.webp",
-		"category": "Bebes"
+		"category": "Bebes",
+		"categoria": "Adolescentes"
 	},
 	{
 		"id": 16,
@@ -138,10 +139,11 @@
 	{
 		"id": 18,
 		"nombre": "Sonajero para bebes",
-		"descripcion": "Movil-Interativo-Leon.webp",
-		"precio": 65,
+		"descripcion": "Leon interativo ",
+		"precio": "65",
 		"imagen": "Movil Interativo Leon.webp",
-		"category": "Bebes"
+		"category": "Bebes",
+		"categoria": "Niños"
 	},
 	{
 		"id": 19,
@@ -262,69 +264,5 @@
 		"precio": 55,
 		"imagen": "Superman.webp",
 		"category": "Niños"
-	},
-	{
-		"nombre": "victor",
-		"precio": "120000",
-		"imagen": "img-tv-samsung-smart.jpg",
-		"descripcion": "gre",
-		"categoria": "Adolescentes",
-		"id": null
-	},
-	{
-		"nombre": "victor",
-		"precio": "120",
-		"imagen": "img-home-banner.jpg",
-		"descripcion": "bla bla ",
-		"categoria": "Niños",
-		"id": null
-	},
-	{
-		"nombre": "victor",
-		"precio": "120000",
-		"imagen": "img-cafetera-moulinex.jpg",
-		"descripcion": "blaaaa",
-		"categoria": "Niños",
-		"id": 36
-	},
-	{
-		"nombre": "hugo",
-		"precio": "129999",
-		"imagen": "img-samsung-galaxy-s10.jpg",
-		"descripcion": "boss",
-		"categoria": "Adolescentes",
-		"id": 37
-	},
-	{
-		"nombre": "esteban",
-		"precio": "",
-		"imagen": "img-macbook-pro-2019.jpg",
-		"descripcion": "bla bla ",
-		"categoria": "Niños",
-		"id": 38
-	},
-	{
-		"nombre": "claudia",
-		"precio": "13000",
-		"imagen": "img-cafetera-moulinex.jpg",
-		"descripcion": "bla bla ",
-		"categoria": "Niños",
-		"id": 39
-	},
-	{
-		"nombre": "erik",
-		"precio": "1200",
-		"imagen": "img-home-banner.jpg",
-		"descripcion": "gre",
-		"categoria": "Niños",
-		"id": 40
-	},
-	{
-		"nombre": "celular sammsung",
-		"precio": "150000",
-		"imagen": "img-samsung-galaxy-s10.jpg",
-		"descripcion": "celu",
-		"categoria": "Niños",
-		"id": 41
 	}
 ]

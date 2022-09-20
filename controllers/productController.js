@@ -107,7 +107,11 @@ productDetail: (req,res)=>{
        
         
      destroy: (req, res) => {
-        res.send("Estoy borrando un producto");
+       
+        let contenido=  products.filter(oneRow => oneRow.id != req.params.id);
+        let writeFile= products.writeFileSync(this.filePath, fileContents);
+        writeFile(contenido);
+        res.redirect("/");
      }
      
      }
