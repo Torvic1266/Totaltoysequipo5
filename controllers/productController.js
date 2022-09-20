@@ -9,6 +9,8 @@ const productDetail  = require("./main") */
 const productController = {
     // ruta de productos para el listado de productos punto 1 sprin 4 entregable 
     list: (req,res) => {
+        const productsFilePath = path.join(__dirname, '../data/products.json');
+        const products = JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'));
         res.render('listado',{ products });
     },
 // punto 2 la ruta del formulario de creacion de productos entregable
@@ -36,6 +38,8 @@ const productController = {
 productDetail: (req,res)=>{
 
         let id = req.params.id
+        const productsFilePath = path.join(__dirname, '../data/products.json');
+        const products = JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'));
         let product = products.find(products => products.id == id)
         res.render("productDetail" ,{product:product})
            

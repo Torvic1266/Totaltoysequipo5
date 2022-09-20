@@ -59,7 +59,7 @@
 		"id": 8,
 		"nombre": "Carro monster",
 		"descripcion": "Monster.webp",
-		"precio": 150,
+		"precio": "300",
 		"imagen": "Monster.webp",
 		"category": "Niños"
 	},
@@ -304,11 +304,27 @@
 		"id": 38
 	},
 	{
-		"nombre": "esteban",
-		"precio": "",
-		"imagen": "img-macbook-pro-2019.jpg",
+		"nombre": "claudia",
+		"precio": "13000",
+		"imagen": "img-cafetera-moulinex.jpg",
 		"descripcion": "bla bla ",
 		"categoria": "Niños",
 		"id": 39
+	},
+	{
+		"nombre": "erik",
+		"precio": "1200",
+		"imagen": "img-home-banner.jpg",
+		"descripcion": "gre",
+		"categoria": "Niños",
+		"id": 40
+	},
+	{
+		"nombre": "celular sammsung",
+		"precio": "150000",
+		"imagen": "img-samsung-galaxy-s10.jpg",
+		"descripcion": "celu",
+		"categoria": "Niños",
+		"id": 41
 	}
 ]
