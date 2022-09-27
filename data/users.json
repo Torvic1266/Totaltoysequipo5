@@ -6,7 +6,7 @@
     "email": "boteroharold63@gmail.com",
     "password": "harold123",
     "category": "Administrador",
-    "image": ""
+    "image": "batman.jpg"
   },
   {
     "id": 2,
@@ -15,7 +15,7 @@
     "email": "juanestebanhernandesbenitez@gmail.com",
     "password": "esteban123",
     "category": "Administrador",
-    "image": ""
+    "image": "iroman.png"
   },
   {
     "id": 3,
@@ -24,7 +24,7 @@
     "email": "claudiacanom@hotmail.com",
     "password": "086613",
     "category": "Administrador",
-    "image": ""
+    "image": "bulma.webp"
   },
   {
     "id": 4,
@@ -33,7 +33,7 @@
     "email": "victorgiraldogallego@gmail.com",
     "password": "victor123",
     "category": "Administrador",
-    "image": ""
+    "image": "thor.jpg"
   },
   {
     "id": 5,
@@ -42,6 +42,6 @@
     "email": "ericapolo10@hotmail.com",
     "password": "erika123",
     "category": "Administrador",
-    "image": ""
+    "imagen": "mujer maravilla.png"
   }
 ]

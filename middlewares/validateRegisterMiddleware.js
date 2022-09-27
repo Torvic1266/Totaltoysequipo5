@@ -8,7 +8,6 @@ const validateRegisterMiddleware = [
     .notEmpty().withMessage('Tienes que escribir un correo electronico').bail()
     .isEmail().withMessage('Debes escribir un formato de correo valido'),
     body('password').notEmpty().withMessage('Tienes que escribir una contraseña'),
-    body('country').notEmpty().withMessage('Tienes que elegir un pais'),
     body('avatar').custom((value,{ req }) => {
         let file = req.file;
         let acceptedExtensions = ['.jpg','.png','gif'];
