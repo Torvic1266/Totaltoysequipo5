@@ -6,8 +6,7 @@ const session = require("express-session");
 const cookies = require('cookie-parser');
 
 const routerMain = require("./Router/node.js");
-const routerProductos = require("./Router/productRouter");
-const userRouter = require('./Router/userRouter');
+
 
 const  userLoggedMiddleware = require('./middlewares/userLoggedMiddleware');
 
@@ -35,8 +34,7 @@ app.get("/productcart",(req, res)=>{
 });
 
 app.use("/", routerMain);
-app.use("/productos", routerProductos);
-app.use("/usuario", userRouter);
+
 
 app.use(express.static(publicPath));
 app.listen(3001,()=> {

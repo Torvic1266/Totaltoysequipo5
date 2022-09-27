@@ -4,7 +4,8 @@
   "description": "Distribuidora de juguetes para todas las edades\r Total toys es un sitio web creado para la compra y venta de juguetes para todas las edades, cuyo objetivo es lograr conexion de momentos felices con familias y amigos, logrando espacios inolvidables.  todas las marcas favoritas de juguetes en un solo lugar, como Nerd, My Litle Ponny, Barby, ¡y muchas más! Mira figuras de acción, muñecas, juegos electrónicos, juegos de mesa y mucho más. Nuestros productos se clacifican de acuerdo a edades especificas .",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon app.js"
   },
   "keywords": [],
   "author": "",

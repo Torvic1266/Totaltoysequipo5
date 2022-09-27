@@ -5,34 +5,41 @@
     <title>registro</title>
     <link rel="stylesheet" href="/css/producto.css" />
   </head>
+  
   <body>
+
+    
     <div class="fondo">
       <div class="login-box">
-        <h1>creacion de producto</h1>
-        <form action="/products/createProduct" method="post" enctype="multipart/form-data">
+        <% if (locals.producto){  %>
+          <h1>edición de producto</h1>
+          <% } else { %>
+            <h1>creación de producto</h1>
+            <% } %>
+        <form action="/productos/<%= locals.producto? "editar-producto/"+producto.id+"?_method=PUT": "crear-producto" %>" method="post" enctype="multipart/form-data">
          
           
           <div style="margin-bottom:18px;">
 
-            <label for="NombreDelProducto">Nombre del Producto</label>
-          <input type="text"name="nombre" placeholder="Nombre del producto" />
+            <label for="NombreDelProducto ">Nombre del Producto</label>
+          <input type="text"name="nombre" value="<%= locals.producto? producto.nombre: "" %>" placeholder="Nombre del producto" />
         </div>
         <div style="margin-bottom:24px;">
           <label for="Descripcion">Descripcion</label>
-          <input type="text" name ="descripcion" placeholder="Descripcion" />
+          <input type="text" name ="descripcion" placeholder="Descripcion" value="<%= locals.producto? producto.descripcion: "" %>" />
         </div>
         <div style="margin-bottom:24px;">
           <label for="Precio">Precio</label>
-            <input type="text" name="precio" pattern="\d*" placeholder="Ingrese el precio"/>
+            <input type="text" name="precio" pattern="\d*" placeholder="Ingrese el precio" value="<%= locals.producto? producto.precio: "" %>"/>
           </div>
           
         <div style="margin-bottom:24px;">
           <label for="Categoria">Categoria</label>
            <select name="categoria">
             <option value=""disabled selected> categoria</option>
-            <option value="Bebes">Bebes</option>
-            <option value="Niños" selected>Niños</option>
-            <option value="Adolescentes">Adolescentes</option>
+            <option value="Bebes"<%= locals.producto? (producto.category==="Bebes"? 'selected': "") :"" %> >Bebes</option>
+            <option value="Niños"<%= locals.producto? (producto.category==="Niños"? 'selected': "") :"" %>selected>Niños</option>
+            <option value="Adolescentes"<%= locals.producto? (producto.category==="Adolescentes"? 'selected': "") :"" %>>Adolescentes</option>
            
           </select>
         </div>
@@ -41,7 +48,7 @@
           <input type="file" name="imagen" placeholder="imagen" />
         </div>
         
-          <button style="background-color:#5b78fb;">Agregar</button>
+          <button class="Agregar"type="submit">Agregar</button>
           
           
     

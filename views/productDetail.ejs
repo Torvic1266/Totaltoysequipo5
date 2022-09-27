@@ -11,7 +11,7 @@
     <main>
       
       
-      <img class="juguete" src="/img/ninos/<%=product.imagen%>" />
+      <img class="juguetes" src="/img/ninos/<%=product.imagen%>" />
 
       <div class="article">
 
@@ -35,18 +35,19 @@
           </div>
         </div>
         <div class="editar">
-          <button class="boton-editar">
-            <span>editar</span>
-          </button>
+          <a href="/productos/editar-product/<%=product.id%>" >
+            <button class="editar-boton ">editar</button>
+          </a>
         </div> 
         <div class="eliminar"></div>
-        <button class="boton-eliminar">
+        <a class="boton-eliminar" href="/productos/productDetail/<%=product.id%>">
           <span>eliminar</span>
-        </button>
+        </a>
       </div>
-     
     </main>
 
-    <%- include('./partials/footer'); %>
+<div class="detalles"> <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus quod, fugiat, laudantium velit eveniet cumque pariatur beatae in autem laboriosam quidem quam illum. Quaerat est numquam, id aut pariatur autem.</p>
+</div>  
+<%- include('./partials/footer'); %>
   </body>
 </html>

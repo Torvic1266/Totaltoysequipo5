@@ -11,17 +11,8 @@ const main = {
     res.render("index", {products}); 
        
     }, 
-    detalle:(req,res)=>{
-        let producto = menu.find(producto => producto.id ===  req.params.id);
-        return res.render("detalleMenu",{producto});
-    },
-    productDetail: (req,res)=>{
-
-        let id = req.params.id
-        let product = products.find(products => products.id == id)
-        res.render("productDetail" ,{product:product})
-           
-    },    
+    
+    
 }
 
 module.exports = main;
