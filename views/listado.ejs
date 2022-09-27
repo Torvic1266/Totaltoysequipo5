@@ -1,62 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
+	<head>
+		<%- include('./partials/head'); %>
+		<title>Total Toys</title>
+	</head>
 
-    <head> 
-        <%- include('./partials/head'); %>
-      <title>Total Toys</title>
-      </head>
-    
+	<body>
+		<%- include('./partials/header') %>
 
-  <body>
-    <%- include('./partials/header') %>
+		<!--------seccion productos-->
+		<section>
+			<div class="seccionDelosProductos">
+				<% products.forEach(singleProduct => { %>
 
+				<div class="producto">
+					<a href="/productDetail/<%=singleProduct.id%>">
+						<div class="producto-image">
+							<img src="/img/ninos/<%=singleProduct.imagen%>" />
+						</div>
+						<p><%=singleProduct.nombre%></p>
+					</a>
 
-    <!--------seccion productos-->
-      <section>
-        
-            <div class="seccionDelosProductos">
+					<p>
+						<strong> $ <%=singleProduct.precio%> </strong>
+					</p>
 
-                   <% products.forEach(singleProduct => { %>
-           
-                
-                       <div class="producto" >
-                         <a href="/productDetail/<%=singleProduct.id%>">
-                             <div class="producto-image">
-                                 <img src="/img/ninos/<%=singleProduct.imagen%>" />
-                                         </div>
-                                              <p>
+					<div class="contenedor-botones">
+						<button class="boton-comprar">
+							<span>Agregar al carrito</span>
+						</button>
+					</div>
+				</div>
 
-                                                 <%=singleProduct.nombre%>
+				<% }) %>
+			</div>
+		</section>
 
-                                                       </p>
-                                                             </a>
-
-                                                                 <p>
-
-       <strong>
-       $ <%=singleProduct.precio%>
-       </strong>
-     </p>
-
-
-    <div class="contenedor-botones">
-        <button class="boton-comprar"><span>Agregar al carrito</span></button>
-        </div>
- </div>
-
-<% }) %>
-
-
-
-
- </div>
-
- </section>
-
-
-<%- include('./partials/footer'); %>
-
-
-  </body>
+		<%- include('./partials/footer'); %>
+	</body>
 </html>
-
