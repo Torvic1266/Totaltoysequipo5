@@ -57,5 +57,12 @@
   "lastName": "vete",
   "email": "metre@hotmail.com",
   "password": "$2a$10$URSqmuQ5.8c4tW6KaQBZYOPxRYttadGc.M7hbf.b3a.vZWeb1aGFC"
+ },
+ {
+  "id": 8,
+  "firstName": "kx",
+  "lastName": "kk",
+  "email": "Lokyperez4@yahoo.com",
+  "password": "$2a$10$fSbSVdz2yP5U/QLH7udPc.NabHvZSWOa0RkLftSESS68oMLYph3Ge"
  }
 ]
