@@ -3,12 +3,13 @@ const packageName = ('packageName');
 const {body } = require( 'express-validator');
 
 const validateRegisterMiddleware = [ 
-    body('fullName').notEmpty().withMessage('Tienes que escribri un nombre'),
+    body('firstName').notEmpty().withMessage('Tienes que escribri un nombre'),
+    body('lastName').notEmpty().withMessage('Tienes que escribri un nombre'),
     body('email')
     .notEmpty().withMessage('Tienes que escribir un correo electronico').bail()
     .isEmail().withMessage('Debes escribir un formato de correo valido'),
     body('password').notEmpty().withMessage('Tienes que escribir una contraseña'),
-    body('avatar').custom((value,{ req }) => {
+    /*body('avatar').custom((value,{ req }) => {
         let file = req.file;
         let acceptedExtensions = ['.jpg','.png','gif'];
        
@@ -23,7 +24,7 @@ const validateRegisterMiddleware = [
       }
        
         return true;
-    })
+    })*/
     
 ]      
 
