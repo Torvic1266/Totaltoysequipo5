@@ -80,5 +80,12 @@
   "email": "ericapolo10@hotmail.com",
   "password": "$2a$10$49JPRcs8cHY0SVVZjRg.YORPc/xjYN9FDWmHMvxUBSsa2S9oHCFVy",
   "avatar": "WhatsApp Image 2022-07-06 at 5.10.16 AM.jpeg"
+ },
+ {
+  "id": 11,
+  "firstName": "erika",
+  "lastName": "polo",
+  "email": "ericapolo10@hotmail.com",
+  "password": "$2a$10$qJytayn25tBIF0VDMPNcc.c19sOegTpGp.zdqDDEqNqlv9xLrqERm"
  }
 ]

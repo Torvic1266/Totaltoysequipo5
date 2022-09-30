@@ -11,7 +11,7 @@ const Controller = {
     res.render("register");
   },
   processRegister: (req, res) => {
-    const resultValidation = validationResult(req);
+     /*const resultValidation = validationResult(req);
 
     if (resultValidation.errors.length > 0) {
       return res.render("login", {
@@ -30,17 +30,23 @@ const Controller = {
         },
         oldData: req.body,
       });
+    }*/
+    try {
+      let userToCreate = {
+        ...req.body,
+        password: bcrypt.hashSync(req.body.password, 10),
+      //  avatar: req.file.filename,
+      };
+  
+      User.create(userToCreate); 
+      console.log(req.file)
+  
+      res.status(200).redirect("/usuario/login");
+    } catch (error) {
+      res.status(400).send('Usuario no creado')
     }
 
-    let userToCreate = {
-      ...req.body,
-      password: bcrypt.hashSync(req.body.password, 10),
-    //  avatar: req.file.filename,
-    };
-
-    let UserCreated = User.create(userToCreate);
-
-    return res.redirect("/usuario/login");
+    
   },
   login: (req, res) => {
     return res.render("login");
