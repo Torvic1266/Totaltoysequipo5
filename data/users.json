@@ -64,5 +64,21 @@
   "lastName": "kk",
   "email": "Lokyperez4@yahoo.com",
   "password": "$2a$10$fSbSVdz2yP5U/QLH7udPc.NabHvZSWOa0RkLftSESS68oMLYph3Ge"
+ },
+ {
+  "id": 9,
+  "firstName": "erika",
+  "lastName": "polo",
+  "email": "ericapolo10@hotmail.com",
+  "password": "$2a$10$1.bHUq9Yb.ia/bdgYMA0hOjUMcgwxRyHzVDQEltXIMEH1XN/wt1cq",
+  "avatar": "WhatsApp Image 2022-07-06 at 5.08.00 AM.jpeg"
+ },
+ {
+  "id": 10,
+  "firstName": "erika",
+  "lastName": "polo",
+  "email": "ericapolo10@hotmail.com",
+  "password": "$2a$10$49JPRcs8cHY0SVVZjRg.YORPc/xjYN9FDWmHMvxUBSsa2S9oHCFVy",
+  "avatar": "WhatsApp Image 2022-07-06 at 5.10.16 AM.jpeg"
  }
 ]
