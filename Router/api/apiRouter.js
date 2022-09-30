@@ -3,4 +3,4 @@ const { getAllTOTALTOYS } = require('../../controllers/api/ApiTotaltoysControlle
 
 router.get('/Totaltoys', getAllTOTALTOYS);
 
-module.exports = router;
+module.exports = router;git
