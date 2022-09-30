@@ -1,3 +1,4 @@
+const { name } = require("ejs");
 
 module.exports = (sequelize, dataTypes) => {
     const Productos = sequelize.define ("productos",{
@@ -45,7 +46,7 @@ module.exports = (sequelize, dataTypes) => {
     //     timestamps : false
     // }
     
-    const productos = sequelize.define(id, nombre,  descripcion, precio, imagen, category_id);
+    const productos = sequelize.define(id, name,  description, price, image, category_id);
     
     return productos;
     } 
