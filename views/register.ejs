@@ -9,7 +9,7 @@
     <div class="fondo">
       <div class="login-box">
         <h1>Formulario de Registro</h1>
-        <form method="POST" action="/usuario/register">
+        <form method="POST" action="/usuario/register" enctype="multipart/form-data">
           <label for="firstName">Nombre</label>
           <input name="firstName" type="text" placeholder="Nombre" required />
 
@@ -20,8 +20,10 @@
           <input name="email" type="text" placeholder="Ingrese su Email" required />
           <label for="password">Password</label>
           <input name="password" type="password" placeholder="Ingrese su Password" required/>
-          <button class="container ">avatar</button>
-          <input type="submit" value="Registrar" />
+          <label for="">avatar</label>
+          <input name="avatar" type="file">
+
+                  <input type="submit" value="Registrar" />
           
          
           <P> ch Estoy de acuerdo con los terminos y condiciones</P>

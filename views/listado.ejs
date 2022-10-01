@@ -1,53 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<%- include('./partials/head'); %>
-		<title>Total Toys</title>
-	</head>
 
-	<body>
-		<%- include('./partials/header') %>
+<head>
+	<%- include('./partials/head'); %>
+		<title>Total Toys</title>
+</head>
+
+<body>
+	<%- include('./partials/header') %>
 
 		<!--------seccion productos-->
 		<section>
 			<div class="seccionDelosProductos">
-				<% products.forEach(singleProduct => { %>
+				<% products.forEach(singleProduct=> { %>
 
-				<div class="producto">
-					<a href="/productDetail/<%=singleProduct.id%>">
-						<div class="producto-image">
-							<img src="/img/ninos/<%=singleProduct.imagen%>" />
+					<div class="producto">
+						<a href="/productDetail/<%=singleProduct.id%>">
+							<div class="producto-image">
+								<img src="/img/ninos/<%=singleProduct.imagen%>" />
+							</div>
+							<p>
+								<%=singleProduct.nombre%>
+							</p>
+						</a>
+
+						<p>
+							<strong> $ <%=singleProduct.precio%> </strong>
+						</p>
+
+						<div class="contenedor-botones">
+							<button class="boton-comprar">
+								<span>Agregar al carrito</span>
+							</button>
 						</div>
-						<p><%=singleProduct.nombre%></p>
-					</a>
-
-					<p>
-						<strong> $ <%=singleProduct.precio%> </strong>
-					</p>
-
-<<<<<<< HEAD
-					<div class="contenedor-botones">
-						<button class="boton-comprar">
-							<span>Agregar al carrito</span>
-						</button>
 					</div>
-				</div>
-=======
-                   <% products.forEach(singleProduct => { %>
-           
-                
-                       <div class="producto" >
-                         <a href="/productos/detalle-producto/<%=singleProduct.id%>">
-                             <div class="producto-image">
-                                 <img src="/img/ninos/<%=singleProduct.imagen%>" />
-                                         </div>
-                                              <p>
->>>>>>> b6226f40b5785b35d3b80527b1bfa618f9d7917f
-
-				<% }) %>
-			</div>
+					
+						<% }) %>
 		</section>
 
 		<%- include('./partials/footer'); %>
-	</body>
+</body>
+
 </html>
