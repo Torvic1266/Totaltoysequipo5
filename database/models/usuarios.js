@@ -1,6 +1,6 @@
 
 module.exports = (sequelize, dataTypes) => {
-  const Usuarios = sequelize.define ("usuarios",{
+  const Usuarios = sequelize.define ("Usuarios",{
 
       id:{
           type: dataTypes.INTEGER, 
@@ -8,25 +8,35 @@ module.exports = (sequelize, dataTypes) => {
           autoIncrement: true
       },
       firstName :{
-          type: dataTypes.STRING
+          type: dataTypes.STRING,
+          allowNull:false
       },
       lastName :{
-          type: dataTypes.STRING
+          type: dataTypes.STRING,
+          allowNull:false
       },
       email:{
-          type: dataTypes.FLOAT
+          type: dataTypes.FLOAT,
+          allowNull:false
       },
       password : {
-          type: dataTypes.STRING
+          type: dataTypes.STRING,
+          allowNull:false
       },
       image:{
-          type: dataTypes.STRING
+          type: dataTypes.STRING,
+          allowNull:false
       },
-      category_id:{
-          type: dataTypes.INTEGER,
-      }
+      is_active:{ 
+        type: dataTypes.INTEGER,
+        defaultValue:1
+    }
       
-  })
+  }, {
+    timeStamps:false,
+    tableName:"usuarios",
+    underscored:true
+  });
 
 
 

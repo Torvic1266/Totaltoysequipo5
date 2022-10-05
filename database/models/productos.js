@@ -29,9 +29,9 @@ module.exports = (sequelize, dataTypes) => {
             type: dataTypes.INTEGER,
             allowNull:false,
         },
-        is_active:
-        { type: dataTypes.INTEGER,
-         defaultValue:1
+        is_active:{ 
+            type: dataTypes.INTEGER,
+            defaultValue:1
         }
         
     },

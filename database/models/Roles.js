@@ -1,7 +1,7 @@
 const { name } = require("ejs");
 
 module.exports = (sequelize, dataTypes) => {
-    const Productos = sequelize.define ("Productos",{
+    const Roles = sequelize.define ("Roles",{
 
         id:{
             type: dataTypes.INTEGER, 
@@ -12,32 +12,11 @@ module.exports = (sequelize, dataTypes) => {
             type: dataTypes.STRING,
             allowNull:false
 
-        },
-        description:{
-            type: dataTypes.TEXT,
-            allowNull:false
-        },
-        price:{
-            type: dataTypes.FLOAT,
-            allowNull:false
-        },
-        image:{
-            type: dataTypes.STRING,
-            allowNull:false
-        },
-        category_id:{
-            type: dataTypes.INTEGER,
-            allowNull:false,
-        },
-        is_active:
-        { type: dataTypes.INTEGER,
-         defaultValue:1
         }
-        
     },
     {
         timeStamps:false,
-        tableName:"productos",
+        tableName:"Roles",
         underscored:true
     });
     
@@ -45,5 +24,5 @@ module.exports = (sequelize, dataTypes) => {
     
     
     
-    return productos;
+    return roles;
     } 
