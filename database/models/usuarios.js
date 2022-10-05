@@ -28,7 +28,7 @@ module.exports = (sequelize, dataTypes) => {
       
   })
 
-const usuarios = sequelize.define(id, firstName,  lastName, email, password, image, category_id);
+
 
 return usuarios;
 } 

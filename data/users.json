@@ -5,7 +5,7 @@
   "lastName": "Botero",
   "email": "boteroharold63@gmail.com",
   "password": "harold123",
-  "category": "Administrador",
+  "rol": "Administrador",
   "image": "batman.jpg"
  },
  {
@@ -14,7 +14,7 @@
   "lastName": "Hernandez",
   "email": "juanestebanhernandesbenitez@gmail.com",
   "password": "esteban123",
-  "category": "Administrador",
+  "Rol": "Administrador",
   "image": "iroman.png"
  },
  {
@@ -23,7 +23,7 @@
   "lastName": "Cano",
   "email": "claudiacanom@hotmail.com",
   "password": "086613",
-  "category": "Administrador",
+  "Rol": "Administrador",
   "image": "bulma.webp"
  },
  {
@@ -32,7 +32,7 @@
   "lastName": "Giraldo",
   "email": "victorgiraldogallego@gmail.com",
   "password": "victor123",
-  "category": "Administrador",
+  "Rol": "Administrador",
   "image": "thor.jpg"
  },
  {
@@ -41,7 +41,7 @@
   "lastName": "Polo",
   "email": "ericapolo10@hotmail.com",
   "password": "erika123",
-  "category": "Administrador",
+  "Rol": "Administrador",
   "imagen": "mujer maravilla.png"
  },
  {
@@ -87,5 +87,19 @@
   "lastName": "polo",
   "email": "ericapolo10@hotmail.com",
   "password": "$2a$10$qJytayn25tBIF0VDMPNcc.c19sOegTpGp.zdqDDEqNqlv9xLrqERm"
+ },
+ {
+  "id": 12,
+  "firstName": "Victor",
+  "lastName": "Giraldo",
+  "email": "victorgiraldogallego@gmail.com",
+  "password": "$2a$10$KjNvAtrQ6iQyei.TzE6TQeL6g6jjtmtPosc7uzNOAh4gbYWWuKx4a"
+ },
+ {
+  "id": 13,
+  "firstName": "Victor",
+  "lastName": "Giraldo",
+  "email": "victorgiraldogallego@gmail.com",
+  "password": "$2a$10$eET0GaLOBNgs6SWvYKJ7OOVgvBox9YDP6x7ifW4QiohmOLtXL6bFW"
  }
 ]

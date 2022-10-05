@@ -5,41 +5,77 @@ SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0;
 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION';
 
 -- -----------------------------------------------------
--- Schema totaltoysDB
+-- Schema totaltoys_DB
 -- -----------------------------------------------------
 
 -- -----------------------------------------------------
--- Schema totaltoysDB
+-- Schema totaltoys_DB
 -- -----------------------------------------------------
-CREATE SCHEMA IF NOT EXISTS `totaltoysDB` DEFAULT CHARACTER SET utf8 ;
-USE `totaltoysDB` ;
+CREATE SCHEMA IF NOT EXISTS `totaltoys_DB` DEFAULT CHARACTER SET utf8 ;
+USE `totaltoys_DB` ;
 
 -- -----------------------------------------------------
--- Table `totaltoysDB`.`producto`
+-- Table `totaltoys_DB`.`categorias`
 -- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS `totaltoysDB`.`producto` (
+CREATE TABLE IF NOT EXISTS `totaltoys_DB`.`categorias` (
   `id` INT NOT NULL AUTO_INCREMENT,
-  `nombre` VARCHAR(45) NOT NULL,
-  `descripcion` VARCHAR(45) NOT NULL,
-  `precio` FLOAT NOT NULL,
-  `id_categoria` VARCHAR(45) NOT NULL,
-  PRIMARY KEY (`id`),
-  UNIQUE INDEX `id_UNIQUE` (`id` ASC))
+  `category` VARCHAR(45) NOT NULL,
+  PRIMARY KEY (`id`))
 ENGINE = InnoDB;
 
 
 -- -----------------------------------------------------
--- Table `totaltoysDB`.`categorias`
+-- Table `totaltoys_DB`.`productos`
 -- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS `totaltoysDB`.`categorias` (
-  `id_categoria` INT NOT NULL,
-  `niños` VARCHAR(45) NOT NULL,
-  `niñas` VARCHAR(45) NOT NULL,
-  `adolescentes` VARCHAR(45) NOT NULL,
-  PRIMARY KEY (`id_categoria`),
-  CONSTRAINT `id_categoria`
-    FOREIGN KEY (`id_categoria`)
-    REFERENCES `totaltoysDB`.`producto` (`id`)
+CREATE TABLE IF NOT EXISTS `totaltoys_DB`.`productos` (
+  `id` INT NOT NULL AUTO_INCREMENT,
+  `slug` VARCHAR(45) NOT NULL,
+  `name` VARCHAR(45) NOT NULL,
+  `description` LONGTEXT NOT NULL,
+  `imagen` VARCHAR(255) NOT NULL,
+  `price` FLOAT NOT NULL,
+  `category_id` INT NOT NULL,
+  `is_active` INT NOT NULL DEFAULT 1,
+  PRIMARY KEY (`id`),
+  UNIQUE INDEX `slug_UNIQUE` (`slug` ASC) ,
+  INDEX `categoria_id_idx` (`category_id` ASC) ,
+  CONSTRAINT `categoria_id`
+    FOREIGN KEY (`category_id`)
+    REFERENCES `totaltoys_DB`.`categorias` (`id`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION)
+ENGINE = InnoDB;
+
+
+-- -----------------------------------------------------
+-- Table `totaltoys_DB`.`roles`
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS `totaltoys_DB`.`roles` (
+  `id` INT NOT NULL AUTO_INCREMENT,
+  `name` VARCHAR(100) NOT NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE INDEX `nombre_UNIQUE` (`name` ASC) )
+ENGINE = InnoDB;
+
+
+-- -----------------------------------------------------
+-- Table `totaltoys_DB`.`usuarios`
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS `totaltoys_DB`.`usuarios` (
+  `id` INT NOT NULL AUTO_INCREMENT,
+  `first_name` VARCHAR(100) NOT NULL,
+  `last_name` VARCHAR(100) NOT NULL,
+  `email` VARCHAR(45) NOT NULL,
+  `password` VARCHAR(200) NOT NULL,
+  `imagen` VARCHAR(255) NULL,
+  `is_active` INT NOT NULL DEFAULT 1,
+  `rol_id` INT NOT NULL,
+  PRIMARY KEY (`id`, `rol_id`),
+  UNIQUE INDEX `id_UNIQUE` (`id` ASC) ,
+  INDEX `id_roles_idx` (`rol_id` ASC) ,
+  CONSTRAINT `id_roles`
+    FOREIGN KEY (`rol_id`)
+    REFERENCES `totaltoys_DB`.`roles` (`id`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
 ENGINE = InnoDB;
