@@ -19,13 +19,13 @@ module.exports = (sequelize, dataTypes) => {
     });
     
     
-    Roles.associate = (models) => {
-        Roles.hasMany(models.Usuarios, {
-            as : 'Usuarios', 
-            foreignKey : 'Usuarios_id'
+    // Roles.associate = (models) => {
+    //     Roles.hasMany(models.Usuarios, {
+    //         as : 'Usuarios', 
+    //         foreignKey : 'rol_id'
        
-        })
-    }
+    //     })
+    // }
     
     return Roles;
     } 

@@ -17,9 +17,9 @@ module.exports = (sequelize, dataTypes) => {
         tableName:"categorias",
         underscored:true
     });
-    
-    
-    
+
+
+
 Categorias.associate = (models) => {
     Categorias.belongsTo(models.Productos, {
             as : 'Productos', 
