@@ -1,5 +1,3 @@
-const { name } = require("ejs");
-
 module.exports = (sequelize, dataTypes) => {
     const Roles = sequelize.define ("Roles",{
 
@@ -22,12 +20,12 @@ module.exports = (sequelize, dataTypes) => {
     
     
     Roles.associate = (models) => {
-        Roles.hasMany(models.usuarios, {
+        Roles.hasMany(models.Usuarios, {
             as : 'Usuarios', 
             foreignKey : 'Usuarios_id'
        
         })
     }
     
-    return roles;
+    return Roles;
     } 

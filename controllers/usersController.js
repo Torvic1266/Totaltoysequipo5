@@ -4,7 +4,8 @@ const { join } = require("path");
 const bcrypt = require("bcryptjs");
 const { validationResult } = require("express-validator");
 
-const User = require("../models/User");
+//const User = require("../models/User");
+const db = require('../database/models');
 
 const Controller = {
   register: (req, res) => {
@@ -38,7 +39,7 @@ const Controller = {
       //  avatar: req.file.filename,
       };
   
-      User.create(userToCreate); 
+      db.User.create(userToCreate); 
       console.log(req.file)
   
       res.status(200).redirect("/usuario/login");

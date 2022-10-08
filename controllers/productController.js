@@ -5,13 +5,16 @@ const productsFilePath = path.join(__dirname, '../data/products.json');
 const products = JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'));
 /* const render  = require("ejs")
 const productDetail  = require("./main") */
+const db = require('../database/models');
 
 const productController = {
     // ruta de productos para el listado de productos punto 1 sprin 4 entregable 
     list: (req,res) => {
-        const productsFilePath = path.join(__dirname, '../data/products.json');
-        const products = JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'));
-        res.render('listado',{ products });
+        db.Products.findAll()
+            .then(function(products){
+               res.render('listado',{ products }); 
+            })
+        
     },
 // punto 2 la ruta del formulario de creacion de productos entregable
     create: (req,res) => {

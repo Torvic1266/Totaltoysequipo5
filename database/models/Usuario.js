@@ -1,4 +1,3 @@
-
 const fs = require('fs');
 
 const User = {
@@ -32,7 +31,11 @@ findByPk: function (id) {
 findByField: function (field,text) {
     let allUsers = this.findAll();
     let userFound = allUsers.find(oneUser => oneUser[field] === text);
+
+    
     return userFound;
+
+    
    },
 
     create:function (userData){

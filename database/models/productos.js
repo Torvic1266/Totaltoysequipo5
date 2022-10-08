@@ -1,5 +1,3 @@
-const { name } = require("ejs");
-
 module.exports = (sequelize, dataTypes) => {
     const Productos = sequelize.define ("Productos",{
 
@@ -43,13 +41,13 @@ module.exports = (sequelize, dataTypes) => {
     
     
     Productos.associate = (models) => {
-        Productos.hasMany(models.categorias, {
+        Productos.hasMany(models.Categorias, {
             as : 'categorias', 
             foreignKey : 'Productos_id'
        
         })
     
+    }
+    return  Productos;
     
-    return productos;
-    } 
 }

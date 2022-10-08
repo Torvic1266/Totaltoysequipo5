@@ -1,5 +1,3 @@
-const { name } = require("ejs");
-
 module.exports = (sequelize, dataTypes) => {
     const Categorias = sequelize.define ("Categorias",{
 
@@ -23,11 +21,11 @@ module.exports = (sequelize, dataTypes) => {
     
     
 Categorias.associate = (models) => {
-    Categorias.belongsTo(models.productos, {
+    Categorias.belongsTo(models.Productos, {
             as : 'Productos', 
             foreignKey : 'Productos_id'
         })
     }
     
-    return categorias;
+    return Categorias;
     } 
