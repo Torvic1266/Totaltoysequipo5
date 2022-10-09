@@ -1,7 +1,7 @@
-CREATE DATABASE GNDB5tewrN;
+CREATE DATABASE totaltoys_db;
 
 
-CREATE TABLE IF NOT EXISTS `GNDB5tewrN`.`productos` (
+CREATE TABLE IF NOT EXISTS `totaltoys_db`.`productos` (
   `id` INT NOT NULL AUTO_INCREMENT,
   `slug` VARCHAR(45) NOT NULL,
   `name` VARCHAR(45) NOT NULL,
@@ -15,16 +15,16 @@ CREATE TABLE IF NOT EXISTS `GNDB5tewrN`.`productos` (
   INDEX `categoria_id_idx` (`category_id` ASC) VISIBLE,
   CONSTRAINT `categoria_id`
     FOREIGN KEY (`category_id`)
-    REFERENCES `GNDB5tewrN`.`categorias` (`id`)
+    REFERENCES `totaltoys_db`.`categorias` (`id`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
 
-    CREATE TABLE IF NOT EXISTS `GNDB5tewrN`.`categorias` (
+    CREATE TABLE IF NOT EXISTS `totaltoys_db`.`categorias` (
   `id` INT NOT NULL AUTO_INCREMENT,
   `category` VARCHAR(45) NOT NULL,
   PRIMARY KEY (`id`))
 
-CREATE TABLE IF NOT EXISTS `GNDB5tewrN`.`usuarios` (
+CREATE TABLE IF NOT EXISTS `totaltoys_db`.`usuarios` (
   `id` INT NOT NULL AUTO_INCREMENT,
   `first_name` VARCHAR(100) NOT NULL,
   `last_name` VARCHAR(100) NOT NULL,
@@ -38,12 +38,12 @@ CREATE TABLE IF NOT EXISTS `GNDB5tewrN`.`usuarios` (
   INDEX `id_roles_idx` (`rol_id` ASC) VISIBLE,
   CONSTRAINT `id_roles`
     FOREIGN KEY (`rol_id`)
-    REFERENCES `GNDB5tewrN`.`roles` (`id`)
+    REFERENCES `totaltoys_db`.`roles` (`id`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
 
 
-CREATE TABLE IF NOT EXISTS `GNDB5tewrN`.`roles` (
+CREATE TABLE IF NOT EXISTS `totaltoys_db`.`roles` (
   `id` INT NOT NULL AUTO_INCREMENT,
   `name` VARCHAR(100) NOT NULL,
   PRIMARY KEY (`id`),
