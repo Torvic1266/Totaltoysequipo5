@@ -36,7 +36,8 @@ module.exports = (sequelize, dataTypes) => {
     {
         timeStamps:false,
         tableName:"productos",
-        underscored:true
+        createdAt: false,
+        updatedAt: false
     });
     
     
