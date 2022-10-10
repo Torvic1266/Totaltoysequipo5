@@ -19,7 +19,7 @@ module.exports = (sequelize, dataTypes) => {
             type: dataTypes.FLOAT,
             allowNull:false
         },
-        image:{
+        imagen:{
             type: dataTypes.STRING,
             allowNull:false
         },
