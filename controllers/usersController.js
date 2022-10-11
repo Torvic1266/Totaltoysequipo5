@@ -4,8 +4,10 @@ const { join } = require("path");
 const bcrypt = require("bcryptjs");
 const { validationResult } = require("express-validator");
 
+
 //const User = require("../models/User");
 const db = require('../src/database/models');
+db.User.create
 
 const Controller = {
   register: (req, res) => {
