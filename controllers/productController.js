@@ -1,11 +1,11 @@
-/*const path = require('path');
+const path = require('path');
 const fs = require('fs');
 const { join } = require('path');
 const productsFilePath = path.join(__dirname, '../data/products.json');
 const products = JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'));
-/* const render  = require("ejs")
-const productDetail  = require("./main") */
-/*const db = require('../src/database/models');
+const render  = require("ejs")
+const productDetail  = require("./main")
+const db = require('../src/database/models');
 
 const productController = {
     // ruta de productos para el listado de productos punto 1 sprin 4 entregable 
@@ -119,12 +119,11 @@ productDetail: (req,res)=>{
      
      }
 
-     module.exports = productController;*/
+     module.exports = productController;
 
      //const { promise } = require("ejs");
-     let db = require("../database/models");
      
-     let productoController = {
+     const productoController = {
          crear: function (req, res){
              db.Producto.findAll()
              .then(function(Producto){
@@ -165,8 +164,8 @@ productDetail: (req,res)=>{
              //let pedidoProducto = db.Producto.finAll();
      
              promise.all([pedidoProducto, pedidoProducto])
-             .then(function({Producto,Producto}) {
-                 res.render("editarProducto", {Producto:Producto, Producto:Producto})
+             .then(function({Producto,producto}) {
+                 res.render("editarProducto", {Producto:producto, Producto:producto})
      
              })
          },
