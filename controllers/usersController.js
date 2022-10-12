@@ -40,11 +40,11 @@ const Controller = {
       };
   
       db.User.create(userToCreate); 
-      console.log(req.file)
+      //console.log(req.file)
   
-      res.status(200).redirect("/usuario/login");
+      res.status(200).redirect("/usuario/profile");
     } catch (error) {
-      res.status(400).send('Usuario no creado')
+      res.redirect("/usuario/profile");
     }
 
     
@@ -87,8 +87,9 @@ const Controller = {
   },
 
   profile: (req, res) => {
+    console.log("profile");
     return res.render("userProfile", {
-      user: req.session.userLogged
+      //user: req.session.userLogged
     });
   },
   logout: (req, res) => {
