@@ -7,7 +7,7 @@ const { validationResult } = require("express-validator");
 
 //const User = require("../models/User");
 const db = require('../src/database/models');
-db.User.create
+
 
 const Controller = {
   register: (req, res) => {
@@ -40,13 +40,15 @@ const Controller = {
         password: bcrypt.hashSync(req.body.password, 10),
       //  avatar: req.file.filename,
       };
+      console.log(userToCreate);
   
       db.User.create(userToCreate); 
       console.log(req.file)
   
       res.status(200).redirect("/usuario/login");
     } catch (error) {
-      res.status(400).send('Usuario no creado')
+      console.log(error);
+      res.status(400).send(error)
     }
 
     
