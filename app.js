@@ -5,10 +5,9 @@ const methodOverride = require('method-override')
 const session = require("express-session"); 
 const cookies = require('cookie-parser');
 
-const routerMain = require("./Router/node.js");
+const routerMain = require("./Router/node");
 
-
-const  userLoggedMiddleware = require('./middlewares/userLoggedMiddleware');
+const userLoggedMiddleware = require('./middlewares/userLoggedMiddleware');
 
 app.use(session({
     secret:"shhh, it's a secret",

@@ -1,3 +1,4 @@
+/*
 const path = require("path");
 const fs = require("fs");
 const { join } = require("path");
@@ -33,7 +34,7 @@ const Controller = {
         },
         oldData: req.body,
       });
-    }*/
+    }
     try {
       let userToCreate = {
         ...req.body,
@@ -103,3 +104,4 @@ const Controller = {
 };
 
 module.exports = Controller;
+*/

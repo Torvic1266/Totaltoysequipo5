@@ -1,4 +1,4 @@
-const path = require('path');
+/*const path = require('path');
 const fs = require('fs');
 const { join } = require('path');
 const productsFilePath = path.join(__dirname, '../data/products.json');
@@ -195,4 +195,5 @@ productDetail: (req,res)=>{
              res.redirect("/Productos");
          }
      }
-     module.exports = productoController;   
+     module.exports = productoController;
+     */
