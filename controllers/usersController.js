@@ -4,8 +4,10 @@ const { join } = require("path");
 const bcrypt = require("bcryptjs");
 const { validationResult } = require("express-validator");
 
+
 //const User = require("../models/User");
 const db = require('../src/database/models');
+
 
 const Controller = {
   register: (req, res) => {
@@ -38,6 +40,7 @@ const Controller = {
         password: bcrypt.hashSync(req.body.password, 10),
       //  avatar: req.file.filename,
       };
+      console.log(userToCreate);
   
       db.User.create(userToCreate); 
       //console.log(req.file)

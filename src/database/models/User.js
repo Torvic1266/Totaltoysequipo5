@@ -25,7 +25,7 @@ module.exports = (sequelize, dataTypes) => {
         },
         imagen:{
             type: dataTypes.STRING,
-            allowNull:false,
+            allowNull:true,
         },
         
         is_active:{ 
