@@ -1,4 +1,3 @@
-/*
 const path = require("path");
 const fs = require("fs");
 const { join } = require("path");
@@ -6,7 +5,7 @@ const bcrypt = require("bcryptjs");
 const { validationResult } = require("express-validator");
 
 
-//const User = require("../models/User");
+const User = require("../models/User");
 const db = require('../src/database/models');
 
 
@@ -15,7 +14,7 @@ const Controller = {
     res.render("register");
   },
   processRegister: (req, res) => {
-     /*const resultValidation = validationResult(req);
+     const resultValidation = validationResult(req);
 
     if (resultValidation.errors.length > 0) {
       return res.render("login", {
@@ -104,4 +103,3 @@ const Controller = {
 };
 
 module.exports = Controller;
-*/

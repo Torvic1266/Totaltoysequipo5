@@ -5,7 +5,7 @@ const methodOverride = require('method-override')
 const session = require("express-session"); 
 const cookies = require('cookie-parser');
 
-const routerMain = require("./Router/node");
+const routerMain = require("./Router/router");
 
 const userLoggedMiddleware = require('./middlewares/userLoggedMiddleware');
 
