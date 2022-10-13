@@ -5,7 +5,7 @@ const productsFilePath = path.join(__dirname, '../data/products.json');
 const products = JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'));
 const render  = require("ejs")
 const productDetail  = require("./main")
-const db = require('../src/database/models');
+const db = require('../database/models');
 
 const productController = {
     // ruta de productos para el listado de productos punto 1 sprin 4 entregable 

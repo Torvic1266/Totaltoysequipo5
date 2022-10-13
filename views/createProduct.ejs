@@ -37,6 +37,11 @@
           <label for="Categoria">Categoria</label>
            <select name="categoria">
             <option value=""disabled selected> categoria</option>
+            
+            <!--<% categorias.forEach(categoria =>{ %>
+              <option><%=categoria.nombre%>></option>
+            <% }) %>-->
+              
             <option value="Bebes"<%= locals.producto? (producto.category==="Bebes"? 'selected': "") :"" %> >Bebes</option>
             <option value="Niños"<%= locals.producto? (producto.category==="Niños"? 'selected': "") :"" %>selected>Niños</option>
             <option value="Adolescentes"<%= locals.producto? (producto.category==="Adolescentes"? 'selected': "") :"" %>>Adolescentes</option>
@@ -44,10 +49,12 @@
           </select>
         </div>
         <div style="margin-bottom:24px;">
-          <label for="imagen">Imagen</label>
-          <input type="file" name="imagen" placeholder="imagen" />
+          <label for="imagen">Imagen (URL)</label>
+          <input type="text" name="urlImagen" placeholder="Imagen del producto (url)">
+          Preview de imagen:
+
+          <!--<input type="file" name="imagen" placeholder="imagen" -->
         </div>
-        
           <button class="Agregar"type="submit">Agregar</button>
           
           
