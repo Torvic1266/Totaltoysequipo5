@@ -25,8 +25,8 @@ Categorias.associate = (models) => {
     Categorias.belongsTo(models.Productos, {
             as : 'Productos', 
             foreignKey : 'Productos_id'
-        })
+        });
     }
-    
+
     return Categorias;
-    } 
+     }
