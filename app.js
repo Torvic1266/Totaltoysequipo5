@@ -1,5 +1,5 @@
 const express = require("express");
-const app = express();
+
 const path = require('path');
 const methodOverride = require('method-override')
 const session = require("express-session"); 
@@ -8,6 +8,10 @@ const cookies = require('cookie-parser');
 const routerMain = require("./Router/router");
 
 const userLoggedMiddleware = require('./middlewares/userLoggedMiddleware');
+
+const app = express();
+
+const db = require("./database/connection");
 
 app.use(session({
     secret:"shhh, it's a secret",
@@ -36,6 +40,10 @@ app.use("/", routerMain);
 
 
 app.use(express.static(publicPath));
+
+
+
+
 app.listen(3001,()=> {
     console.log("servidor corriendo en el puerto 3001");
 });
