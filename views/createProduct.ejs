@@ -38,9 +38,9 @@
            <select name="categoria">
             <option value=""disabled selected> categoria</option>
             
-            <% categorias.forEach(categoria =>{ %>
+            <!--<% categorias.forEach(categoria =>{ %>
               <option><%=categoria.nombre%>></option>
-            <% }) %>
+            <% }) %>-->
               
             <option value="Bebes"<%= locals.producto? (producto.category==="Bebes"? 'selected': "") :"" %> >Bebes</option>
             <option value="Niños"<%= locals.producto? (producto.category==="Niños"? 'selected': "") :"" %>selected>Niños</option>
