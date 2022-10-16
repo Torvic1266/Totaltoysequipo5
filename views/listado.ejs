@@ -12,12 +12,12 @@
 		<!--------seccion productos-->
 		<section>
 			<div class="seccionDelosProductos">
-				<% products.forEach(singleProduct=> { %>
+				<% Productos.forEach(singleProduct=> { %>
 
 					<div class="producto">
 						<a href="/productDetail/<%=singleProduct.id%>">
 							<div class="producto-image">
-								<img src="/img/ninos/<%=singleProduct.imagen%>" />
+								<img src="<%=singleProduct.urlImagen%>" />
 							</div>
 							<p>
 								<%=singleProduct.nombre%>
