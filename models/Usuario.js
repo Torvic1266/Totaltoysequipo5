@@ -21,9 +21,18 @@
              allowNull: false,
              primaryKey: true,
          },
-         nombre: {
+         email: {
              type: DataTypes.STRING,
              allowNull: false,
+         },
+        
+        password: {
+            type: DataTypes.STRING,
+            allowNull: false,
+        },
+         nombre: {
+            type: DataTypes.STRING,
+            allowNull: false,
          },
          descripcion: {
              type: DataTypes.STRING,
@@ -37,8 +46,14 @@
              type: DataTypes.STRING,
              allowNull: true,
          },
-     },
-     {
+         telefono: {
+            type: DataTypes.STRING,
+            allowNull: false,
+         },
+         rol: {
+            type: DataTypes.STRING,
+            allowNull: false,
+         },
          /**
           * Other model options go here
           */
