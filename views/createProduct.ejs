@@ -14,52 +14,45 @@
         <% if (locals.producto){  %>
           <h1>edición de producto</h1>
           <% } else { %>
-            <h1>creación de producto</h1>
+            <h1>Creación de producto</h1>
             <% } %>
         <form action="/productos/<%= locals.producto? "editar-producto/"+producto.id+"?_method=PUT": "crear-producto" %>" method="post" enctype="multipart/form-data">
          
           
-          <div style="margin-bottom:18px;">
-
-            <label for="NombreDelProducto ">Nombre del Producto</label>
+        <div style="margin-bottom:18px;">
+          <label for="NombreDelProducto ">Nombre del Producto</label>
           <input type="text"name="nombre" value="<%= locals.producto? producto.nombre: "" %>" placeholder="Nombre del producto" />
         </div>
+
         <div style="margin-bottom:24px;">
           <label for="Descripcion">Descripcion</label>
           <input type="text" name ="descripcion" placeholder="Descripcion" value="<%= locals.producto? producto.descripcion: "" %>" />
         </div>
+
         <div style="margin-bottom:24px;">
           <label for="Precio">Precio</label>
-            <input type="text" name="precio" pattern="\d*" placeholder="Ingrese el precio" value="<%= locals.producto? producto.precio: "" %>"/>
-          </div>
-          
+          <input type="text" name="precio" pattern="\d*" placeholder="Ingrese el precio" value="<%= locals.producto? producto.precio: "" %>"/>
+        </div>
+
+        <div style="margin-bottom:24px;">
+          <label for="urlImagen">Imagen</label>
+          <input type="text" name="urlImagen" placeholder="Url de la imagen">
+          <% /* %>
+          <label for="imagen">Archivo</label>
+          <input type="file" name="imagen" placeholder="imagen" />
+          <% */ %>
+        </div>
+
         <div style="margin-bottom:24px;">
           <label for="Categoria">Categoria</label>
            <select name="categoria">
             <option value=""disabled selected> categoria</option>
-            <% /* %>
-            NO DESCOMENTAR - PARTE DEL CRUD PARA CATEGORIA(en construccion)
-            <% categorias.forEach(categoria =>{ %>
-              <option><%=categoria.nombre%>></option>
-            <% })%>
-              <% */ %>
             <option value="Bebes"<%= locals.producto? (producto.category==="Bebes"? 'selected': "") :"" %> >Bebes</option>
             <option value="Niños"<%= locals.producto? (producto.category==="Niños"? 'selected': "") :"" %>selected>Niños</option>
             <option value="Adolescentes"<%= locals.producto? (producto.category==="Adolescentes"? 'selected': "") :"" %>>Adolescentes</option>
-           
           </select>
         </div>
-        <div style="margin-bottom:24px;">
-          <label for="imagen">Imagen (URL)</label>
-          <input type="text" name="urlImagen" placeholder="Imagen del producto (url)">
-          Preview de imagen:
-
-          <!--<input type="file" name="imagen" placeholder="imagen" -->
-        </div>
-          <button class="Agregar"type="submit">Agregar</button>
-          
-          
-    
+          <button class="Agregar" type="submit">Agregar</button>
         </form>
       </div>
     </div>
