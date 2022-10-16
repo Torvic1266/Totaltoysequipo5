@@ -1,0 +1,105 @@
+[
+ {
+  "id": 1,
+  "firstName": "Harold",
+  "lastName": "Botero",
+  "email": "boteroharold63@gmail.com",
+  "password": "harold123",
+  "rol": "Administrador",
+  "image": "batman.jpg"
+ },
+ {
+  "id": 2,
+  "firstName": "Esteban",
+  "lastName": "Hernandez",
+  "email": "juanestebanhernandesbenitez@gmail.com",
+  "password": "esteban123",
+  "Rol": "Administrador",
+  "image": "iroman.png"
+ },
+ {
+  "id": 3,
+  "firstName": "Claudia",
+  "lastName": "Cano",
+  "email": "claudiacanom@hotmail.com",
+  "password": "086613",
+  "Rol": "Administrador",
+  "image": "bulma.webp"
+ },
+ {
+  "id": 4,
+  "firstName": "Victor",
+  "lastName": "Giraldo",
+  "email": "victorgiraldogallego@gmail.com",
+  "password": "victor123",
+  "Rol": "Administrador",
+  "image": "thor.jpg"
+ },
+ {
+  "id": 5,
+  "firstName": "Erika",
+  "lastName": "Polo",
+  "email": "ericapolo10@hotmail.com",
+  "password": "erika123",
+  "Rol": "Administrador",
+  "imagen": "mujer maravilla.png"
+ },
+ {
+  "id": 6,
+  "firstName": "Brian",
+  "lastName": "zapata",
+  "email": "dteietee@hotmail.com",
+  "password": "$2a$10$D94nKYxFQjAlpThDAmZXeuwAV4WLbjfgjqLO.7abO0oG6QJDH3fm6"
+ },
+ {
+  "id": 7,
+  "firstName": "juses",
+  "lastName": "vete",
+  "email": "metre@hotmail.com",
+  "password": "$2a$10$URSqmuQ5.8c4tW6KaQBZYOPxRYttadGc.M7hbf.b3a.vZWeb1aGFC"
+ },
+ {
+  "id": 8,
+  "firstName": "kx",
+  "lastName": "kk",
+  "email": "Lokyperez4@yahoo.com",
+  "password": "$2a$10$fSbSVdz2yP5U/QLH7udPc.NabHvZSWOa0RkLftSESS68oMLYph3Ge"
+ },
+ {
+  "id": 9,
+  "firstName": "erika",
+  "lastName": "polo",
+  "email": "ericapolo10@hotmail.com",
+  "password": "$2a$10$1.bHUq9Yb.ia/bdgYMA0hOjUMcgwxRyHzVDQEltXIMEH1XN/wt1cq",
+  "avatar": "WhatsApp Image 2022-07-06 at 5.08.00 AM.jpeg"
+ },
+ {
+  "id": 10,
+  "firstName": "erika",
+  "lastName": "polo",
+  "email": "ericapolo10@hotmail.com",
+  "password": "$2a$10$49JPRcs8cHY0SVVZjRg.YORPc/xjYN9FDWmHMvxUBSsa2S9oHCFVy",
+  "avatar": "WhatsApp Image 2022-07-06 at 5.10.16 AM.jpeg"
+ },
+ {
+  "id": 11,
+  "firstName": "erika",
+  "lastName": "polo",
+  "email": "ericapolo10@hotmail.com",
+  "password": "$2a$10$qJytayn25tBIF0VDMPNcc.c19sOegTpGp.zdqDDEqNqlv9xLrqERm"
+ },
+ {
+  "id": 12,
+  "firstName": "Victor",
+  "lastName": "Giraldo",
+  "email": "victorgiraldogallego@gmail.com",
+  "password": "$2a$10$KjNvAtrQ6iQyei.TzE6TQeL6g6jjtmtPosc7uzNOAh4gbYWWuKx4a"
+ },
+ {
+  "id": 13,
+  "firstName": "Victor",
+  "lastName": "Giraldo",
+  "email": "victorgiraldogallego@gmail.com",
+  "password": "$2a$10$eET0GaLOBNgs6SWvYKJ7OOVgvBox9YDP6x7ifW4QiohmOLtXL6bFW"
+ }
+]
