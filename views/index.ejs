@@ -21,21 +21,16 @@
 <section>
   <div class="seccionDeLosProductos">
     
-    <% for (let i = 0; i < products.length; i++) { %>
+    <% for (let i = 0; i < Productos.length; i++) { %>
 
     <div class="producto">
-      <a href="/productos/detalle-producto/<%=products[i].id%>">
+      <a href="/productos/detalle-producto/<%=Productos[i].id%>">
       <div class="producto-image">
-      <img src="/img/ninos/<%=products[i].imagen%>"/>
+        <img src="<%=Productos[i].urlImagen%>"/>
       </div>
-      <p>
-      <%=products[i].nombre%>
-      </p>
-      <strong>
-      <%=products[i].precio%>
-      </strong>
+      <p><%=Productos[i].nombre%></p>
+      <strong><%=Productos[i].precio%></strong>
       
-
     <div class="contenedor-botones"> 
       <button class="boton-comprar"><span>Agregar Al Carrito</span></button>
     </div>
