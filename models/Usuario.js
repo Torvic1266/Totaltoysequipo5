@@ -54,11 +54,17 @@
             type: DataTypes.STRING,
             allowNull: false,
          },
-         /**
+
+        },
+        {
+        timestamps: false,
+        }
+            /**
           * Other model options go here
           */
-     }
- );
+     );
+         
+     
  
  /**
   * Export the model, so that it can be used in any
