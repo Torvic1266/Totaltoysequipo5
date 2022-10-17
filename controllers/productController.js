@@ -163,7 +163,7 @@ const productController = {
                 include: [{association: "Descripcion"}, {association: "Precio"}]
             })
             .then(function(Producto){
-                res.render("detalleProducto", {Producto:Producto});
+                res.render("/detail/:id", {Producto:Producto});
             })
         },
 

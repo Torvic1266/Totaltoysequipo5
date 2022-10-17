@@ -57,6 +57,9 @@
          /**
           * Other model options go here
           */
+     },
+     {
+     timestamps: false,
      }
  );
  
