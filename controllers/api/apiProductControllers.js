@@ -1,4 +1,4 @@
-/*
+
 const fs = require('fs');
 const path = require('path');
 const db = require('../database/models');
@@ -16,8 +16,7 @@ const productController = {
                 
             }});
             if(totaltoys){
-                shuffle(totaltoys);
-                res.render('index', { heroesJSON: totaltoys, title : 'Heroes App' })
+                res.render('index', { productsJSON: totaltoys, title : 'Heroes App' })
             }else{
                 res.render('error', { title: 'Error', msg: 'No hay datos para mostrar' });
             }
@@ -88,7 +87,6 @@ const productController = {
                 const heroes = await db.Hero.findAll({ where: {publisher_id: 2}});
 
                 if (heroes) {
-                    shuffle(heroes);
                     res.render('index', { heroesJSON : heroes, title: 'Marvel Comics Heroes' });
                 } else {
                     res.render('error', { title: 'Error', msg: 'No hay datos para mostrar' });
@@ -137,7 +135,7 @@ const productController = {
 
 };
 
-module.exports = HeroController;
+module.exports = productController;
 
 
 */
