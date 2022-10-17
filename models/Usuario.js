@@ -62,9 +62,17 @@
             /**
           * Other model options go here
           */
+<<<<<<< HEAD
      );
          
      
+=======
+     },
+     {
+     timestamps: false,
+     }
+ );
+>>>>>>> 71d04c72791db4fdab9478d31b26234066a16b65
  
  /**
   * Export the model, so that it can be used in any
