@@ -57,6 +57,9 @@ const productController = {
     editarFormulario: (req,res) => {  
     res.render("createProduct");
     },
+    create: (req,res) => {  
+        res.render("createProduct");
+        },
 
     productDetail: (req,res)=>{
         res.render("productDetail")

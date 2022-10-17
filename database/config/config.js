@@ -2,7 +2,7 @@ module.exports = {
   "development": {
     "username": "root",
     "password": "",
-    "database": "totaltoys_db",
+    "database": "totaltoys",
     "host": "127.0.0.1",
     "dialect": "mysql",
     "operatorsAliases":false

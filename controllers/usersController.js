@@ -5,32 +5,38 @@ const bcrypt = require("bcryptjs");
 const { validationResult } = require("express-validator");
 
 
-//const User = require("../models/Usuario");
+const User = require("../models/Usuario");
 const db = require('../database/models');
+
 
 
 const Controller = {
   
-  /*
+  
   // CRUD (Create): LISTAR USUARIOS ??? (usuario admin)
   guardar: (req, res) => {
     //let rutaProducts = path.join(__dirname,"../data/products.json");
     db.sync().then(() => {                    
-        Producto.create({
+        User.create({
+            email: req.body.email,
+            password: req.body.password,
             nombre: req.body.nombre,
-            descripcion: req.body.descripcion,
-            precio: req.body.precio,
-            categoria: req.body.categoria,
-            urlImagen: req.body.urlImagen,
+            apellido: req.body.apellido,
+            edad: req.body.edad,
+            nacionalidad: req.body.nacionalidad,
+            telefono: req.body.telefono,
+            //rol: req.body.rol
+
         }).then(data => {
             console.log(data);
             res.redirect("/");
         }).catch((error) => {
-            console.error('Error al crear producto: ', error);
+            console.error('Error al crear usuario: ', error);
         });
     }).catch((error) => {
       console.error('Error en la conexión con la base de datos: ', error);
-    });*/
+    });
+  },
 
   register: (req, res) => {
     res.render("register");
@@ -43,6 +49,9 @@ const Controller = {
   login: (req, res) => {
     return res.render("login");
   },
+  loginProcess: (req, res) => {
+    return res.render("userProfile");
+  },
 
   profile: (req, res) => {
     console.log("profile");
@@ -54,21 +63,22 @@ const Controller = {
     return res.redirect("/");
   },
 
-  /*
-    // CRUD (Read):
-    list: (req,res) => {
+ 
+    //CRUD (Read)://
+
+    listar: (req,res) => {
       db.sync().then(() => {                    
-          Producto.findAll()
-          .then(function(productos){
-              res.render("listado", {Productos: productos})
+          User.findAll()
+          .then(function(usuarios){
+              res.render("listado", {usuarios: usuarios})
           }).catch((error) => {
-              console.error('Error al listar productos: ', error);
+              console.error('Error al listar usuario: ', error);
           });
       }).catch((error) => {
           console.error('Error en la conexión con la base de datos: ', error);
       });
-  },*/
+  }
 
-};
+}
 
 module.exports = Controller;
