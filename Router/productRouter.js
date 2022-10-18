@@ -19,8 +19,6 @@ const upload = multer({storage});
 
 //Enrutamiento por get
 
-router.get("/productDetail", productController.detail);
-
 router.get("/detalle-producto/:id", productController.productDetail);
 
 
@@ -35,8 +33,6 @@ router.get("/crear-producto", productController.create);
 
 router.get("/listar",productController.list);
 
-router.get("/detail/:id", productController.singleDetail);
-
 
 //Enrutamiento por post metodo de creacion de productos punto 4
 
@@ -48,6 +44,6 @@ router.put("/editar-producto/:id", upload.single('imagen'), productController.ed
 
 //Enrutamiento por delete
 
-router.post("/borrar/:id",productController.borrar)
+router.post("/borrar/:id", productController.borrar)
 
 module.exports = router;
