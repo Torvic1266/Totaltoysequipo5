@@ -64,11 +64,20 @@ const productController = {
         },
 
     productDetail: (req,res)=>{
-        res.render("productDetail")
-    },
-
-    detail: function (req, res){
-        res.render ('productDetail')
+        db.sync().then(() => {                    
+            Producto.findOne({
+                where: {
+                    id: req.params.id,
+                }
+            }).then(Producto => {
+                console.log(Producto);
+                res.render("productDetail", { product: Producto })
+            }).catch((error) => {
+                console.error('Error al crear producto: ', error);
+            });
+        }).catch((error) => {
+            console.error('Error en la conexión con la base de datos: ', error);
+        });
     },
 
     carritoCompras: (req,res) => {
@@ -78,7 +87,7 @@ const productController = {
         res.redirect('/productos/detalle-producto/');
     },
     // SE CREA METODO DE ELIMINAR//
-    destroy: (req, res) => {
+    borrar: (req, res) => {
         db.Productos.destroy({
             where: { id:require.id
     },
