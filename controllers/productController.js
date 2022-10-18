@@ -3,8 +3,8 @@ const fs = require('fs');
 const { join } = require('path');
 const productsFilePath = path.join(__dirname, '../data/products.json');
 const products = JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'));
-const render  = require("ejs")
-const productDetail  = require("./main")
+const render = require("ejs")
+const productDetail = require("./main")
 
 const db = require("../database/connection");
 const Producto = require("../models/Producto");
@@ -14,14 +14,14 @@ const productController = {
     // ruta de productos para el listado de productos punto 1 sprin 4 entregable 
 
     // CRUD (Read):
-    list: (req,res) => {
-        db.sync().then(() => {                    
+    list: (req, res) => {
+        db.sync().then(() => {
             Producto.findAll()
-            .then(function(productos){
-                res.render("listado", {Productos: productos})
-            }).catch((error) => {
-                console.error('Error al listar productos: ', error);
-            });
+                .then(function (productos) {
+                    res.render("listado", { Productos: productos })
+                }).catch((error) => {
+                    console.error('Error al listar productos: ', error);
+                });
         }).catch((error) => {
             console.error('Error en la conexión con la base de datos: ', error);
         });
@@ -32,7 +32,7 @@ const productController = {
     // CRUD (Create):
     guardar: (req, res) => {
         //let rutaProducts = path.join(__dirname,"../data/products.json");
-        db.sync().then(() => {                    
+        db.sync().then(() => {
             Producto.create({
                 nombre: req.body.nombre,
                 descripcion: req.body.descripcion,
@@ -49,22 +49,22 @@ const productController = {
             console.error('Error en la conexión con la base de datos: ', error);
         });
     },
- 
+
 
     // punto 3 creacion de productos 
-    singleDetail: (req,res) => {
+    singleDetail: (req, res) => {
         res.render("detail")
     },
     // punto 5 editar producto
-    editarFormulario: (req,res) => {  
-    res.render("createProduct");
-    },
-    create: (req,res) => {  
+    editarFormulario: (req, res) => {
         res.render("createProduct");
-        },
+    },
+    create: (req, res) => {
+        res.render("createProduct");
+    },
 
-    productDetail: (req,res)=>{
-        db.sync().then(() => {                    
+    productDetail: (req, res) => {
+        db.sync().then(() => {
             Producto.findOne({
                 where: {
                     id: req.params.id,
@@ -80,21 +80,24 @@ const productController = {
         });
     },
 
-    carritoCompras: (req,res) => {
+    carritoCompras: (req, res) => {
         res.render('productcart')
-    }, 
-    editar: (req,res) => {
+    },
+    editar: (req, res) => {
         res.redirect('/productos/detalle-producto/');
     },
     // SE CREA METODO DE ELIMINAR//
     borrar: (req, res) => {
-        db.Productos.destroy({
-            where: { id:require.id
+        db.sync().then(() => {
+            Producto.destroy({
+                where: { id: req.params.id }
+            })
+            Producto.findAll()
+                .then(function (productos) {
+                    res.render("listado", { Productos: productos })
+                })
+        })
     },
-    })
-    res.redirect('/')
-   
-},
 
 }
 
