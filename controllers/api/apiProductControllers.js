@@ -1,4 +1,4 @@
-/*
+
 const db = require('../../database/models');
 
 
@@ -170,4 +170,3 @@ const Controller = {
 };
 
 module.exports = ApiHeroController;
-*/

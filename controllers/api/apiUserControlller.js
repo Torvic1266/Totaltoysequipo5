@@ -1,4 +1,4 @@
-/*
+
 const db = require('../../database/models');
 
 
@@ -16,21 +16,20 @@ const Controller = {
             
             if(totaltoys){
                 const totalUsuarios = totaltoys.length;
-                const UsuariosWithDetail = totaltoys.map(hero => {
+                const UsuariosWithDetail = totaltoys.map(users => {
                     return {
-                        id: hero.id,
-                        slug: hero.slug,
-                        name: hero.superhero,
-                        detail: `https://dh-heroes-app.herokuapp.com/api/hero-detail/${hero.slug}`,
+                        id: users.id,
+                        name: users.firstName,
+                        email : users.email,
+                        detail: `https://dh-usuarios-app.herokuapp.com/api/users-detail/${users.slug}`,
                     }
                 })
-                shuffle(heroesWithDetail);
                 res.status(200).json({
-                    'count': totalHeroes,
-                    'data': heroesWithDetail,
+                    'count': totalUsuarios,
+                    'data': UsuariosWithDetail,
                     'status': 200,
                     'msg': 'OK',
-                    'enpoint': '/api/heroes',
+                    'enpoint': '/api/usuarios',
                 });
             }else{
                 // res.render('error', { title: 'Error', msg: 'No hay datos para mostrar' });
@@ -48,17 +47,17 @@ const Controller = {
 
     getHeroById: async (req, res) => {
         try {
-            const hero = await db.Hero.findOne({ 
+            const users = await db.Hero.findOne({ 
                 include: {
                     association: 'publisher'     
                 },
                 where: { slug: req.params.slug }
                 });
     
-            if(hero){
-                console.log(hero);
+            if(users){
+                console.log(users);
                 res.status(200).json({
-                    data: hero,
+                    data: users,
                     status: 200,
                     msg: 'OK',
                 })
@@ -79,19 +78,18 @@ const Controller = {
 
         if(publisher === 'dc'){ //1
             try {
-                const heroes = await db.Hero.findAll({ where: {publisher_id: 1}});
+                const usuarios = await db.totaltoys.findAll({ where: {publisher_id: 1}});
 
-                if (heroes) {
-                    shuffle(heroes);
+                if (usuarios) {
                     res.status(200).json({
-                        count: heroes.length,
-                        data: heroes,
+                        count: usuarios.length,
+                        data: usuarios,
                         'status': 200,
                         'msg': 'OK',
-                        'enpoint': `/api/heroes/${publisher}`
+                        'enpoint': `/api/usuarios/${publisher}`
                     })
                 
-                    // res.render('index', { heroesJSON : heroes, title: 'DC Comics Heroes' });
+                    // res.render('index', { heroesJSON : usuarios, title: 'DC Comics Heroes' });
                 } else {
                     res.render('error', { title: 'Error', msg: 'No hay datos para mostrar' });
                 }
@@ -104,16 +102,15 @@ const Controller = {
 
         }else if(publisher === 'marvel'){ //2
             try {
-                const heroes = await db.Hero.findAll({ where: {publisher_id: 2}});
+                const usuarios = await db.Hero.findAll({ where: {publisher_id: 2}});
 
-                if (heroes) {
-                    shuffle(heroes);
+                if (usuarios) {
                     res.status(200).json({
-                        count: heroes.length,
-                        data: heroes,
+                        count: usuarios.length,
+                        data: usuarios,
                         'status': 200,
                         'msg': 'OK',
-                        'enpoint': `/api/heroes/${publisher}`
+                        'enpoint': `/api/usuarios/${publisher}`
                     })
                 } else {
                     res.status(404).json({
@@ -171,4 +168,3 @@ const Controller = {
 
 module.exports = ApiHeroController;
 
-*/
