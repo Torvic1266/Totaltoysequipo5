@@ -1,46 +1,52 @@
 /*
-const fs = require('fs');
-const path = require('path');
-const db = require('../database/models');
-// const heroModel = require('../database/models/hero'); 
+const db = require('../../database/models');
 
-const productsJSON =  JSON.parse(fs.readFileSync(path.resolve(__dirname, '../data/products.json'), 'utf-8'));
 
-const productController = {
-    list: async (req, res) => {
+
+const Controller = {
+    guardar: async (req, res) => {
 
         try {
 
-            const totaltoys = await db.Hero.findAll({ include: {
+            const totaltoys = await db.totaltoys.findAll({ include: {
                 association: 'publisher',
                 
             }});
-            if(totaltoys){
-                res.render('index', { productsJSON: totaltoys, title : 'Heroes App' })
+
+            
+            if(herosFromDB){
+                const totalHeroes = herosFromDB.length;
+                const heroesWithDetail = herosFromDB.map(hero => {
+                    return {
+                        id: hero.id,
+                        slug: hero.slug,
+                        name: hero.superhero,
+                        detail: `https://dh-heroes-app.herokuapp.com/api/hero-detail/${hero.slug}`,
+                    }
+                })
+                shuffle(heroesWithDetail);
+                res.status(200).json({
+                    'count': totalHeroes,
+                    'data': heroesWithDetail,
+                    'status': 200,
+                    'msg': 'OK',
+                    'enpoint': '/api/heroes',
+                });
             }else{
-                res.render('error', { title: 'Error', msg: 'No hay datos para mostrar' });
+                // res.render('error', { title: 'Error', msg: 'No hay datos para mostrar' });
+                res.status(404).json({'msg': 'No hay datos para mostrar'});
             }
             
         } catch (error) {
             console.log(error);
-            res.render('error', { title: 'Error', msg: '500 - Ha ocurrido un error interno' });
+            // res.render('error', { title: 'Error', msg: '500 - Ha ocurrido un error interno' });
+            res.status(500).json({'msg': '500 - Ha ocurrido un error interno'});
             
         }
 
     },
 
     getHeroById: async (req, res) => {
-        // const hero = heroesJSON.find(hero => {
-        //     return  hero.id === req.params.slug;
-        // })
-        // const { slug } = req.params;
-        // db.hero.findOne({where: {slug: req.params.slug}})
-        // .then(hero => {
-        //     res.render('hero', { hero, title: 'Heroe' })
-        // })
-        // .catch(error => {
-        //     console.log(error);
-        // });
         try {
             const hero = await db.Hero.findOne({ 
                 include: {
@@ -51,13 +57,19 @@ const productController = {
     
             if(hero){
                 console.log(hero);
-                res.render('hero-details', { hero, title: 'Hero Details' });
+                res.status(200).json({
+                    data: hero,
+                    status: 200,
+                    msg: 'OK',
+                })
             }else{
-                res.render('error', { title: 'Error', msg: 'No hay datos para mostrar' });
+                res.status(404).json({'msg': 'No hay datos para mostrar'});
+                // res.render('error', { title: 'Error', msg: 'No hay datos para mostrar' });
             }
         } catch (error) {
-            console.log(error);
-            res.render('error', { title: 'Error', msg: '500 - Ha ocurrido un error interno' });
+            // console.log(error);
+            res.status(500).json({'msg': '500 - Ha ocurrido un error interno'});
+            // res.render('error', { title: 'Error', msg: '500 - Ha ocurrido un error interno' });
         }
 
     },
@@ -71,7 +83,15 @@ const productController = {
 
                 if (heroes) {
                     shuffle(heroes);
-                    res.render('index', { heroesJSON : heroes, title: 'DC Comics Heroes' });
+                    res.status(200).json({
+                        count: heroes.length,
+                        data: heroes,
+                        'status': 200,
+                        'msg': 'OK',
+                        'enpoint': `/api/heroes/${publisher}`
+                    })
+                
+                    // res.render('index', { heroesJSON : heroes, title: 'DC Comics Heroes' });
                 } else {
                     res.render('error', { title: 'Error', msg: 'No hay datos para mostrar' });
                 }
@@ -87,19 +107,37 @@ const productController = {
                 const heroes = await db.Hero.findAll({ where: {publisher_id: 2}});
 
                 if (heroes) {
-                    res.render('index', { heroesJSON : heroes, title: 'Marvel Comics Heroes' });
+                    shuffle(heroes);
+                    res.status(200).json({
+                        count: heroes.length,
+                        data: heroes,
+                        'status': 200,
+                        'msg': 'OK',
+                        'enpoint': `/api/heroes/${publisher}`
+                    })
                 } else {
-                    res.render('error', { title: 'Error', msg: 'No hay datos para mostrar' });
+                    res.status(404).json({
+                        'status': 404,
+                        'msg': 'No hay datos para mostrar'
+                    })
+
+                    // res.render('error', { title: 'Error', msg: 'No hay datos para mostrar' });
                 }
                 
             } catch (error) {
-                console.log(error);
-                res.render('error', { title: 'Error', msg: '500 - Ha ocurrido un error interno' });
+                // console.log(error);
+                res.status(500).json({'msg': '500 - Ha ocurrido un error interno'});
+                // res.render('error', { title: 'Error', msg: '500 - Ha ocurrido un error interno' });
             }
 
         }else{
-            res.render('error', { title: 'Error', msg: 'Ha realizado una búsqueda inválida' });
+            res.status(400).json({
+                'status': 400,
+                'msg': 'Ha realizado una búsqueda inválida'
+            })
         }
+            // res.render('error', { title: 'Error', msg: 'Ha realizado una búsqueda inválida' });
+    
 
     },
 
@@ -107,10 +145,6 @@ const productController = {
 
 
     //CRUD
-
-    getCreateHeroForm: (req, res) => {
-        res.render('crud/create-hero', { title: 'Create a Hero' });
-    },
     
     createHeroAction: async (req, res) => {
         const hero = await db.Hero.create({
@@ -135,7 +169,5 @@ const productController = {
 
 };
 
-module.exports = productController;
-
-
+module.exports = ApiHeroController;
 */
