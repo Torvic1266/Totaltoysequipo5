@@ -21,15 +21,15 @@
 <section>
   <div class="seccionDeLosProductos">
     
-    <% Productos.forEach(Productos => { %>
+    <% for (let i = 0; i < Productos.length; i++) { %>
 
     <div class="producto">
-      <a href="/productos/detalle-producto/<%=Productos.id%>">
+      <a href="/productos/detalle-producto/<%=Productos[i].id%>">
       <div class="producto-image">
-        <img src="<%=Productos.urlImagen%>"/>
+        <img src="<%=Productos[i].urlImagen%>"/>
       </div>
-      <p><%=Productos.nombre%></p>
-      <strong><%=Productos.precio%></strong>
+      <p><%=Productos[i].nombre%></p>
+      <strong><%=Productos[i].precio%></strong>
       
     <div class="contenedor-botones"> 
       <button class="boton-comprar"><span>Agregar Al Carrito</span></button>
@@ -37,7 +37,7 @@
     </div>
     
   
-    <% }) %>
+    <% } %>
     </div>
     </div>
   </a>
