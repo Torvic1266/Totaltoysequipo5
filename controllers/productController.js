@@ -7,7 +7,8 @@ const render  = require("ejs")
 const productDetail  = require("./main")
 
 const db = require("../database/connection");
-const Producto = require("../models/Producto")
+const Producto = require("../models/Producto");
+const { where } = require('sequelize');
 
 const productController = {
     // ruta de productos para el listado de productos punto 1 sprin 4 entregable 
@@ -48,6 +49,7 @@ const productController = {
             console.error('Error en la conexión con la base de datos: ', error);
         });
     },
+ 
 
     // punto 3 creacion de productos 
     singleDetail: (req,res) => {
@@ -75,9 +77,16 @@ const productController = {
     editar: (req,res) => {
         res.redirect('/productos/detalle-producto/');
     },
+    // SE CREA METODO DE ELIMINAR//
     destroy: (req, res) => {
-        res.redirect("/");
+        db.Productos.destroy({
+            where: { id:require.id
     },
+    })
+    res.redirect('/')
+   
+},
+
 }
 
 module.exports = productController;

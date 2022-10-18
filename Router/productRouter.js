@@ -48,6 +48,6 @@ router.put("/editar-producto/:id", upload.single('imagen'), productController.ed
 
 //Enrutamiento por delete
 
-router.delete("/productDetail/:id", productController.destroy);
+router.post("/borrar/:id",productController.borrar)
 
 module.exports = router;
