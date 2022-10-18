@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es" dir="itr">
+  <head>
+    <%- include('./partials/head') %>
+    <title>registro</title>
+    <link rel="stylesheet" href="/css/producto.css" />
+  </head>
+  
+  <body>
+
+    
+    <div class="fondo">
+      <div class="login-box">
+        
+          <h1>Edición de producto</h1>
+          
+          <form class="form-create" method="POST" enctype="multipart/form-data">
+          
+        <div style="margin-bottom:18px;">
+          <label for="NombreDelProducto ">Nombre del Producto</label>
+          <input type="text" name="nombre" placeholder="Nombre del producto" />
+        </div>
+
+        <div style="margin-bottom:24px;">
+          <label for="Descripcion">Descripcion</label>
+          <input type="text" name ="descripcion" placeholder="Descripcion" />
+        </div>
+
+        <div style="margin-bottom:24px;">
+          <label for="Precio">Precio</label>
+          <input type="text" name="precio" pattern="\d*" placeholder="Ingrese el precio"/>
+        </div>
+
+        <div style="margin-bottom:24px;">
+          <label for="urlImagen">Imagen</label>
+          <input type="text" name="urlImagen" placeholder="Url de la imagen">
+          
+          <label for="imagen">Archivo</label>
+          <input type="file" name="imagen" placeholder="imagen" />
+          
+        </div>
+
+        <div style="margin-bottom:24px;">
+          <label for="Categoria">Categoria</label>
+           <select name="categoria">
+            
+          </select>
+        </div>
+          <button class="Agregar" type="submit">editar</button>
+        </form>
+      </div>
+    </div>
+    <%- include('./partials/footer') %>
+  </body>
+</html>

@@ -57,7 +57,7 @@ const productController = {
     },
     // punto 5 editar producto
     editarFormulario: (req, res) => {
-        res.render("createProduct");
+        res.render("editar");
     },
     create: (req, res) => {
         res.render("createProduct");
@@ -84,7 +84,21 @@ const productController = {
         res.render('productcart')
     },
     editar: (req, res) => {
-        res.redirect('/productos/detalle-producto/');
+        //let rutaProducts = path.join(__dirname,"../data/products.json");
+        db.sync().then(() => {
+            Producto.update({
+                nombre: req.body.nombre,
+                descripcion: req.body.descripcion,
+                precio: req.body.precio,
+                categoria: req.body.categoria,
+                urlImagen: req.body.urlImagen,
+            },{
+                where: {id:req.params.id}
+            }).then(data => {
+                res.redirect("listado");
+            })
+            
+        })
     },
     // SE CREA METODO DE ELIMINAR//
     borrar: (req, res) => {
