@@ -12,23 +12,23 @@
     <div class="fondo">
       <div class="login-box">
         
-          <h1>edición de producto</h1>
+          <h1>Edición de producto</h1>
           
-          <!-- <form class="form-create" method="POST" action="?_method=PUT" enctype="multipart/form-data"> -->
+          <form class="form-create" method="POST" enctype="multipart/form-data">
           
         <div style="margin-bottom:18px;">
           <label for="NombreDelProducto ">Nombre del Producto</label>
-          <input type="text"name="nombre" value="<%= locals.producto? producto.nombre: %>" placeholder="Nombre del producto" />
+          <input type="text" name="nombre" placeholder="Nombre del producto" />
         </div>
 
         <div style="margin-bottom:24px;">
           <label for="Descripcion">Descripcion</label>
-          <input type="text" name ="descripcion" placeholder="Descripcion" value="<%= locals.producto? producto.descripcion: %>" />
+          <input type="text" name ="descripcion" placeholder="Descripcion" />
         </div>
 
         <div style="margin-bottom:24px;">
           <label for="Precio">Precio</label>
-          <input type="text" name="precio" pattern="\d*" placeholder="Ingrese el precio" value="<%= locals.producto? producto.precio: %>"/>
+          <input type="text" name="precio" pattern="\d*" placeholder="Ingrese el precio"/>
         </div>
 
         <div style="margin-bottom:24px;">
@@ -53,11 +53,3 @@
     <%- include('./partials/footer') %>
   </body>
 </html>
-
-
-<!-- <form action="/productos/<%= locals.producto? "editar-producto/"+producto.id+"?_method=PUT": "crear-producto" %>" method="post" enctype="multipart/form-data"> -->
-         
-    <!-- <option value=""disabled selected> categoria</option>
-                <option value="Bebes"<%= locals.producto? (producto.category==="Bebes"? 'selected': "") :"" %> >Bebes</option>
-                <option value="Niños"<%= locals.producto? (producto.category==="Niños"? 'selected': "") :"" %>selected>Niños</option>
-                <option value="Adolescentes"<%= locals.producto? (producto.category==="Adolescentes"? 'selected': "") :"" %>>Adolescentes</option> -->

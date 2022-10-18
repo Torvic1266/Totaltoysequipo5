@@ -6,7 +6,7 @@ const { validationResult } = require("express-validator");
 
 
 const User = require("../models/Usuario");
-const db = require('../database/models');
+const db = require('../database/connection');
 
 
 
