@@ -84,8 +84,6 @@ const productController = {
         res.render('productcart')
     },
     editar: (req, res) => {
-        res.redirect('/productos/detalle-producto/');
-
         //let rutaProducts = path.join(__dirname,"../data/products.json");
         db.sync().then(() => {
             Producto.update({
@@ -97,8 +95,7 @@ const productController = {
             },{
                 where: {id:req.params.id}
             }).then(data => {
-                console.log(data);
-                res.redirect("/");
+                res.redirect("listado");
             })
             
         })
