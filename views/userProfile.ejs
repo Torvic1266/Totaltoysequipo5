@@ -2,8 +2,10 @@
 <html lang="en">
 <head>
     <%- include('./partials/head'); %>
+    <link rel="stylesheet" href="/css/userProfile.css"/>
     <title>Total toys/Perfil</title>
 </head>
+
 <body>
   <header>
     <img src="/img/logo Total Toys.jpg" alt="se crea logo" />
@@ -20,8 +22,25 @@
     </nav>
     
   </header>
+  <div class="login-box">
+    <h1>Datos de usuarios</h1>
+    <form method="POST" action="/usuario/register" enctype="multipart/form-data">
+      <label for="nombre">Nombre</label>
+      <input name="nombre" type="text" placeholder="Nombre" required />
+
+      <label for="apellido">Apellido</label>
+      <input name="apellido" type="text" placeholder="Ingresa su Apellido" required />
+
+      <label for="email">Email</label>
+      <input name="email" type="text" placeholder="Ingrese su Email" required />
+      
+        <button type="submit"><i class="fa-solid fa-trash"></i>&nbsp; Eliminar</button>
+        
+      
+      
+    </form>
+  </div>
   
-  <h2>Perfil de usuario (en construcción)</h2>
     <%- include('./partials/footer'); %>
 </body>
 </html>

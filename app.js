@@ -44,6 +44,6 @@ app.use(express.static(publicPath));
 
 
 
-app.listen(3001,()=> {
+app.listen((process.env.PORT || 3001),()=> {
     console.log("servidor corriendo en el puerto 3001");
 });
