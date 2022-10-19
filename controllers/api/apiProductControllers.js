@@ -21,7 +21,7 @@ const productController = {
                         id: product.id,
                         name: product.name,
                         description: product.description,
-                        //detail: `https://dh-heroes-app.herokuapp.com/api/product-detail/${product.slug}`,
+                        //detail: `https://dh-productos-app.herokuapp.com/api/product-detail/${product.slug}`,
                     }
                 })
                 res.status(200).json({
@@ -29,7 +29,7 @@ const productController = {
                     'data': productosWithDetail,
                     'status': 200,
                     'msg': 'OK',
-                    'enpoint': '/api/heroes',
+                    'enpoint': '/api/productos',
                 });
             }else{
                 // res.render('error', { title: 'Error', msg: 'No hay datos para mostrar' });
@@ -79,19 +79,18 @@ const productController = {
 
         if(carritoCompras === 'dc'){ //1
             try {
-                const heroes = await db.totaltoys.findAll({ where: {publisher_id: 1}});
+                const productos = await db.totaltoys.findAll({ where: {publisher_id: 1}});
 
-                if (heroes) {
-                    shuffle(heroes);
+                if (productos) {
                     res.status(200).json({
-                        count: heroes.length,
-                        data: heroes,
+                        count: productos.length,
+                        data: productos,
                         'status': 200,
                         'msg': 'OK',
-                        'enpoint': `/api/heroes/${carritoCompras}`
+                        'enpoint': `/api/productos/${carritoCompras}`
                     })
                 
-                    // res.render('index', { heroesJSON : heroes, title: 'DC Comics Heroes' });
+                    // res.render('index', { heroesJSON : productos, title: 'DC Comics Heroes' });
                 } else {
                     res.render('error', { title: 'Error', msg: 'No hay datos para mostrar' });
                 }
@@ -104,16 +103,15 @@ const productController = {
 
         }else if(carritoCompras === 'marvel'){ //2
             try {
-                const heroes = await db.Hero.findAll({ where: {publisher_id: 2}});
+                const productos = await db.totaltoys.findAll({ where: {publisher_id: 2}});
 
-                if (heroes) {
-                    shuffle(heroes);
+                if (productos) {
                     res.status(200).json({
-                        count: heroes.length,
-                        data: heroes,
+                        count: productos.length,
+                        data: productos,
                         'status': 200,
                         'msg': 'OK',
-                        'enpoint': `/api/heroes/${carritoCompras}`
+                        'enpoint': `/api/productos/${carritoCompras}`
                     })
                 } else {
                     res.status(404).json({
@@ -147,7 +145,7 @@ const productController = {
     //CRUD
     
     createHeroAction: async (req, res) => {
-        const product = await db.Hero.create({
+        const product = await db.totaltoys.create({
             slug: req.body.slug,
             superhero: req.body.superhero,
             alter_ego: req.body.alter_ego,
