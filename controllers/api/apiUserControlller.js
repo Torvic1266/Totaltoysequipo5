@@ -4,12 +4,12 @@ const db = require('../../database/models');
 
 
 const Controller = {
-    guardar: async (req, res) => {
+    register: async (req, res) => {
 
         try {
 
             const totaltoys = await db.totaltoys.findAll({ include: {
-                association: 'publisher',
+                association: 'rol_id',
                 
             }});
 
@@ -21,7 +21,7 @@ const Controller = {
                         id: users.id,
                         name: users.firstName,
                         email : users.email,
-                        detail: `https://dh-usuarios-app.herokuapp.com/api/users-detail/${users.slug}`,
+                       // detail: `https://dh-usuarios-app.herokuapp.com/api/users-detail/${users.slug}`,
                     }
                 })
                 res.status(200).json({
@@ -45,13 +45,13 @@ const Controller = {
 
     },
 
-    getHeroById: async (req, res) => {
+    loguin: async (req, res) => {
         try {
-            const users = await db.Hero.findOne({ 
+            const users = await db.totaltoys.findOne({ 
                 include: {
-                    association: 'publisher'     
+                    association: 'rol_id'     
                 },
-                where: { slug: req.params.slug }
+                where: { firstName: req.params.firstName }
                 });
     
             if(users){
@@ -73,10 +73,10 @@ const Controller = {
 
     },
 
-    getHeroesByPublisher: async (req, res) => {
-        const { publisher } = req.params;
+    profile: async (req, res) => {
+        const { profile } = req.params;
 
-        if(publisher === 'dc'){ //1
+        if(profile === 'dc'){ //1
             try {
                 const usuarios = await db.totaltoys.findAll({ where: {publisher_id: 1}});
 
@@ -86,7 +86,7 @@ const Controller = {
                         data: usuarios,
                         'status': 200,
                         'msg': 'OK',
-                        'enpoint': `/api/usuarios/${publisher}`
+                        'enpoint': `/api/usuarios/${profile}`
                     })
                 
                     // res.render('index', { heroesJSON : usuarios, title: 'DC Comics Heroes' });
@@ -100,9 +100,9 @@ const Controller = {
             }
            
 
-        }else if(publisher === 'marvel'){ //2
+        }else if(profile === 'marvel'){ //2
             try {
-                const usuarios = await db.Hero.findAll({ where: {publisher_id: 2}});
+                const usuarios = await db.totaltoys.findAll({ where: {publisher_id: 2}});
 
                 if (usuarios) {
                     res.status(200).json({
@@ -110,7 +110,7 @@ const Controller = {
                         data: usuarios,
                         'status': 200,
                         'msg': 'OK',
-                        'enpoint': `/api/usuarios/${publisher}`
+                        'enpoint': `/api/usuarios/${profile}`
                     })
                 } else {
                     res.status(404).json({
@@ -150,7 +150,7 @@ const Controller = {
             alter_ego: req.body.alter_ego,
             first_appearance: req.body.first_appearance,
             characters: req.body.character,
-            publisher_id: req.body.publisher,
+            publisher_id: req.body.profile,
         });
 
         if(hero){
@@ -166,5 +166,5 @@ const Controller = {
 
 };
 
-module.exports = ApiHeroController;
+module.exports = ApiUserController;
 
