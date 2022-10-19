@@ -167,4 +167,4 @@ const productController = {
 
 };
 
-module.exports = ApiHeroController;
+module.exports = ApiProductController;
