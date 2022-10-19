@@ -4,7 +4,7 @@ const db = require('../../database/models');
 
 
 const productController = {
-    guardar: async (req, res) => {
+    productDetail: async (req, res) => {
 
         try {
 
@@ -19,8 +19,8 @@ const productController = {
                 const productosWithDetail = totaltoys.map(product => {
                     return {
                         id: product.id,
-                        name: product.superhero,
-                        description: product.description
+                        name: product.name,
+                        description: product.description,
                         //detail: `https://dh-heroes-app.herokuapp.com/api/product-detail/${product.slug}`,
                     }
                 })
@@ -45,19 +45,19 @@ const productController = {
 
     },
 
-    getHeroById: async (req, res) => {
+    editarFormulario: async (req, res) => {
         try {
-            const hero = await db.Hero.findOne({ 
+            const product = await db.totaltoys.findOne({ 
                 include: {
-                    association: 'publisher'     
+                    association: 'productos_id'     
                 },
-                where: { slug: req.params.slug }
+                where: { name: req.params.name }
                 });
     
-            if(hero){
-                console.log(hero);
+            if(product){
+                console.log(product);
                 res.status(200).json({
-                    data: hero,
+                    data: product,
                     status: 200,
                     msg: 'OK',
                 })
@@ -73,12 +73,13 @@ const productController = {
 
     },
 
-    getHeroesByPublisher: async (req, res) => {
-        const { publisher } = req.params;
+    
+    carritoCompras: async (req, res) => {
+        const { carritoCompras } = req.params;
 
-        if(publisher === 'dc'){ //1
+        if(carritoCompras === 'dc'){ //1
             try {
-                const heroes = await db.Hero.findAll({ where: {publisher_id: 1}});
+                const heroes = await db.totaltoys.findAll({ where: {publisher_id: 1}});
 
                 if (heroes) {
                     shuffle(heroes);
@@ -87,7 +88,7 @@ const productController = {
                         data: heroes,
                         'status': 200,
                         'msg': 'OK',
-                        'enpoint': `/api/heroes/${publisher}`
+                        'enpoint': `/api/heroes/${carritoCompras}`
                     })
                 
                     // res.render('index', { heroesJSON : heroes, title: 'DC Comics Heroes' });
@@ -101,7 +102,7 @@ const productController = {
             }
            
 
-        }else if(publisher === 'marvel'){ //2
+        }else if(carritoCompras === 'marvel'){ //2
             try {
                 const heroes = await db.Hero.findAll({ where: {publisher_id: 2}});
 
@@ -112,7 +113,7 @@ const productController = {
                         data: heroes,
                         'status': 200,
                         'msg': 'OK',
-                        'enpoint': `/api/heroes/${publisher}`
+                        'enpoint': `/api/heroes/${carritoCompras}`
                     })
                 } else {
                     res.status(404).json({
@@ -146,20 +147,20 @@ const productController = {
     //CRUD
     
     createHeroAction: async (req, res) => {
-        const hero = await db.Hero.create({
+        const product = await db.Hero.create({
             slug: req.body.slug,
             superhero: req.body.superhero,
             alter_ego: req.body.alter_ego,
             first_appearance: req.body.first_appearance,
             characters: req.body.character,
-            publisher_id: req.body.publisher,
+            publisher_id: req.body.carritoCompras,
         });
 
-        if(hero){
-            console.log(JSON.stringify(hero, null, 4));
+        if(product){
+            console.log(JSON.stringify(product, null, 4));
             res.redirect('/');
         }else{
-            res.redirect('/hero/create');
+            res.redirect('/product/create');
         }
 
     }
