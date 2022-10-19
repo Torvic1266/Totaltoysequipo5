@@ -13,7 +13,7 @@
   * Define a model that can be managed by Sequelize.
   */
  const Usuario = sequelize.define(
-     "app_usuarios",
+     "usuarios",
      {
          id: {
              type: DataTypes.INTEGER,
@@ -34,9 +34,13 @@
             type: DataTypes.STRING,
             allowNull: false,
          },
+         apellido: {
+            type: DataTypes.STRING,
+            allowNull: false,
+         },
          descripcion: {
              type: DataTypes.STRING,
-             allowNull: false,
+             allowNull: true,
          },
          edad: {
              type: DataTypes.STRING,
@@ -48,11 +52,11 @@
          },
          telefono: {
             type: DataTypes.STRING,
-            allowNull: false,
+            allowNull: true,
          },
          rol: {
             type: DataTypes.STRING,
-            allowNull: false,
+            allowNull: true,
          },
 
         },
