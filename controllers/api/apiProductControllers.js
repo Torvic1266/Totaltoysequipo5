@@ -3,31 +3,30 @@ const db = require('../../database/models');
 
 
 
-const Controller = {
+const productController = {
     guardar: async (req, res) => {
 
         try {
 
             const totaltoys = await db.totaltoys.findAll({ include: {
-                association: 'publisher',
+                association: 'Productos_id',
                 
             }});
 
             
-            if(herosFromDB){
-                const totalHeroes = herosFromDB.length;
-                const heroesWithDetail = herosFromDB.map(hero => {
+            if(totaltoys){
+                const totalProductos = totaltoys.length;
+                const productosWithDetail = totaltoys.map(product => {
                     return {
-                        id: hero.id,
-                        slug: hero.slug,
-                        name: hero.superhero,
-                        detail: `https://dh-heroes-app.herokuapp.com/api/hero-detail/${hero.slug}`,
+                        id: product.id,
+                        name: product.superhero,
+                        description: product.description
+                        //detail: `https://dh-heroes-app.herokuapp.com/api/product-detail/${product.slug}`,
                     }
                 })
-                shuffle(heroesWithDetail);
                 res.status(200).json({
-                    'count': totalHeroes,
-                    'data': heroesWithDetail,
+                    'count': totalProductos,
+                    'data': productosWithDetail,
                     'status': 200,
                     'msg': 'OK',
                     'enpoint': '/api/heroes',
