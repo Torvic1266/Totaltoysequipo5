@@ -85,32 +85,26 @@ const productController = {
     },
     editar: (req, res) => {
         //let rutaProducts = path.join(__dirname,"../data/products.json");
-        db.sync().then(() => {
-            Producto.update({
+        db.sync()
+            .then(() => Producto.update({
                 nombre: req.body.nombre,
                 descripcion: req.body.descripcion,
                 precio: req.body.precio,
                 categoria: req.body.categoria,
                 urlImagen: req.body.urlImagen,
-            },{
-                where: {id:req.params.id}
-            }).then(data => {
-                res.redirect("listado");
-            })
-            
-        })
+            }, {
+                where: { id: req.params.id }
+            }))
+            .then(() => res.redirect("/productos/listar"))
     },
+
     // SE CREA METODO DE ELIMINAR//
     borrar: (req, res) => {
-        db.sync().then(() => {
-            Producto.destroy({
-                where: { id: req.params.id }
-            })
-            Producto.findAll()
-                .then(function (productos) {
-                    res.render("listado", { Productos: productos })
-                })
-        })
+        db.sync()
+            .then(() => Producto.destroy({ where: { id: req.params.id } }))
+            .then(() => res.redirect("/productos/listar"))
+
+
     },
 
 }

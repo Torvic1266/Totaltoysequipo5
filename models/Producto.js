@@ -64,7 +64,7 @@ Producto.create({
 
 }).catch((error) => {
 console.error('Error en la tabla productos: ', error);
-});
-*/
+});*/
+
 
 module.exports = Producto;
