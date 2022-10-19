@@ -39,9 +39,10 @@
             <button class="editar-boton ">editar</button>
           </a>
         </div> 
-        <form action="/productos/borrar/<%=product.id%>" method="POST">
-        <button type="submit">eliminar</button>
-        </form>
+        <div class="eliminar"></div>
+        <a class="boton-eliminar" href="/productos/productDetail/<%=product.id%>">
+          <span>eliminar</span>
+        </a>
       </div>
     </main>
 
