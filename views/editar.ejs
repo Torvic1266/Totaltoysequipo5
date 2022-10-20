@@ -7,7 +7,7 @@
   </head>
   
   <body>
-
+    <%- include('./partials/header'); %>
     
     <div class="fondo">
       <div class="login-box">
@@ -19,21 +19,30 @@
         <div style="margin-bottom:18px;">
           <label for="NombreDelProducto ">Nombre del Producto</label>
           <input type="text" name="nombre" placeholder="Nombre del producto" />
+
+          <p class="formError">*El campo no puede estar vacío.</p>
         </div>
 
         <div style="margin-bottom:24px;">
           <label for="Descripcion">Descripcion</label>
           <input type="text" name ="descripcion" placeholder="Descripcion" />
+
+          <p class="formError">*El campo no puede estar vacío.</p>
         </div>
 
         <div style="margin-bottom:24px;">
           <label for="Precio">Precio</label>
           <input type="text" name="precio" pattern="\d*" placeholder="Ingrese el precio"/>
+
+          <p class="formError">*El campo no puede estar vacío.</p>
+          <p class="formError">*El valor solo puede ser numérico.</p>
         </div>
 
         <div style="margin-bottom:24px;">
           <label for="urlImagen">Imagen</label>
           <input type="text" name="urlImagen" placeholder="Url de la imagen">
+
+          <p class="formError">*El campo no puede estar vacío.</p>
           
           <label for="imagen">Archivo</label>
           <input type="file" name="imagen" placeholder="imagen" />
