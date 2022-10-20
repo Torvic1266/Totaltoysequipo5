@@ -84,5 +84,7 @@ body {
     
     }
 
-    
+.formError {
+    color: red;
+}
     
