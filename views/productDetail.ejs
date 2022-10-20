@@ -30,21 +30,21 @@
         <div class="seccion">
           <div class="contenedor-botones">
             <button class="boton-comprar">
-              <span>Agregar Al Carrito</span>
+              <span><i class="fa-solid fa-cart-shopping"></i>&nbsp; Agregar Al Carrito</span>
             </button>
           </div>
           <div class="contenedor-botones">
-            <button class="boton-comprar"><span>Comprar</span></button>
+            <button class="boton-comprar"><span><i class="fa-solid fa-bag-shopping"></i>&nbsp; Comprar</span></button>
           </div>
         </div>
         <div class="editar">
           <a href="/productos/editar-product/<%=product.id%>" >
-            <button class="editar-boton ">editar</button>
+            <button class="editar-boton"><i class="fa-solid fa-pen-to-square"></i>&nbsp; Editar</button>
           </a>
         </div> 
         
         <form action="/productos/borrar/<%=product.id%>" method="POST">
-          <button type="submit">eliminar</button>
+          <button type="submit"><i class="fa-solid fa-trash"></i>&nbsp; Eliminar</button>
           </form>
           
       </div>

@@ -29,7 +29,7 @@ const Controller = {
 
         }).then(data => {
             console.log(data);
-            res.redirect("/");
+            res.status(200).redirect("/usuario/profile");
         }).catch((error) => {
             console.error('Error al crear usuario: ', error);
         });

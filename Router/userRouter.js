@@ -20,15 +20,15 @@ const storage = multer.diskStorage({
 const imgAvatar = multer({storage});
 
 
-router.get('/register', guestMiddleware, usersController.register);
+router.get('/register', usersController.register);
 
-router.post('/register', guestMiddleware, imgAvatar.single('avatar'), validations, usersController.processRegister);
+router.post('/register', imgAvatar.single('avatar'), validations, usersController.guardar);
 
-router.get('/login', guestMiddleware, usersController.login);
-
+router.get('/login', usersController.login);
+    
 router.post('/login', usersController.loginProcess);
 
-router.get('/profile', authMiddleware, usersController.profile);
+router.get('/profile', usersController.profile);
 
 router.post('/logout', usersController.logout);
 

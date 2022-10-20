@@ -40,7 +40,7 @@ router.post("/crear-producto", upload.single('imagen'), productController.guarda
 
 //Enrutamiento por put
 
-router.post("/editar-producto/:id", upload.single('imagen'), productController.editar);
+router.post("/editar-product/:id", upload.single('imagen'), productController.editar);
 
 //Enrutamiento por delete
 

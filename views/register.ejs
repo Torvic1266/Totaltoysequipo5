@@ -10,11 +10,11 @@
       <div class="login-box">
         <h1>Formulario de Registro</h1>
         <form method="POST" action="/usuario/register" enctype="multipart/form-data">
-          <label for="first_name">Nombre</label>
-          <input name="first_name" type="text" placeholder="Nombre" required />
+          <label for="nombre">Nombre</label>
+          <input name="nombre" type="text" placeholder="Nombre" required />
 
-          <label for="last_name">Apellido</label>
-          <input name="last_name" type="text" placeholder="Ingresa su Apellido" required />
+          <label for="apellido">Apellido</label>
+          <input name="apellido" type="text" placeholder="Ingresa su Apellido" required />
 
           <label for="email">Email</label>
           <input name="email" type="text" placeholder="Ingrese su Email" required />
@@ -22,11 +22,8 @@
           <input name="password" type="password" placeholder="Ingrese su Password" required/>
           <label for="">avatar</label>
           <input name="avatar" type="file">
-
-                  <input type="submit" value="Registrar" />
-          
-         
-          <P> ch Estoy de acuerdo con los terminos y condiciones</P>
+          <p><input type="checkbox">  Estoy de acuerdo con los terminos y condiciones</p>
+          <input type="submit" value="Registrar" />
         </form>
       </div>
     </div>

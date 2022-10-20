@@ -95,16 +95,14 @@ const productController = {
             }, {
                 where: { id: req.params.id }
             }))
-            .then(() => res.redirect("/productos/listar"))
+            .then(() => res.redirect("/"))
     },
 
     // SE CREA METODO DE ELIMINAR//
     borrar: (req, res) => {
         db.sync()
             .then(() => Producto.destroy({ where: { id: req.params.id } }))
-            .then(() => res.redirect("/productos/listar"))
-
-
+            .then(() => res.redirect("/"))
     },
 
 }
