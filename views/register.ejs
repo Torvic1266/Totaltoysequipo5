@@ -14,25 +14,25 @@
           <label for="nombre">Nombre</label>
           <input name="nombre" type="text" placeholder="Nombre" required />
 
-          <p class="formError">*El campo no puede estar vacío.</p>
+          <p class="formError"></p>
           <p class="formError">*El nombre solo puede contener letras.</p>
 
           <label for="apellido">Apellido</label>
           <input name="apellido" type="text" placeholder="Ingresa su Apellido" required />
 
-          <p class="formError">*El campo no puede estar vacío.</p>
+          <p class="formError"></p>
           <p class="formError">*El apellido solo puede contener letras.</p>
 
           <label for="email">Email</label>
           <input name="email" type="text" placeholder="Ingrese su Email" required />
 
-          <p class="formError">*El campo no puede estar vacío.</p>
+          <p class="formError"></p>
           <p class="formError">*Correo electrónico no válido.</p>
 
           <label for="password">Password</label>
           <input name="password" type="password" placeholder="Ingrese su Password" required/>
 
-          <p class="formError">*El campo no puede estar vacío.</p>
+          <p class="formError"></p>
           <p class="formError">*La contraseña debe tener más de 6 caracteres.</p>
 
           <label for="">avatar</label>
@@ -43,5 +43,7 @@
       </div>
     </div>
     <%- include('./partials/footer'); %>
+
+    <script src="js/validaciones.js"></script>
   </body>
 </html>
