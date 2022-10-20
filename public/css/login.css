@@ -23,7 +23,7 @@ width: 350px;
 height: 500px;
 background: hsl(0, 0%, 100%);
 color: #0a0909;
-top: 50%;
+top: 65%;
 left: 50%;
 position: absolute;
 transform: translate(-50%, -50%);
