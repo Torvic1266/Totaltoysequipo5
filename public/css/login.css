@@ -82,3 +82,7 @@ background: hsl(242, 94%, 50%);
 color: #fff;
 font-size: 18px;
 }
+
+.formError {
+    color: red;
+}
