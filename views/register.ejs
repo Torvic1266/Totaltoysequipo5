@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="/css/register.css" />
   </head>
   <body>
+    <%- include('./partials/header'); %>
     <div class="fondo">
       <div class="login-box">
         <h1>Formulario de Registro</h1>
@@ -13,16 +14,30 @@
           <label for="nombre">Nombre</label>
           <input name="nombre" type="text" placeholder="Nombre" required />
 
+          <p class="formError">*El campo no puede estar vacío.</p>
+          <p class="formError">*El nombre solo puede contener letras.</p>
+
           <label for="apellido">Apellido</label>
           <input name="apellido" type="text" placeholder="Ingresa su Apellido" required />
 
+          <p class="formError">*El campo no puede estar vacío.</p>
+          <p class="formError">*El apellido solo puede contener letras.</p>
+
           <label for="email">Email</label>
           <input name="email" type="text" placeholder="Ingrese su Email" required />
+
+          <p class="formError">*El campo no puede estar vacío.</p>
+          <p class="formError">*Correo electrónico no válido.</p>
+
           <label for="password">Password</label>
           <input name="password" type="password" placeholder="Ingrese su Password" required/>
+
+          <p class="formError">*El campo no puede estar vacío.</p>
+          <p class="formError">*La contraseña debe tener más de 6 caracteres.</p>
+
           <label for="">avatar</label>
           <input name="avatar" type="file">
-          <p><input type="checkbox">  Estoy de acuerdo con los terminos y condiciones</p>
+          <p><input type="checkbox">Estoy de acuerdo con los terminos y condiciones</p>
           <input type="submit" value="Registrar" />
         </form>
       </div>
