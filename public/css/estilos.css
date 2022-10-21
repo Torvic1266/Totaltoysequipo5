@@ -12,7 +12,7 @@ header {
   align-items: center;
   justify-content: space-around;
   padding: 1% 0;
-  background-color: #94b4c0;
+  background-color: white;
   
  
 }
@@ -50,7 +50,7 @@ header img {
   font-size: 20px;
   border-radius: 5px;
   padding: 4px;
-  background: #94b4c0;
+  background: white;
   display: inline-block;
   line-height: 1.2em;
 }
