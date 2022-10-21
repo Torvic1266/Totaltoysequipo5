@@ -250,8 +250,11 @@ header img {
 
 .formError {
   color: red;
+  display: none;
 }
 
+
+/* **************** */
 
 .Redes-Sociales {
   font-size: 2rem;
