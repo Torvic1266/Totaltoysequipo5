@@ -12,7 +12,7 @@ header {
   align-items: center;
   justify-content: space-around;
   padding: 1% 0;
-  background-color: #fffcfc;
+  background-color: #94b4c0;
   
  
 }
@@ -50,7 +50,7 @@ header img {
   font-size: 20px;
   border-radius: 5px;
   padding: 4px;
-  background: #fffcfc;
+  background: #94b4c0;
   display: inline-block;
   line-height: 1.2em;
 }
@@ -227,7 +227,7 @@ header img {
 }
 
 .pie-pagina .grupo-1 .box figure img {
-  width: 250px;
+  width: 150px;
 }
 
 .pie-pagina .grupo-1 .box h2{

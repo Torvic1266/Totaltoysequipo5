@@ -23,7 +23,11 @@ width: 350px;
 height: 500px;
 background: hsl(0, 0%, 100%);
 color: #0a0909;
+<<<<<<< HEAD
 top: 60%;
+=======
+top: 65%;
+>>>>>>> 41bb4dfae31c07293344b22ea86d5dd7aed1eb4d
 left: 50%;
 position: absolute;
 transform: translate(-50%, -50%);
