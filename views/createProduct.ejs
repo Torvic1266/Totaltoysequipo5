@@ -22,31 +22,31 @@
           
         <div style="margin-bottom:18px;">
           <label for="NombreDelProducto ">Nombre del Producto</label>
-          <input type="text"name="nombre" value="<%= locals.producto? producto.nombre: "" %>" placeholder="Nombre del producto" />
+          <input id="crearProductoNombre" type="text" name="nombre" value="<%= locals.producto? producto.nombre: "" %>" placeholder="Nombre del producto" />
 
-          <p class="formError"></p>
+          <p id="crearProductoFormErrorNombre" class="formError">El campo no puede estar vacío.</p>
         </div>
 
         <div style="margin-bottom:24px;">
           <label for="Descripcion">Descripcion</label>
-          <input type="text" name ="descripcion" placeholder="Descripcion" value="<%= locals.producto? producto.descripcion: "" %>" />
+          <input id="crearProductoDescripcion" type="text" name ="descripcion" placeholder="Descripcion" value="<%= locals.producto? producto.descripcion: "" %>" />
 
-          <p class="formError"></p>
+          <p id="crearProductoFormErrorDescripcion" class="formError">El campo no puede estar vacío.</p>
         </div>
 
         <div style="margin-bottom:24px;">
           <label for="Precio">Precio</label>
-          <input type="text" name="precio" pattern="\d*" placeholder="Ingrese el precio" value="<%= locals.producto? producto.precio: "" %>"/>
+          <input id="crearProductoPrecio" type="text" name="precio" pattern="\d*" placeholder="Ingrese el precio" value="<%= locals.producto? producto.precio: "" %>"/>
 
           <p class="formError"></p>
-          <p class="formError">*El valor solo puede ser numérico.</p>
+          <p id="crearProductoFormErrorPrecio" class="formError">*El valor solo puede ser numérico.</p>
         </div>
 
         <div style="margin-bottom:24px;">
           <label for="urlImagen">Imagen</label>
-          <input type="text" name="urlImagen" placeholder="Url de la imagen">
+          <input id="crearProductoFormUrlImg" type="text" name="urlImagen" placeholder="Url de la imagen">
 
-          <p class="formError"></p>
+          <p id="crearProductoFormErrorUrlImg" class="formError">El campo no puede estar vacío.</p>
 
           <% /* %>
           <label for="imagen">Archivo</label>
@@ -70,5 +70,23 @@
     <%- include('./partials/footer'); %>
 
     <script src="/js/validaciones.js"></script>
+
+    <script>
+      document.getElementById("crearProductoNombre").addEventListener("click", function(event){
+          document.getElementById("crearProductoFormErrorNombre").style.display = "block";
+      });
+
+      document.getElementById("crearProductoDescripcion").addEventListener("click", function(event){
+          document.getElementById("crearProductoFormErrorDescripcion").style.display = "block";
+      });
+
+      document.getElementById("crearProductoPrecio").addEventListener("click", function(event){
+          document.getElementById("crearProductoFormErrorPrecio").style.display = "block";
+      });
+
+      document.getElementById("crearProductoFormUrlImg").addEventListener("click", function(event){
+          document.getElementById("crearProductoFormErrorUrlImg").style.display = "block";
+      });
+    </script>
   </body>
 </html>
