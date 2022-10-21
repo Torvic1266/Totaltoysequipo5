@@ -18,31 +18,31 @@
           
         <div style="margin-bottom:18px;">
           <label for="NombreDelProducto ">Nombre del Producto</label>
-          <input type="text" name="nombre" placeholder="Nombre del producto" />
+          <input id="editarProductoNombre" type="text" name="nombre" placeholder="Nombre del producto" />
 
-          <p class="formError"></p>
+          <p id="editarProductoFormErrorNombre" class="formError">El campo no puede estar vacío.</p>
         </div>
 
         <div style="margin-bottom:24px;">
           <label for="Descripcion">Descripcion</label>
-          <input type="text" name ="descripcion" placeholder="Descripcion" />
+          <input id="editarProductoDescripcion" type="text" name ="descripcion" placeholder="Descripcion" />
 
-          <p class="formError"></p>
+          <p id="editarProductoFormErrorDescripcion" class="formError">El campo no puede estar vacío</p>
         </div>
 
         <div style="margin-bottom:24px;">
           <label for="Precio">Precio</label>
-          <input type="text" name="precio" pattern="\d*" placeholder="Ingrese el precio"/>
+          <input id="editarProductoPrecio" type="text" name="precio" pattern="\d*" placeholder="Ingrese el precio"/>
 
           <p class="formError"></p>
-          <p class="formError">*El valor solo puede ser numérico.</p>
+          <p id="editarProductoFormErrorPrecio" class="formError">*El valor solo puede ser numérico.</p>
         </div>
 
         <div style="margin-bottom:24px;">
           <label for="urlImagen">Imagen</label>
-          <input type="text" name="urlImagen" placeholder="Url de la imagen">
+          <input id="editarProductoUrlImg" type="text" name="urlImagen" placeholder="Url de la imagen">
 
-          <p class="formError"></p>
+          <p id="editarProductoFormErrorUrlImg" class="formError">El campo no puede estar vacío.</p>
           
           <label for="imagen">Archivo</label>
           <input type="file" name="imagen" placeholder="imagen" />
@@ -62,5 +62,22 @@
     <%- include('./partials/footer') %>
 
     <script src="js/validaciones.js"></script>
+    <script>
+      document.getElementById("editarProductoNombre").addEventListener("click", function(event){
+          document.getElementById("editarProductoFormErrorNombre").style.display = "block";
+      });
+
+      document.getElementById("editarProductoDescripcion").addEventListener("click", function(event){
+          document.getElementById("editarProductoFormErrorDescripcion").style.display = "block";
+      });
+
+      document.getElementById("editarProductoPrecio").addEventListener("click", function(event){
+          document.getElementById("editarProductoFormErrorPrecio").style.display = "block";
+      });
+
+      document.getElementById("editarProductoUrlImg").addEventListener("click", function(event){
+          document.getElementById("editarProductoFormErrorUrlImg").style.display = "block";
+      });
+    </script>
   </body>
 </html>
