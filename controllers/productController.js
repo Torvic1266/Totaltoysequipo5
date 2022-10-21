@@ -6,7 +6,7 @@ const products = JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'));
 const render = require("ejs")
 const productDetail = require("./main")
 
-const db = require("../database/connection");
+const db = require("../src/database/connection");
 const Producto = require("../models/Producto");
 const { where } = require('sequelize');
 

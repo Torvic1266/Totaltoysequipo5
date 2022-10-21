@@ -7,8 +7,8 @@ const {body } = require( 'express-validator');
 const multer = require("multer");
 const uploadFile = require('../middlewares/multerMiddleware');
 const validations = [ 
-    body('firstName').notEmpty().withMessage('Tienes que escribir un nombre'),
-    body('lastName').notEmpty().withMessage('Tienes que escribir un nombre'),
+    body('nombre').notEmpty().withMessage('Tienes que escribir un nombre'),
+    body('apellido').notEmpty().withMessage('Tienes que escribir un nombre'),
     body('email')
     .notEmpty().withMessage('Tienes que escribir un correo electronico').bail()
     .isEmail().withMessage('Debes escribir un formato de correo valido'),
