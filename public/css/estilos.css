@@ -7,6 +7,10 @@
   font-family: sans-serif;
 }
 
+body {
+  background: #FADC87;
+}
+
 header {
   display: flex;
   align-items: center;
@@ -253,7 +257,14 @@ header img {
   font-size: 2rem;
 }
 
-
+#listadoProductosHome {
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#fadc87+0,87fadc+100 */
+  background: #fadc87; /* Old browsers */
+  background: -moz-linear-gradient(top,  #fadc87 0%, #87fadc 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top,  #fadc87 0%,#87fadc 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom,  #fadc87 0%,#87fadc 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fadc87', endColorstr='#87fadc',GradientType=0 ); /* IE6-9 */
+}
 
 
 

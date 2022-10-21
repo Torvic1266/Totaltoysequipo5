@@ -9,8 +9,8 @@
     <%- include('./partials/header'); %>
   <!-----seccion del baneer -->
   <div style="text-align:center">
-    <video autoplay controls style="max-width: 600px; text-align: center">
-      <source src="/videos/video-tierno-2022.mp4" type="video/mp4" styles="margin: auto">
+    <video autoplay muted style="max-width: 850px; text-align: center">
+      <source src="/videos/video-totaltoys.mp4" type="video/mp4" styles="margin: auto">
     Your browser does not support the video tag.
     </video>
   </div>
@@ -18,8 +18,9 @@
 
 
 <!--------- secion productos -->
-<section>
-  <div class="seccionDeLosProductos">
+<section id="listadoProductosHome">
+  <h1 style="margin-top: 50px; text-align: center;">Últimos productos</h1>
+  <div class="seccionDeLosProductos" style="display: flexbox; justify-content: center;">
     
     <% for (let i = 0; i < Productos.length; i++) { %>
 
@@ -31,9 +32,9 @@
       <p><%=Productos[i].nombre%></p>
       <strong><%=Productos[i].precio%></strong>
       
-    <div class="contenedor-botones"> 
-      <button class="boton-comprar"><span>Agregar Al Carrito</span></button>
-    </div>
+      <div class="contenedor-botones"> 
+        <button class="boton-comprar"><span>Agregar Al Carrito</span></button>
+      </div>
     </div>
     
   
@@ -42,7 +43,7 @@
     </div>
   </a>
   </div>
-  
+  <hr>
 </section>
 
   <%- include('./partials/footer'); %>
