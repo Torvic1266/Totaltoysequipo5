@@ -7,7 +7,7 @@
   * Import the Sequelize instance that you have exported
   * in the config/database.js file.
   */
- const sequelize = require("../database/connection");
+ const sequelize = require("../src/database/connection");
  
  /**
   * Define a model that can be managed by Sequelize.

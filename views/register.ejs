@@ -14,12 +14,18 @@
         <form method="POST" action="/usuario/register" enctype="multipart/form-data">
           <label for="nombre">Nombre</label>
           <input name="nombre" type="text" placeholder="Nombre" required />
+          <%if (locals.errors && errors.nombre) {%>
 
-          <p class="formError"></p>
+            <div>
+                <%= errors.nombre %>
+            </div>
+
+        <% } %>
+          <p class="formError">Nombre</p>
           <p class="formError">*El nombre solo puede contener letras.</p>
 
           <label for="apellido">Apellido</label>
-          <input name="apellido" type="text" placeholder="Ingresa su Apellido" required />
+          <input name="apellido" type="text" placeholder="Ingresa su Apellido" />
 
           <p class="formError"></p>
           <p class="formError">*El apellido solo puede contener letras.</p>
@@ -45,6 +51,6 @@
     </div>
     <%- include('./partials/footer'); %>
 
-    <script src="js/validaciones.js"></script>
+    <script src="js/validaciones.ejs "></script>
   </body>
 </html>

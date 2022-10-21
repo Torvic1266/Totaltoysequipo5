@@ -5,8 +5,8 @@ const bcrypt = require("bcryptjs");
 const { validationResult } = require("express-validator");
 
 
-const User = require("../models/Usuario");
-const db = require('../database/connection');
+const User = require("../src/database/models/Usuario");
+const db = require('../src/database/connection');
 
 
 
@@ -14,38 +14,28 @@ const Controller = {
   
   
   // CRUD (Create): LISTAR USUARIOS ??? (usuario admin)
-  guardar: (req, res) => {
+guardar: (req, res) => {
     //let rutaProducts = path.join(__dirname,"../data/products.json");
-    const resultadoValidacion = validationResult(req)
+    db.sync().then(() => {                    
+      User.create({
+        email: req.body.email,
+        password: req.body.password,
+        nombre: req.body.nombre,
+        apellido: req.body.apellido,
+        edad: req.body.edad,
+        nacionalidad: req.body.nacionalidad,
+        telefono: req.body.telefono,
+        //rol: req.body.rol
 
-        console.log(resultadoValidacion.mapped());
-
-        if (resultadoValidacion.errors.length > 0) {
-            return res.render("registro", {
-                errors: resultadoValidacion.mapped(),
-                datosAntiguos: req.body
-            });
-        }
-        try {
-          db.sync().then(() => {                    
-        User.create({
-            email: req.body.email,
-            password: req.body.password,
-            nombre: req.body.nombre,
-            apellido: req.body.apellido,
-            edad: req.body.edad,
-            nacionalidad: req.body.nacionalidad,
-            telefono: req.body.telefono,
-            //rol: req.body.rol
-
-        })
+          }).then(data => {
             console.log(data);
             res.status(200).redirect("/usuario/profile");
-        })
-        } catch (error) {
-          res.status(400).send('usuario no creado')
-        }
-    
+        }).catch((error) => {
+            console.error('Error al crear usuario: ', error);
+        });
+    }).catch((error) => {
+      console.error('Error en la conexión con la base de datos: ', error);
+    });
   },
 
   register: (req, res) => {

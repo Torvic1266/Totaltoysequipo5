@@ -11,7 +11,7 @@ const userLoggedMiddleware = require('./middlewares/userLoggedMiddleware');
 
 const app = express();
 
-const db = require("./database/connection");
+const db = require("./src/database/connection");
 
 app.use(session({
     secret:"shhh, it's a secret",
