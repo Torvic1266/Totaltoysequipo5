@@ -3,16 +3,32 @@
   <head>
     <%- include('./partials/head'); %>
     <title>userProfile</title>
-    <link href="/css/login.css" rel="stylesheet" type="text/css" />
+    <link href="/css/userProfile.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
-    <%- include('./partials/header'); %>
-    <div class="fondo">
+    <header>
+      <img src="/img/logo Total Toys.jpg" alt="se crea logo" />
+      <nav class="menú">
+        
+        <li><a href="/"><i class="fa-solid fa-house"></i>&nbsp; Inicio</i></a></li>
+        <li><a href="/productos/listar"><i class="fa-solid fa-store"></i>&nbsp; Catálogo</a></li>
+        <li><a href="/productcart"><i class="fa-solid fa-cart-plus"></i>&nbsp; Mi Carrito</a></li>
+        <li><a href="/productos/crear-producto"><i class="fa-solid fa-puzzle-piece"></i>&nbsp; Agregar Producto</a></li>
+        <form action="/usuario/logout" method="POST">
+          <li><a href="/"><i class="fa-solid fa-right-to-bracket"></i>&nbsp; Cerrar sesión</a></li> 
+          
+        </form>
+  
+      </Nav>
+      <div id="menu-icon">
+        <i class="fas fa-bars"></i>
+      
+      </div>
+  
+</header>
+    <div class="fondo"></div>
       
        
-      </div>
-    </div>
-
     <%- include('./partials/footer'); %>
 
     </body>
