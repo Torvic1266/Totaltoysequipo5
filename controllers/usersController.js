@@ -16,7 +16,18 @@ const Controller = {
   // CRUD (Create): LISTAR USUARIOS ??? (usuario admin)
   guardar: (req, res) => {
     //let rutaProducts = path.join(__dirname,"../data/products.json");
-    db.sync().then(() => {                    
+    const resultadoValidacion = validationResult(req)
+
+        console.log(resultadoValidacion.mapped());
+
+        if (resultadoValidacion.errors.length > 0) {
+            return res.render("registro", {
+                errors: resultadoValidacion.mapped(),
+                datosAntiguos: req.body
+            });
+        }
+        try {
+          db.sync().then(() => {                    
         User.create({
             email: req.body.email,
             password: req.body.password,
@@ -27,15 +38,14 @@ const Controller = {
             telefono: req.body.telefono,
             //rol: req.body.rol
 
-        }).then(data => {
+        })
             console.log(data);
             res.status(200).redirect("/usuario/profile");
-        }).catch((error) => {
-            console.error('Error al crear usuario: ', error);
-        });
-    }).catch((error) => {
-      console.error('Error en la conexión con la base de datos: ', error);
-    });
+        })
+        } catch (error) {
+          res.status(400).send('usuario no creado')
+        }
+    
   },
 
   register: (req, res) => {
