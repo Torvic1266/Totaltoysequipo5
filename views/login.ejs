@@ -16,9 +16,7 @@
           <label for="usuario">Usuario</label>
           <input type="text" name="email" value="" placeholder="usuario" required />
           <% if (locals.errors && errors.email){ %>
-          <div class="text-danger">
-            <%= errors.email.msg %>
-          </div>
+          <div class="formError"><%= errors.email.msg %></div>
           <% } %>
 
           <p class="formError"></p>
@@ -40,7 +38,7 @@
 
     <%- include('./partials/footer'); %>
 
-    <script src="js/validaciones.js"></script>
+    <!-- <script src="js/validaciones.js"></script>
     <script>
       document.getElementById("botonIniciarSesion").addEventListener("click", function(event){
         if(document.getElementById("campoContraseña").value == "12345") {
@@ -48,6 +46,6 @@
           document.getElementById("errorContraseñaIncorrecta").style.display = "block";
         }
       });
-    </script>
+    </script> -->
   </body>
 </html>

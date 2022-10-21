@@ -9,17 +9,18 @@
     <%- include('./partials/header'); %>
   <!-----seccion del baneer -->
   <div style="text-align:center">
-    <video autoplay muted style="max-width: 850px; text-align: center">
-      <source src="/videos/video-totaltoys.mp4" type="video/mp4" styles="margin: auto">
-    Your browser does not support the video tag.
-    </video>
-  </div>
+    <iframe width="790" height="444" 
+    src="https://www.youtube.com/embed/ySQQM8lohfI" title="Totaltoys" frameborder="0" allow="accelerometer; autoplay=1&mute=1; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+</div>
   
 
 
 <!--------- secion productos -->
 <section id="listadoProductosHome">
-  <h1 style="margin-top: 50px; text-align: center;">Últimos productos</h1>
+  <h1 style="margin-top: 50px; text-align: center;"> Totaltoys </h1>
+  <h1 style="margin-top: 50px; text-align: center;"> Productos màs vendidos </h1>
+
   <div class="seccionDeLosProductos" style="display: flexbox; justify-content: center;">
     
     <% for (let i = 0; i < Productos.length; i++) { %>
