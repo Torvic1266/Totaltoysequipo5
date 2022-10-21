@@ -142,6 +142,7 @@ header img {
   font-family:Arial, Helvetica, sans-serif;
   font-size: 18px;
   text-align: center;
+  
 
   
 }
@@ -150,6 +151,8 @@ header img {
   width: 23%;
   margin: 50px;
   box-shadow: 0px 0px 6px hwb(0 68% 30%);
+  background-color: white;
+  text-decoration: none;
 }
 .producto .producto-image {
   width: 100%;
