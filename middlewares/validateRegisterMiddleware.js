@@ -3,8 +3,8 @@ const packageName = ('packageName');
 const {body } = require( 'express-validator');
 
 const validateRegisterMiddleware = [ 
-    body('firstName').notEmpty().withMessage('Tienes que escribri un nombre'),
-    body('lastName').notEmpty().withMessage('Tienes que escribri un nombre'),
+    body('firstName').notEmpty().withMessage('Tienes que escribir un nombre'),
+    body('lastName').notEmpty().withMessage('Tienes que escribir un nombre'),
     body('email')
     .notEmpty().withMessage('Tienes que escribir un correo electronico').bail()
     .isEmail().withMessage('Debes escribir un formato de correo valido'),
