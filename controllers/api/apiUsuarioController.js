@@ -3,8 +3,32 @@ const db = require("../../src/database/models/Usuario");
 
 
 const ApiUsuarioController = {
+    
     getUserById: async(req,res) => {
-        console.log("Getting all users");
+        try {
+            const product = await db.findOne({ 
+                
+                where: { id: req.params.id }
+                });
+    
+            if(product){
+                console.log(product);
+                res.status(200).json({
+                    data: product,
+                    status: 200,
+                    msg: 'OK',
+                })
+            }else{
+                res.status(404).json({'msg': 'No hay datos para mostrar'});
+                // res.render('error', { title: 'Error', msg: 'No hay datos para mostrar' });
+            }
+        } catch (error) {
+            // console.log(error);
+            res.status(500).json({'msg': '500 - Ha ocurrido un error interno'});
+            // res.render('error', { title: 'Error', msg: '500 - Ha ocurrido un error interno' });
+        }
+
+
     },
     getAllUsers: async (req, res) => {
 
