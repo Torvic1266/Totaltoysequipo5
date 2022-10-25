@@ -1,4 +1,4 @@
-const db = require('../../models/Producto');
+const db = require('../../src/database/connection');
 
 const ApiProductController = {
     

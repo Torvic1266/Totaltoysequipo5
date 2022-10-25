@@ -1,9 +1,11 @@
-const db = require('../../src/database/models');
+const db = require('../../src/database/connection');
 
 
 const ApiUsuarioController = {
-    
-    getAllregister: async (req, res) => {
+    getUserById: async(req,res) => {
+        console.log("Getting all users");
+    },
+    getAllUsers: async (req, res) => {
 
         try {
 
