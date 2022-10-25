@@ -1,10 +1,11 @@
 .fondo{
     width: 100%;
     height:100vh;
-    background-image: url(../img/el-sr-cara-de-papa-cambiara-su-identidad-de-genero.jpg);
+    background-image: url(../img/bienvenidos.jpg);
     background-repeat: no-repeat;
     background-size:cover;
     background-position: center;
+}
 
 body {
     
@@ -81,15 +82,6 @@ body {
     
     }
 
-    .header {
-        display: flex;
-        align-items: center;
-        justify-content: space-around;
-        padding: 1% 0;
-        background-color: white;
-        
-       
-      }
       
       
   

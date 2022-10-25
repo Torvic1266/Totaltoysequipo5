@@ -13,7 +13,7 @@
         <h1>Formulario de Registro</h1>
         <form method="POST" action="/usuario/register" enctype="multipart/form-data">
           <label for="nombre">Nombre</label>
-          <input name="nombre" type="text" placeholder="Nombre" required />
+          <input id="registrarseNombre" name="nombre" type="text" placeholder="Nombre" required />
           <%if (locals.errors && errors.nombre) {%>
 
             <div>
@@ -22,25 +22,26 @@
 
         <% } %>
           <p class="formError">Nombre</p>
-          <p class="formError">*El nombre solo puede contener letras.</p>
+          <p id="formErrorNombre" class="formError">*El nombre solo puede contener letras.</p>
 
           <label for="apellido">Apellido</label>
-          <input name="apellido" type="text" placeholder="Ingresa su Apellido" />
+          <input id="registrarseApellido" name="apellido" type="text" placeholder="Ingresa su Apellido" />
 
           <p class="formError"></p>
-          <p class="formError">*El apellido solo puede contener letras.</p>
+          <p id="formErrorApellido" class="formError">*El apellido solo puede contener letras.</p>
 
           <label for="email">Email</label>
-          <input name="email" type="text" placeholder="Ingrese su Email" required />
+          <input id="registrarseEmail" name="email" type="text" placeholder="Ingrese su Email" required />
 
           <p class="formError"></p>
-          <p class="formError">*Correo electrónico no válido.</p>
+          <p id="formErrorEmail" class="formError">*Correo electrónico no válido.</p>
 
           <label for="password">Password</label>
-          <input name="password" type="password" placeholder="Ingrese su Password" required/>
 
           <p class="formError"></p>
-          <p class="formError">*La contraseña debe tener más de 6 caracteres.</p>
+          <input id="registrarsePass" Error name="password" type="password" placeholder="Ingrese su Password" required/>
+          
+          <p id="formErrorPass" class="formError formPassError">*La contraseña debe tener más de 6 caracteres.</p>
 
           <label for="">avatar</label>
           <input name="avatar" type="file">
@@ -49,8 +50,25 @@
         </form>
       </div>
     </div>
-    <%- include('./partials/footer'); %>
+    
 
     <script src="js/validaciones.ejs "></script>
+    <script>
+      document.getElementById("registrarseNombre").addEventListener("click", function(event){
+          document.getElementById("formErrorNombre").style.display = "block";
+      });
+
+      document.getElementById("registrarseApellido").addEventListener("click", function(event){
+          document.getElementById("formErrorApellido").style.display = "block";
+      });
+
+      document.getElementById("registrarseEmail").addEventListener("click", function(event){
+          document.getElementById("formErrorEmail").style.display = "block";
+      });
+
+      document.getElementById("registrarsePass").addEventListener("click", function(event){
+          document.getElementById("formErrorPass").style.display = "block";
+      });
+    </script>
   </body>
 </html>
