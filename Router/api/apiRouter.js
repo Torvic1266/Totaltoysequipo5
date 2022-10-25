@@ -5,6 +5,6 @@ router.get('/juguetes', ApiProductController.getAllTOTALTOY);
 
 const ApiUsuarioController = require('../../controllers/api/apiUsuarioController');
 router.get('/usuario/:id', ApiUsuarioController.getUserById);
-router.get('/usuarios',ApiUsuarioController.getAllUsers);
+router.get('/usuarios', ApiUsuarioController.getAllUsers);
 
 module.exports = router;
