@@ -1,6 +1,6 @@
 const router = require('express').Router();
-const TotaltoysRouter = require('./Totaltoys');
-const apiRouter = require('./api/apiRouter');
+//const TotaltoysRouter = require('./Totaltoys');
+const apiRouter = require('./apiRouter');
 
 /* GET home page. */
 // router.get('/', function(req, res, next) {
@@ -8,7 +8,7 @@ const apiRouter = require('./api/apiRouter');
 // });
 
 
-router.use('/', TotaltoysRouter);
+//router.use('/', TotaltoysRouter);
 router.use('/api', apiRouter);
 
 

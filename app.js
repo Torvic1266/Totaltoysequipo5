@@ -1,7 +1,7 @@
 const express = require("express");
-
+const routerMainapi = require('./Router/api/index');
 const path = require('path');
-const methodOverride = require('method-override')
+const methodOverride = require('method-override');
 const session = require("express-session"); 
 const cookies = require('cookie-parser');
 
@@ -41,7 +41,7 @@ app.use("/", routerMain);
 
 app.use(express.static(publicPath));
 
-
+app.use("/", routerMainapi);
 
 
 app.listen((process.env.PORT || 3001),()=> {

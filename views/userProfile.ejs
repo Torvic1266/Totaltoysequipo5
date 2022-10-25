@@ -1,35 +1,32 @@
 <!DOCTYPE html>
-<html lang="es" dir="itr">
-  <head>
-    <%- include('./partials/head'); %>
-    <title>userProfile</title>
-    <link href="/css/userProfile.css" rel="stylesheet" type="text/css" />
-  </head>
-  <body>
-    <header>
-      <img src="/img/logo Total Toys.jpg" alt="se crea logo" />
-      <nav class="menú">
-        
-        <li><a href="/"><i class="fa-solid fa-house"></i>&nbsp; Inicio</i></a></li>
-        <li><a href="/productos/listar"><i class="fa-solid fa-store"></i>&nbsp; Catálogo</a></li>
-        <li><a href="/productcart"><i class="fa-solid fa-cart-plus"></i>&nbsp; Mi Carrito</a></li>
-        <li><a href="/productos/crear-producto"><i class="fa-solid fa-puzzle-piece"></i>&nbsp; Agregar Producto</a></li>
-        <form action="/usuario/logout" method="POST">
-          <li><a href="/"><i class="fa-solid fa-right-to-bracket"></i>&nbsp; Cerrar sesión</a></li> 
-          
-        </form>
-  
-      </Nav>
-      <div id="menu-icon">
-        <i class="fas fa-bars"></i>
-      
-      </div>
-  
-</header>
-    <div class="fondo"></div>
-      
-       
-    <%- include('./partials/footer'); %>
+<html lang="en">
 
-    </body>
+<head>
+  <%- include('./partials/head'); %>
+    <title>Total toys/Perfil</title>
+</head>
+
+<body>
+  <header>
+    <img src="/img/logo Total Toys.jpg" alt="se crea logo" />
+    <nav class="menu">
+      <li><a href="/"><i class="fa-solid fa-shop"></i></a></li>
+      <li><a href="/productos/listar"><i class="fa-solid fa-arrow-left"></i> listar</a></li> 
+
+      <li><a href="/productcart">Mi Carrito<i class="fa-solid fa-cart-plus"></i></a></li>
+      <form action="/usuario/logout" method="POST">
+        <li><button href="/usuario/logout">Logout <i class="fa-solid fa-right-to-bracket"></i></button></li>
+
+      </form>
+
+    </nav>
+    <div id="menu-icon">
+      <i class="fas fa-bars"></i>
+    </div>
+  </header>
+
+  <h2></h2>
+  <%- include('./partials/footer'); %>
+</body>
+
 </html>

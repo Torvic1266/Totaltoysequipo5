@@ -1,18 +1,13 @@
-
-const db = require('../../database/models');
-
+const db = require('../../src/database/models');
 
 
-const Controller = {
-    register: async (req, res) => {
+const ApiUsuarioController = {
+    
+    getAllregister: async (req, res) => {
 
         try {
 
-            const totaltoys = await db.totaltoys.findAll({ include: {
-                association: 'rol_id',
-                
-            }});
-
+         const totaltoys = await db.findAll();
             
             if(totaltoys){
                 const totalUsuarios = totaltoys.length;
@@ -47,12 +42,7 @@ const Controller = {
 
     loguin: async (req, res) => {
         try {
-            const users = await db.totaltoys.findOne({ 
-                include: {
-                    association: 'rol_id'     
-                },
-                where: { firstName: req.params.firstName }
-                });
+            const users = await db.findOne();
     
             if(users){
                 console.log(users);
@@ -78,7 +68,7 @@ const Controller = {
 
         if(profile === 'dc'){ //1
             try {
-                const usuarios = await db.totaltoys.findAll({ where: {publisher_id: 1}});
+                const usuarios = await db.findAll();
 
                 if (usuarios) {
                     res.status(200).json({
@@ -100,9 +90,9 @@ const Controller = {
             }
            
 
-        }else if(profile === 'marvel'){ //2
+        }else if(profile === totaltoys ){ //2
             try {
-                const usuarios = await db.totaltoys.findAll({ where: {publisher_id: 2}});
+                const usuarios = await db.findAll();
 
                 if (usuarios) {
                     res.status(200).json({
@@ -136,35 +126,10 @@ const Controller = {
             // res.render('error', { title: 'Error', msg: 'Ha realizado una búsqueda inválida' });
     
 
-    },
-
-
-
-
-    //CRUD
-    
-    createHeroAction: async (req, res) => {
-        const hero = await db.Hero.create({
-            slug: req.body.slug,
-            superhero: req.body.superhero,
-            alter_ego: req.body.alter_ego,
-            first_appearance: req.body.first_appearance,
-            characters: req.body.character,
-            publisher_id: req.body.profile,
-        });
-
-        if(hero){
-            console.log(JSON.stringify(hero, null, 4));
-            res.redirect('/');
-        }else{
-            res.redirect('/hero/create');
-        }
-
     }
 
 
+ };
 
-};
-
-module.exports = ApiUserController;
+module.exports = ApiUsuarioController;
 
