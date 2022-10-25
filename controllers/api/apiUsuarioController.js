@@ -1,4 +1,5 @@
-const db = require('../../src/database/connection');
+
+const db = require("../../src/database/models/Usuario");
 
 
 const ApiUsuarioController = {
@@ -10,7 +11,9 @@ const ApiUsuarioController = {
         try {
 
          const totaltoys = await db.findAll();
-            
+            console.log(totaltoys);
+            res.send(totaltoys);
+
             if(totaltoys){
                 const totalUsuarios = totaltoys.length;
                 const UsuariosWithDetail = totaltoys.map(users => {
