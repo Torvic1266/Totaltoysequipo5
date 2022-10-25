@@ -1,11 +1,9 @@
-const db = require('../../src/database/connection');
+const db = require('../../models/Producto');
 
 const ApiProductController = {
     
     getAllTOTALTOY: async (req, res) => {
-
         try {
-
             const totaltoys = await db.findAll();
 
             
