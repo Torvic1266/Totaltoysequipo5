@@ -1,4 +1,5 @@
 const db = require('../../src/database/connection');
+const Producto = require("../../models/Producto");
 
 const ApiProductController = {
     
@@ -6,7 +7,7 @@ const ApiProductController = {
 
         try {
 
-            const totaltoys = await db.findAll();
+            const totaltoys = await Producto.findAll();
 
             
             if(totaltoys){
@@ -42,7 +43,7 @@ const ApiProductController = {
 
         Totaltoys5: async (req, res) => {
         try {
-            const product = await db.findOne({ 
+            const product = await Producto.findOne({ 
                 
                 where: { id: req.params.id }
                 });
