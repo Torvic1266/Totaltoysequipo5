@@ -4,12 +4,14 @@ const path = require('path');
 const methodOverride = require('method-override');
 const session = require("express-session"); 
 const cookies = require('cookie-parser');
+const cors = require("cors");
 
 const routerMain = require("./Router/router");
 
 const userLoggedMiddleware = require('./middlewares/userLoggedMiddleware');
 
 const app = express();
+
 
 const db = require("./src/database/connection");
 
@@ -19,6 +21,7 @@ app.use(session({
     saveUninitialized:false,
 }));
 
+app.use(cors());
 app.use(cookies());
 app.use(methodOverride ("_method"));
 app.use(userLoggedMiddleware);

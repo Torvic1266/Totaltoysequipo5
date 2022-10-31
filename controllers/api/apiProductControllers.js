@@ -16,7 +16,7 @@ const ApiProductController = {
                     return {
                         id: product.id,
                         name: product.nombre,
-                        description: product.description,
+                        descripcion: product.descripcion,
                         //detail: `https://dh-productos-app.herokuapp.com/api/product-detail/${product.slug}`,
                     }
                 })
