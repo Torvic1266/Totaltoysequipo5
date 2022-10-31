@@ -2,6 +2,7 @@ const express = require("express");
 const routerMainapi = require('./Router/api/index');
 const path = require('path');
 const methodOverride = require('method-override');
+const cors = require("cors");
 const session = require("express-session"); 
 const cookies = require('cookie-parser');
 const cors = require("cors");
@@ -20,6 +21,7 @@ app.use(session({
     resave: false,
     saveUninitialized:false,
 }));
+app.use(cors())
 
 app.use(cors());
 app.use(cookies());
