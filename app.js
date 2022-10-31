@@ -5,7 +5,6 @@ const methodOverride = require('method-override');
 const cors = require("cors");
 const session = require("express-session"); 
 const cookies = require('cookie-parser');
-const cors = require("cors");
 
 const routerMain = require("./Router/router");
 
