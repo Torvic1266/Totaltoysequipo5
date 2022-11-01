@@ -7,4 +7,8 @@ const ApiUsuarioController = require('../../controllers/api/apiUsuarioController
 router.get('/usuario/:id', ApiUsuarioController.getUserById);
 router.get('/usuarios', ApiUsuarioController.getAllUsers);
 
+const ApiCategoriasController = require('../../controllers/api/ApiCategoriasController');
+router.get('/categorias/:id', ApiCategoriasController.getCategoriasById);
+router.get('/categorias', ApiCategoriasController.getAllCategorias);
+
 module.exports = router;
