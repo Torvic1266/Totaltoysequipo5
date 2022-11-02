@@ -45,4 +45,11 @@
   * Export the model, so that it can be used in any
   * page to execute CRUD operations on the app_posts table.
   */
- module.exports = categorias;
+  Categoria.associate = (models) => {
+      Categoria.hasMany(models.Producto, {
+             as : 'Categorias', 
+             foreignKey : 'Categorias_id'
+    }),
+ module.exports = Categoria;
+}
+

@@ -2,18 +2,18 @@
 const db = require("../../src/database/models/Categorias");
 
 
-const ApiUsuarioController = {
+const ApiCategoriasController = {
     getCategoriasById: async (req, res) => {
         try {
-            const user = await db.findOne({ 
+            const CATEGORIA = await db.findOne({ 
                 
                 where: { id: req.params.id }
                 });
     
-            if(user){
-                console.log(user);
+            if(CATEGORIA){
+                console.log(CATEGORIA);
                 res.status(200).json({
-                    data: user,
+                    data: CATEGORIA,
                     status: 200,
                     msg: 'OK',
                 })
@@ -33,26 +33,26 @@ const ApiUsuarioController = {
 
         try {
 
-         const totaltoys = await db.findAll();
-            console.log(totaltoys);
-            res.send(totaltoys);
+         const totaltoys1 = await db.findAll();
+            console.log(totaltoys1);
+            res.send(totaltoys1);
 
-            if(totaltoys){
-                const totalUsuarios = totaltoys.length;
-                const UsuariosWithDetail = totaltoys.map(users => {
+            if(totaltoys1){
+                const totalcategoria = totaltoys1.length;
+                const categoriaWithDetail = totaltoys1.map(users => {
                     return {
-                        id: users.id,
-                        name: users.firstName,
-                        email : users.email,
+                        id: categoria.id,
+                        name: categoria.firstName,
+                        email : categoria.email,
                        // detail: `https://dh-usuarios-app.herokuapp.com/api/users-detail/${users.slug}`,
                     }
                 })
                 res.status(200).json({
-                    'count': totalUsuarios,
-                    'data': UsuariosWithDetail,
+                    'count': totalcategoria,
+                    'data': categoriaWithDetail,
                     'status': 200,
                     'msg': 'OK',
-                    'enpoint': '/api/usuarios',
+                    'enpoint': '/api/categoria',
                 });
             }else{
                 // res.render('error', { title: 'Error', msg: 'No hay datos para mostrar' });
@@ -159,5 +159,5 @@ const ApiUsuarioController = {
 
  };
 
-module.exports = ApiUsuarioController;
+module.exports = ApiCategoriasController;
 

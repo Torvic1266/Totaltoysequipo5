@@ -7,7 +7,9 @@ const ApiProductController = {
 
         try {
 
-            const totaltoys = await Producto.findAll();
+            const totaltoys = await Producto.findAll({
+                
+            });
 
             
             if(totaltoys){
@@ -17,6 +19,7 @@ const ApiProductController = {
                         id: product.id,
                         name: product.nombre,
                         descripcion: product.descripcion,
+                        categoria: categoria
                         //detail: `https://dh-productos-app.herokuapp.com/api/product-detail/${product.slug}`,
                     }
                 })

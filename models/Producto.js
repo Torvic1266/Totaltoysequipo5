@@ -66,5 +66,13 @@ Producto.create({
 console.error('Error en la tabla productos: ', error);
 });*/
 
+Producto.associate = (models) => {
+    Producto.belonsgTo(models.categoria, {
+           as : 'Categorias', 
+           foreignKey : 'Categorias_id'
+    }),
 
-module.exports = Producto;
+module.exports = Producto
+}
+
+
