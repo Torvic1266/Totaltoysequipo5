@@ -1,6 +1,4 @@
-
 const db = require("../../src/database/models/Usuario");
-
 
 const ApiUsuarioController = {
     getUserById: async (req, res) => {

@@ -1,5 +1,5 @@
 const db = require('../../src/database/connection');
-const Producto = require("../../models/Producto");
+const Producto = require("../../src/database/models/Productos");
 
 const ApiProductController = {
     
@@ -19,7 +19,7 @@ const ApiProductController = {
                         id: product.id,
                         name: product.nombre,
                         descripcion: product.descripcion,
-                        categoria: categoria
+                        categoria: product.categoria
                         //detail: `https://dh-productos-app.herokuapp.com/api/product-detail/${product.slug}`,
                     }
                 })

@@ -1,55 +1,77 @@
-module.exports = (sequelize, dataTypes) => {
-    const Productos = sequelize.define ("Productos",{
+/**
+ * Import Sequelize.
+ */
+ const { Sequelize, DataTypes } = require("sequelize");
 
-        id:{
-            type: dataTypes.INTEGER, 
+ /**
+  * Import the Sequelize instance that you have exported
+  * in the config/database.js file.
+  */
+ const sequelize = require("../connection");
+ 
+ /**
+  * Define a model that can be managed by Sequelize.
+  */
+ const Producto = sequelize.define(
+    "Productos",
+    {
+        id: {
+            type: DataTypes.INTEGER,
+            autoIncrement: true,
+            allowNull: false,
             primaryKey: true,
-            autoIncrement: true
         },
-        name:{
-            type: dataTypes.STRING,
-            allowNull:false
-
+        nombre: {
+            type: DataTypes.STRING,
+            allowNull: false,
         },
-        description:{
-            type: dataTypes.TEXT,
-            allowNull:false
+        descripcion: {
+            type: DataTypes.STRING,
+            allowNull: false,
         },
-        price:{
-            type: dataTypes.FLOAT,
-            allowNull:false
+        precio: {
+        type: DataTypes.INTEGER,
+        allowNull: false,
         },
-        imagen:{
-            type: dataTypes.STRING,
-            allowNull:false
+        categoria: {
+        type: DataTypes.INTEGER,
+        allowNull: false,
         },
-        category_id:{
-            type: dataTypes.INTEGER,
-            allowNull:false,
-        },
-        is_active:{ 
-            type: dataTypes.INTEGER,
-            defaultValue:1
+        urlImagen: {
+        type: DataTypes.STRING,
         }
-        
     },
     {
-        timeStamps:false,
-        tableName:"productos",
-        createdAt: false,
-        updatedAt: false
-    });
-    
-    
-    Productos.associate = (models) => {
-        Productos.hasMany(models.Categorias, {
-            as : 'categorias', 
-            foreignKey : 'Productos_id'
-       
-        })
-    
+    timestamps: false,
     }
+);
+
+/*
+sequelize.sync().then(() => {
+console.log('Tabla de productos OK');
+
+Producto.create({
+    nombre: "Lego Bionicle",
+    descripcion: "Juguete de colección",
+    precio: "10000",
+    categoria: 3,
+    urlImagen: "prueba"
+}).then(res => {
+    console.log(res)
+}).catch((error) => {
+    console.error('Failed to create a new record: ', error);
+});
+
+}).catch((error) => {
+console.error('Error en la tabla productos: ', error);
+});*/
+
+Producto.associate = function (models) {
+    Producto.belongsTo(models.Categorias, { 
+        as: "Categoria",
+        foreignKey: "Categoria"
+    })
     
-    return  Productos;
-    
+
 }
+module.exports = Producto

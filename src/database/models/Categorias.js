@@ -12,8 +12,8 @@
  /**
   * Define a model that can be managed by Sequelize.
   */
- const categorias = sequelize.define(
-     "categorias",
+ const Categoria = sequelize.define(
+     "Categorias",
      {
          id: {
              type: DataTypes.INTEGER,
@@ -45,11 +45,10 @@
   * Export the model, so that it can be used in any
   * page to execute CRUD operations on the app_posts table.
   */
-  Categoria.associate = (models) => {
-      Categoria.hasMany(models.Producto, {
-             as : 'Categorias', 
-             foreignKey : 'Categorias_id'
-    }),
- module.exports = Categoria;
+  Categoria.associate = function(models) {
+    Categoria.hasMany(models.Productos, {
+        as: "Categoria", // El nombre del modelo pero en plural
+        foreignKey: "Categoria"
+    })
 }
-
+module.exports = Categoria;

@@ -7,7 +7,7 @@ const render = require("ejs")
 const productDetail = require("./main")
 
 const db = require("../src/database/connection");
-const Producto = require("../models/Producto");
+const Producto = require("../src/database/models/Productos");
 const { where } = require('sequelize');
 
 const productController = {

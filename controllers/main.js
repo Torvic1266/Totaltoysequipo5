@@ -3,7 +3,7 @@ const express = require("express");
 const router = express.Router();
 
 const db = require("../src/database/connection");
-const Producto = require("../models/Producto")
+const Producto = require("../src/database/models/Productos")
 
 /*
 const fs = require('fs');
