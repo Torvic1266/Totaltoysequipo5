@@ -3,10 +3,7 @@ const db = require("../../src/database/models/Usuario");
 const ApiUsuarioController = {
     getUserById: async (req, res) => {
         try {
-            const user = await db.findOne({ 
-                
-                where: { id: req.params.id }
-                });
+            const user = await db.findOne();
     
             if(user){
                 console.log(user);

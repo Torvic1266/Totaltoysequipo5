@@ -35,11 +35,11 @@ const ApiCategoriasController = {
 
          const totaltoys1 = await db.findAll();
             console.log(totaltoys1);
-            res.send(totaltoys1);
+            //res.send(totaltoys1);
 
             if(totaltoys1){
                 const totalcategoria = totaltoys1.length;
-                const categoriaWithDetail = totaltoys1.map(users => {
+                const categoriaWithDetail = totaltoys1.map(categoria => {
                     return {
                         id: categoria.id,
                         name: categoria.firstName,
