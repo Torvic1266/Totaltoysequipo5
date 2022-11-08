@@ -30,14 +30,13 @@ const ApiUsuarioController = {
 
          const totaltoys = await db.findAll();
             console.log(totaltoys);
-            res.send(totaltoys);
 
             if(totaltoys){
                 const totalUsuarios = totaltoys.length;
                 const UsuariosWithDetail = totaltoys.map(users => {
                     return {
                         id: users.id,
-                        name: users.firstName,
+                        name: users.nombre,
                         email : users.email,
                        // detail: `https://dh-usuarios-app.herokuapp.com/api/users-detail/${users.slug}`,
                     }
