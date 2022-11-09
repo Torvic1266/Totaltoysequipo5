@@ -29,6 +29,22 @@ header img {
     display: flex;
 }
 
+.fondoCreate{
+  background-image:url("../img/baner4.jpeg"); 
+  background-repeat: no-repeat;   
+  background-size: cover;
+  background-attachment: fixed;
+  min-height: 100vh;
+}
+
+.fondoEdit{
+  background-image:url("../img/baner2.jpeg"); 
+  background-repeat: no-repeat;   
+  background-size: cover;
+  background-attachment: fixed;
+  min-height: 100vh;
+}
+
 .menu li a {
     text-decoration: none;
     color: #0c0c0d;
