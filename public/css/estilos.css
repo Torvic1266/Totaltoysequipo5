@@ -142,9 +142,6 @@ header img {
   font-family:Arial, Helvetica, sans-serif;
   font-size: 18px;
   text-align: center;
-  
-
-  
 }
 
 .producto {
@@ -263,7 +260,7 @@ header img {
   font-size: 2rem;
 }
 
-#listadoProductosHome {
+html, body {
   /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#fadc87+0,87fadc+100 */
   background: #fadc87; /* Old browsers */
   background: -moz-linear-gradient(top,  #fadc87 0%, #87fadc 100%); /* FF3.6-15 */
@@ -271,6 +268,31 @@ header img {
   background: linear-gradient(to bottom,  #fadc87 0%,#87fadc 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fadc87', endColorstr='#87fadc',GradientType=0 ); /* IE6-9 */
 }
+
+.producto:hover {
+  box-shadow: 5px 10px 18px #888888;
+  transition: 0.3s;
+}
+
+.producto a {
+  color: black;
+  text-decoration: none;
+}
+
+    .producto a:hover {
+      color: black;
+    }
+
+.productoPrecio {
+  font-size: 20px;
+  text-align: center;
+}
+
+.productoNombre {
+  font-size: 24px;
+  text-align: center;
+}
+
 
 
 
