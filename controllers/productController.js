@@ -8,6 +8,7 @@ const productDetail = require("./main")
 
 const db = require("../src/database/connection");
 const Producto = require("../src/database/models/Productos");
+const Categorias = require("../src/database/models/Categorias");
 const { where } = require('sequelize');
 
 const productController = {
@@ -60,7 +61,17 @@ const productController = {
         res.render("editar");
     },
     create: (req, res) => {
-        res.render("createProduct");
+        db.sync().then(() => {
+            let productoss = Producto.findAll()
+            let categoriass = Categorias.findAll();
+            Promise.all([productoss, categoriass])
+                .then(function ([productos, categorias]) {
+                    res.render("createProduct", { productos, categorias });
+                })
+        }).catch((error) => {
+            console.error('Error en la conexión con la base de datos: ', error);
+        });
+
     },
 
     productDetail: (req, res) => {

@@ -57,10 +57,22 @@
         <div style="margin-bottom:24px;">
           <label for="Categoria">Categoria</label>
            <select name="categoria">
-            <option value=""disabled selected> categoria</option>
-            <option value="Bebes"<%= locals.producto? (producto.category==="Bebes"? 'selected': "") :"" %> >Bebes</option>
-            <option value="Niños"<%= locals.producto? (producto.category==="Niños"? 'selected': "") :"" %>selected>Niños</option>
-            <option value="Adolescentes"<%= locals.producto? (producto.category==="Adolescentes"? 'selected': "") :"" %>>Adolescentes</option>
+            <% for (let i = 0; i < categorias.length; i++) { %>
+							<% if (categorias[i].id == productos.categoria) {%>
+
+								<option value="<%=categorias[i].id%>" selected>
+									<%=categorias[i].nombre%>
+								</option>
+
+							<% } else { %>
+
+								<option value="<%=categorias[i].id%>">
+									<%=categorias[i].nombre%>
+								</option>
+
+							<% } %>
+
+						<% } %>
           </select>
         </div>
           <button class="Agregar" type="submit">Agregar</button>
