@@ -20,8 +20,7 @@ height:  100vh;
 
 .login-box {
 width: 350px;
-margin: 20px;
-height: fit-content;
+height: 500px;
 background: hsl(0, 0%, 100%);
 color: #0a0909;
 top: 60%;

@@ -22,19 +22,17 @@ body {
    
     
     .login-box {
-    width: 360px;
-    height: 600px;
-    background: hsl(180, 71%, 99%);
-    color: #131212;
-    top: 46%;
-    left: 50%;
-    position: absolute;
-    transform: translate(-50%, -40%);
-    box-sizing: border-box;
-    padding: 50px 20px;
-    border-radius: 3px;
-    
-    }
+      width: 350px;
+      margin: 10px;
+      height: fit-content;
+      background: hsl(0, 0%, 100%);
+      color: #0a0909;
+      margin-left: auto;
+      margin-right: auto; 
+      box-sizing: border-box;
+      padding: 70px 30px;
+      border-radius: 5px;
+      }
     
     .login-box .avatar {
     width: 100px;
