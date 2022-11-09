@@ -23,13 +23,13 @@ body {
     
     .login-box {
     width: 360px;
-    height: 500px;
+    height: 600px;
     background: hsl(180, 71%, 99%);
     color: #131212;
     top: 46%;
     left: 50%;
     position: absolute;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -40%);
     box-sizing: border-box;
     padding: 50px 20px;
     border-radius: 3px;
