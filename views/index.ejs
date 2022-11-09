@@ -18,8 +18,7 @@
 
 <!--------- secion productos -->
 <section id="listadoProductosHome">
-  <h1 style="margin-top: 50px; text-align: center;"> Totaltoys </h1>
-  <h1 style="margin-top: 50px; text-align: center;"> Productos màs vendidos </h1> 
+  <h1 style="margin-top: 50px; text-align: center;"> Productos más vendidos </h1> 
   
 
   <div class="seccionDeLosProductos" style="display: flexbox; justify-content: center;">
@@ -31,8 +30,12 @@
       <div class="producto-image">
         <img src="<%=Productos[i].urlImagen%>"/>
       </div>
-      <p><%=Productos[i].nombre%></p>
-      <strong>$&nbsp<%=Productos[i].precio%></strong>
+      
+      <hr>
+
+      <p class="productoNombre"><%=Productos[i].nombre%></p>
+      <p class="productoPrecio">$&nbsp<%=Productos[i].precio%></p>
+      
       
       <div class="contenedor-botones">
         <button class="boton-comprar btn btn-success"><span><i class="fa-solid fa-cart-shopping"></i>&nbsp Agregar Al Carrito</span></button>
