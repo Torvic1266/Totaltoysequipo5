@@ -11,7 +11,7 @@
 
 		<!--------seccion productos-->
 		<section>
-			<div class="seccionDelosProductos" style="display: flex; flex-wrap:wrap;">
+			<div class="seccionDelosProductos" style="display: flex; flex-wrap: wrap; justify-content: center;">
 				<% Productos.forEach(singleProduct=> { %>
 
 					<div class="producto">
@@ -19,14 +19,20 @@
 							<div class="producto-image">
 								<img src="<%=singleProduct.urlImagen%>" />
 							</div>
-							<p>
-								<%=singleProduct.nombre%>
-							</p>
+							
 						</a>
 
-						<p>
-							<strong> $ <%=singleProduct.precio%> </strong>
+						<hr>
+
+						<p class="productoNombre">
+							<%=singleProduct.nombre%>
 						</p>
+
+						<p class="productoPrecio">
+							 $ <%=singleProduct.precio%>
+						</p>
+
+						
 
 						<div class="contenedor-botones">
 							<button class="boton-comprar btn btn-success">
