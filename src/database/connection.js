@@ -1,4 +1,4 @@
-/**
+ /**
  * Import Sequelize.
  */
 const Sequelize = require("sequelize");

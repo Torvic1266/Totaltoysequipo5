@@ -6,6 +6,7 @@
   font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
 
+
  
 
 
@@ -28,7 +29,7 @@ header {
   font-size: 40px;
   text-transform: uppercase;
   text-shadow: 
-  5px 5px 2px rgb(255, 66, 154);
+  5px 5px 2px rgb(255, 212, 232);
   font-weight: 900;
 }
 
@@ -41,7 +42,7 @@ header {
 }
 
 .menu :hover{
-  color: rgb(255, 66, 154);
+  color: rgb(255, 212, 232);
 }
 
 .menu li a  {
@@ -97,7 +98,7 @@ header {
   font-size: 40px;
   text-transform: uppercase;
   text-shadow: 
-  5px 5px 2px rgb(255, 66, 154);
+  5px 5px 2px rgb(255, 212, 232);
   font-weight: 900;
 }
 
@@ -143,6 +144,8 @@ header {
 
 
 /*-------seccion de los porductos -----*/
+
+
 .seccionDeLosProductos {
   width: 98%;
   display: flex;
@@ -150,38 +153,82 @@ header {
   padding-bottom:10px;
   margin: 0 auto; 
   flex-wrap: wrap; 
+  
 }
 
-.producto {
-  width: 20%;
-  margin: 20px;
-  box-shadow: 0px 0px 6px rgb(255, 66, 154);
-  background-color: rgb(255, 255, 255);
-}
-.producto .producto-image {
-  width: 100%;
-  height: 280px;
-}
+.producto { 
+      width: 20%; 
+      margin: 30px;
+			border: 1px solid black;
+			box-shadow: 5px 5px grey;
+			padding: 10px;
+			border-radius: 10px; 
+      transition: all 0.3s ease;
+      
+ }
 
-.producto img {
+
+
+
+
+ .producto .producto-image {
+  width: 100%; 
+   height: 280px; 
+   height: 150px;
+} 
+
+ .producto img {
   display: flex;
   margin: auto;
   max-width: 100%;
-  max-height: 100%;
+  max-height: 110%;
+} 
+
+.productoPrecio {
+  font-size: 20px;
+  text-align: center;
+  color: #f60;
 }
+
+.productoNombre {
+  font-size: 20px;
+  text-align: center;
+}
+
 
 .boton-comprar{
   width: 100%;
   height: 40px;
   text-transform: uppercase;
-  
  
 }
 
 .contenedor-botones {
-  background-color: rgb(255, 66, 154);
-}
+  background-color: rgb(255, 212, 232);
+} 
  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -272,15 +319,7 @@ header {
       color: black;
     }
 
-.productoPrecio {
-  font-size: 20px;
-  text-align: center;
-}
 
-.productoNombre {
-  font-size: 24px;
-  text-align: center;
-}
 
 
 
