@@ -1,13 +1,15 @@
-@import url("https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed&family=Tiro+Devanagari+Sanskrit&display=swap");
+ @import url("https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed&family=Tiro+Devanagari+Sanskrit&display=swap");
 
 * {
   list-style:none;
   margin: 0;
   padding: 0;
   font-family: "Tiro Devanagari Sanskrit", serif;
-}
+} 
 
-.menu li a {
+
+
+/* .menu li a {
     text-decoration: none;
     color: #0c0c0d;
     margin-left: 25px;
@@ -18,8 +20,10 @@
     display: inline-block;
     line-height: 1.2em;
     transition:1s;
-}
+} */
 
+
+/* 
 .menu :hover{
   color:white
 }
@@ -35,16 +39,18 @@
   background: white;
   display: inline-block;
   line-height: 1.2em;
-}
+} */
 
-#menu-icon {
+
+
+/* #menu-icon {
   display: none;
   font-size: 16px;
   color: black;
-}
+} */
 
 
-nav {
+/* nav {
 	float:right;
     display: flex;
     padding-right: 20px;
@@ -70,32 +76,38 @@ nav {
 				display: block;
 				padding: 0 10px;
 				text-decoration: none;
-			}
+			} */
 
 
 
 
 
-main{
+/* main{
    display:flex;
-    height: 420px;
+    height: 100%;
     flex-direction: row;
     background-color: hsl(180, 18%, 93%);
+    border: 5px solid green;
+    /* padding: 10px; */
+    /* margin: 20px 
+
+}
+
+ .imagenDetalle{
+  border: 5px solid pink;
+
 }
 
 main div {
-    padding:5px;
+    padding:10px;
     text-align: center;
     margin:auto ; 
-    border-color:black;
-    
-
-    
-}
+     border-color:black; 
+  }  
 
 
 
-.juguete{
+/* .juguete{
     width: 30%;
     margin: 10%;
     background-color: rgb(220, 239, 245);
@@ -104,11 +116,11 @@ main div {
   margin: 60px;
   box-shadow: 0px 0px 6px hwb(0 68% 30%);
   text-decoration: none;
-}
+} */
 
 
 
-
+/* 
 .boton-comprar{
     display: inline-flex;
     align-items:center;
@@ -188,4 +200,168 @@ main div {
 
   .Eliminar-boton:hover{
     background-color: hsl(200, 82%, 89%);
-  }
+  }  */
+
+
+
+
+  /* .imagenDetalle{
+
+
+
+    width: 100%;
+    overflow: hidden;
+    /* display:flex;
+     height: 100%;
+     flex-direction: row;
+     background-color: hsl(180, 18%, 93%);
+     /* border: 5px solid green; */
+     /* padding: 10px; */
+     /* margin: 20px  
+  
+ }
+
+
+
+ /* img {
+  width: 99vh;
+  float: left;
+  border-radius: 20px;
+  margin: 5px;
+}
+
+p {
+  width: 50%;
+  float: right;
+  text-align: center;
+}
+
+h4{
+  width: 50%;
+  float: right;
+  text-align: center;
+  padding: 10px;
+} */ 
+ 
+ 
+ /* main div {
+     padding:10px;
+     text-align: center;
+     margin:auto ; 
+     /* border-color:black; 
+   }  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   /* Estilos para la sección de imagenDetalle */
+.imagenDetalle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.imagenDetalle img {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.imagenDetalle h4 {
+  margin: 0;
+  font-size: 22px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.imagenDetalle p {
+  margin-top: 10px;
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: justify;
+}
+
+/* Estilos para la sección de article */
+.article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.boton-comprar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 12px 20px;
+  margin-bottom: 20px;
+  border: none;
+  border-radius: 4px;
+  background-color: #4CAF50;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.boton-comprar:hover {
+  background-color: #3e8e41;
+}
+
+.editar {
+  margin-bottom: 20px;
+}
+
+.editar-boton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  background-color: #008CBA;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.editar-boton:hover {
+  background-color: #0078a0;
+}
+
+button[type="submit"] {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  background-color: #f44336;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: #d32f2f;
+  
+}

@@ -4,6 +4,18 @@
   list-style:none;
   box-sizing: border-box;
   font-family:Verdana, Geneva, Tahoma, sans-serif;
+
+
+
+
+  /* background-image: linear-gradient(-225deg, #E3FDF5 0%, #FFE6FA 100%); */
+  /* background-image: linear-gradient(to top, #d6efed 0%, #fff5f8 100%); */
+
+/* 
+  background:linear-gradient(top, rgb(255, 242, 242), rgb(255, 252, 235));
+ background:-webkit-linear-gradient(top, rgb(255, 246, 188), rgb(255, 250, 225));
+   background-attachment: fixed; 
+  background-repeat: no-repeat;  */
 }
 
 

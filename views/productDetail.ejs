@@ -5,50 +5,53 @@
     <title>Pagina Detail</title>
     <link rel="stylesheet" href="/css/pructodetail.css" />
   </head>
+
+
   <body>
+
     <%- include('./partials/header'); %>
 
-    <main>
       
       
-       <!-- <img class="juguetes" src="./img/ninos/<%=product.imagen%>" /> -->
+    <div class="imagenDetalle">
       <img src="<%=product.urlImagen%>" alt="">
+      <h4><%=product.nombre%></h4>
+      <h4><%=product.precio%></h4>
+      <p><%=product.descripcion%></p>
+    </div>
+    
+    <div class="article">
+     
+      <div class="editar">
+        <a href="/productos/editar-product/<%=product.id%>" >
+          <button class="editar-boton"><i class="fa-solid fa-pen-to-square"></i>&nbsp; Editar</button>
+        </a>
+      </div> 
+    
+      <form action="/productos/borrar/<%=product.id%>" method="POST">
+        <button type="submit"><i class="fa-solid fa-trash"></i>&nbsp; Eliminar</button>
+      </form>
 
-      <div class="article">
+    </div>
 
-        <h4><%=product.nombre%></h4>
-
-        <div class="precio">
-          <h4><%=product.precio%></h4>
-        </div>
-        <p>
-          <%=product.descripcion%>
-        </p>
-
-        <div class="seccion">
-          <div class="contenedor-botones">
-            <button class="boton-comprar">
-              <span><i class="fa-solid fa-cart-shopping"></i>&nbsp; Agregar Al Carrito</span>
-            </button>
-          </div>
-          <div class="contenedor-botones">
-            <button class="boton-comprar"><span><i class="fa-solid fa-bag-shopping"></i>&nbsp; Comprar</span></button>
-          </div>
-        </div>
-        <div class="editar">
-          <a href="/productos/editar-product/<%=product.id%>" >
-            <button class="editar-boton"><i class="fa-solid fa-pen-to-square"></i>&nbsp; Editar</button>
-          </a>
-        </div> 
-      
-        <form action="/productos/borrar/<%=product.id%>" method="POST">
-          <button type="submit"><i class="fa-solid fa-trash"></i>&nbsp; Eliminar</button>
-          </form>
-         
-      </div>
-    </main>
-
-</div>  
+ 
 <%- include('./partials/footer'); %>
+
+
   </body>
+
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
